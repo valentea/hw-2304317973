@@ -1,0 +1,1 @@
+/usr/bin/c++.exe  -g  -Wl,--enable-auto-import CMakeFiles/WordSearch.dir/main.cpp.o  -o WordSearch.exe -Wl,--out-implib,libWordSearch.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

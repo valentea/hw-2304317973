@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/WordSearch/main.cpp
+iostream
+-
+iomanip
+-
+string
+-
+fstream
+-
+sstream
+-
+vector
+-
+
