@@ -12,9 +12,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca49d4d-3eea-459c-8268-e63c254902ce" name="Default" comment="Something I changed">
+    <list default="true" id="4ca49d4d-3eea-459c-8268-e63c254902ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsearch.cpp" afterPath="$PROJECT_DIR$/wsearch.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -323,12 +322,20 @@
       <workItem from="1485146600489" duration="53000" />
       <workItem from="1485194490305" duration="12000" />
       <workItem from="1485194515167" duration="1431000" />
-      <workItem from="1485196607928" duration="347000" />
+      <workItem from="1485196607928" duration="360000" />
     </task>
+    <task id="LOCAL-00001" summary="Something I changed">
+      <created>1485196962451</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1485196962451</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37907000" />
+    <option name="totallyTimeSpent" value="37920000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
