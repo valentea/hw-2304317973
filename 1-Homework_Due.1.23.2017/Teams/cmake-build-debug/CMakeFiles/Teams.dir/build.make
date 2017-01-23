@@ -43,10 +43,10 @@ RM = /cygdrive/c/Users/Alex/.CLion2016.3/system/cygwin_cmake/bin/cmake.exe -E re
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/Teams"
+CMAKE_SOURCE_DIR = "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/Teams"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/Teams/cmake-build-debug"
+CMAKE_BINARY_DIR = "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/Teams/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Teams.dir/depend.make
@@ -57,41 +57,41 @@ include CMakeFiles/Teams.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Teams.dir/flags.make
 
-CMakeFiles/Teams.dir/main.cpp.o: CMakeFiles/Teams.dir/flags.make
-CMakeFiles/Teams.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/Teams/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Teams.dir/main.cpp.o"
-	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Teams.dir/main.cpp.o -c "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/Teams/main.cpp"
+CMakeFiles/Teams.dir/teams.cpp.o: CMakeFiles/Teams.dir/flags.make
+CMakeFiles/Teams.dir/teams.cpp.o: ../teams.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/Teams/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Teams.dir/teams.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Teams.dir/teams.cpp.o -c "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/Teams/teams.cpp"
 
-CMakeFiles/Teams.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Teams.dir/main.cpp.i"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/Teams/main.cpp" > CMakeFiles/Teams.dir/main.cpp.i
+CMakeFiles/Teams.dir/teams.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Teams.dir/teams.cpp.i"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/Teams/teams.cpp" > CMakeFiles/Teams.dir/teams.cpp.i
 
-CMakeFiles/Teams.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Teams.dir/main.cpp.s"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/Teams/main.cpp" -o CMakeFiles/Teams.dir/main.cpp.s
+CMakeFiles/Teams.dir/teams.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Teams.dir/teams.cpp.s"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/Teams/teams.cpp" -o CMakeFiles/Teams.dir/teams.cpp.s
 
-CMakeFiles/Teams.dir/main.cpp.o.requires:
+CMakeFiles/Teams.dir/teams.cpp.o.requires:
 
-.PHONY : CMakeFiles/Teams.dir/main.cpp.o.requires
+.PHONY : CMakeFiles/Teams.dir/teams.cpp.o.requires
 
-CMakeFiles/Teams.dir/main.cpp.o.provides: CMakeFiles/Teams.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Teams.dir/build.make CMakeFiles/Teams.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/Teams.dir/main.cpp.o.provides
+CMakeFiles/Teams.dir/teams.cpp.o.provides: CMakeFiles/Teams.dir/teams.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Teams.dir/build.make CMakeFiles/Teams.dir/teams.cpp.o.provides.build
+.PHONY : CMakeFiles/Teams.dir/teams.cpp.o.provides
 
-CMakeFiles/Teams.dir/main.cpp.o.provides.build: CMakeFiles/Teams.dir/main.cpp.o
+CMakeFiles/Teams.dir/teams.cpp.o.provides.build: CMakeFiles/Teams.dir/teams.cpp.o
 
 
 # Object files for target Teams
 Teams_OBJECTS = \
-"CMakeFiles/Teams.dir/main.cpp.o"
+"CMakeFiles/Teams.dir/teams.cpp.o"
 
 # External object files for target Teams
 Teams_EXTERNAL_OBJECTS =
 
-Teams.exe: CMakeFiles/Teams.dir/main.cpp.o
+Teams.exe: CMakeFiles/Teams.dir/teams.cpp.o
 Teams.exe: CMakeFiles/Teams.dir/build.make
 Teams.exe: CMakeFiles/Teams.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/Teams/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Teams.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/Teams/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Teams.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Teams.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -99,7 +99,7 @@ CMakeFiles/Teams.dir/build: Teams.exe
 
 .PHONY : CMakeFiles/Teams.dir/build
 
-CMakeFiles/Teams.dir/requires: CMakeFiles/Teams.dir/main.cpp.o.requires
+CMakeFiles/Teams.dir/requires: CMakeFiles/Teams.dir/teams.cpp.o.requires
 
 .PHONY : CMakeFiles/Teams.dir/requires
 
@@ -108,6 +108,6 @@ CMakeFiles/Teams.dir/clean:
 .PHONY : CMakeFiles/Teams.dir/clean
 
 CMakeFiles/Teams.dir/depend:
-	cd "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/Teams/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/Teams" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/Teams" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/Teams/cmake-build-debug" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/Teams/cmake-build-debug" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/Teams/cmake-build-debug/CMakeFiles/Teams.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/Teams/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/Teams" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/Teams" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/Teams/cmake-build-debug" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/Teams/cmake-build-debug" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/Teams/cmake-build-debug/CMakeFiles/Teams.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/Teams.dir/depend
 

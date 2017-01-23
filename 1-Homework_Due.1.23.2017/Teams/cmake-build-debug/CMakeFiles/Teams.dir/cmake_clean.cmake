@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Teams.dir/main.cpp.o"
+  "CMakeFiles/Teams.dir/teams.cpp.o"
   "Teams.pdb"
   "Teams.exe"
   "libTeams.dll.a"

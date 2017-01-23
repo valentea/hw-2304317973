@@ -48,10 +48,10 @@ RM = /cygdrive/c/Users/Alex/.CLion2016.3/system/cygwin_cmake/bin/cmake.exe -E re
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/Teams"
+CMAKE_SOURCE_DIR = "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/Teams"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/Teams/cmake-build-debug"
+CMAKE_BINARY_DIR = "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/Teams/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/Teams/cmake-build-debug/CMakeFiles" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/Teams/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/Teams/cmake-build-debug/CMakeFiles" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/Teams/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/Teams/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/Teams/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ Teams/fast:
 	$(MAKE) -f CMakeFiles/Teams.dir/build.make CMakeFiles/Teams.dir/build
 .PHONY : Teams/fast
 
-main.o: main.cpp.o
+teams.o: teams.cpp.o
 
-.PHONY : main.o
+.PHONY : teams.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/Teams.dir/build.make CMakeFiles/Teams.dir/main.cpp.o
-.PHONY : main.cpp.o
+teams.cpp.o:
+	$(MAKE) -f CMakeFiles/Teams.dir/build.make CMakeFiles/Teams.dir/teams.cpp.o
+.PHONY : teams.cpp.o
 
-main.i: main.cpp.i
+teams.i: teams.cpp.i
 
-.PHONY : main.i
+.PHONY : teams.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/Teams.dir/build.make CMakeFiles/Teams.dir/main.cpp.i
-.PHONY : main.cpp.i
+teams.cpp.i:
+	$(MAKE) -f CMakeFiles/Teams.dir/build.make CMakeFiles/Teams.dir/teams.cpp.i
+.PHONY : teams.cpp.i
 
-main.s: main.cpp.s
+teams.s: teams.cpp.s
 
-.PHONY : main.s
+.PHONY : teams.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/Teams.dir/build.make CMakeFiles/Teams.dir/main.cpp.s
-.PHONY : main.cpp.s
+teams.cpp.s:
+	$(MAKE) -f CMakeFiles/Teams.dir/build.make CMakeFiles/Teams.dir/teams.cpp.s
+.PHONY : teams.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Teams"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... teams.o"
+	@echo "... teams.i"
+	@echo "... teams.s"
 .PHONY : help
 
 
