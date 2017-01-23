@@ -1,1 +1,0 @@
-/usr/bin/c++.exe  -g  -Wl,--enable-auto-import CMakeFiles/wsearch.dir/wsearch.cpp.o  -o wsearch.exe -Wl,--out-implib,libwsearch.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
