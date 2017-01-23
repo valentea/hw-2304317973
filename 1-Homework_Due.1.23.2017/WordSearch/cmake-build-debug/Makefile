@@ -48,10 +48,10 @@ RM = /cygdrive/c/Users/Alex/.CLion2016.3/system/cygwin_cmake/bin/cmake.exe -E re
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/WordSearch"
+CMAKE_SOURCE_DIR = "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/WordSearch"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/WordSearch/cmake-build-debug"
+CMAKE_BINARY_DIR = "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/WordSearch/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/WordSearch/cmake-build-debug/CMakeFiles" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/WordSearch/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/WordSearch/cmake-build-debug/CMakeFiles" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/WordSearch/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/WordSearch/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/WordSearch/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ WordSearch/fast:
 	$(MAKE) -f CMakeFiles/WordSearch.dir/build.make CMakeFiles/WordSearch.dir/build
 .PHONY : WordSearch/fast
 
-main.o: main.cpp.o
+wsearch.o: wsearch.cpp.o
 
-.PHONY : main.o
+.PHONY : wsearch.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/WordSearch.dir/build.make CMakeFiles/WordSearch.dir/main.cpp.o
-.PHONY : main.cpp.o
+wsearch.cpp.o:
+	$(MAKE) -f CMakeFiles/WordSearch.dir/build.make CMakeFiles/WordSearch.dir/wsearch.cpp.o
+.PHONY : wsearch.cpp.o
 
-main.i: main.cpp.i
+wsearch.i: wsearch.cpp.i
 
-.PHONY : main.i
+.PHONY : wsearch.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/WordSearch.dir/build.make CMakeFiles/WordSearch.dir/main.cpp.i
-.PHONY : main.cpp.i
+wsearch.cpp.i:
+	$(MAKE) -f CMakeFiles/WordSearch.dir/build.make CMakeFiles/WordSearch.dir/wsearch.cpp.i
+.PHONY : wsearch.cpp.i
 
-main.s: main.cpp.s
+wsearch.s: wsearch.cpp.s
 
-.PHONY : main.s
+.PHONY : wsearch.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/WordSearch.dir/build.make CMakeFiles/WordSearch.dir/main.cpp.s
-.PHONY : main.cpp.s
+wsearch.cpp.s:
+	$(MAKE) -f CMakeFiles/WordSearch.dir/build.make CMakeFiles/WordSearch.dir/wsearch.cpp.s
+.PHONY : wsearch.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... WordSearch"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... wsearch.o"
+	@echo "... wsearch.i"
+	@echo "... wsearch.s"
 .PHONY : help
 
 

@@ -43,10 +43,10 @@ RM = /cygdrive/c/Users/Alex/.CLion2016.3/system/cygwin_cmake/bin/cmake.exe -E re
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/WordSearch"
+CMAKE_SOURCE_DIR = "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/WordSearch"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/WordSearch/cmake-build-debug"
+CMAKE_BINARY_DIR = "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/WordSearch/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/WordSearch.dir/depend.make
@@ -57,41 +57,41 @@ include CMakeFiles/WordSearch.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/WordSearch.dir/flags.make
 
-CMakeFiles/WordSearch.dir/main.cpp.o: CMakeFiles/WordSearch.dir/flags.make
-CMakeFiles/WordSearch.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/WordSearch/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/WordSearch.dir/main.cpp.o"
-	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/WordSearch.dir/main.cpp.o -c "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/WordSearch/main.cpp"
+CMakeFiles/WordSearch.dir/wsearch.cpp.o: CMakeFiles/WordSearch.dir/flags.make
+CMakeFiles/WordSearch.dir/wsearch.cpp.o: ../wsearch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/WordSearch/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/WordSearch.dir/wsearch.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/WordSearch.dir/wsearch.cpp.o -c "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/WordSearch/wsearch.cpp"
 
-CMakeFiles/WordSearch.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WordSearch.dir/main.cpp.i"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/WordSearch/main.cpp" > CMakeFiles/WordSearch.dir/main.cpp.i
+CMakeFiles/WordSearch.dir/wsearch.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WordSearch.dir/wsearch.cpp.i"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/WordSearch/wsearch.cpp" > CMakeFiles/WordSearch.dir/wsearch.cpp.i
 
-CMakeFiles/WordSearch.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WordSearch.dir/main.cpp.s"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/WordSearch/main.cpp" -o CMakeFiles/WordSearch.dir/main.cpp.s
+CMakeFiles/WordSearch.dir/wsearch.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WordSearch.dir/wsearch.cpp.s"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/WordSearch/wsearch.cpp" -o CMakeFiles/WordSearch.dir/wsearch.cpp.s
 
-CMakeFiles/WordSearch.dir/main.cpp.o.requires:
+CMakeFiles/WordSearch.dir/wsearch.cpp.o.requires:
 
-.PHONY : CMakeFiles/WordSearch.dir/main.cpp.o.requires
+.PHONY : CMakeFiles/WordSearch.dir/wsearch.cpp.o.requires
 
-CMakeFiles/WordSearch.dir/main.cpp.o.provides: CMakeFiles/WordSearch.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/WordSearch.dir/build.make CMakeFiles/WordSearch.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/WordSearch.dir/main.cpp.o.provides
+CMakeFiles/WordSearch.dir/wsearch.cpp.o.provides: CMakeFiles/WordSearch.dir/wsearch.cpp.o.requires
+	$(MAKE) -f CMakeFiles/WordSearch.dir/build.make CMakeFiles/WordSearch.dir/wsearch.cpp.o.provides.build
+.PHONY : CMakeFiles/WordSearch.dir/wsearch.cpp.o.provides
 
-CMakeFiles/WordSearch.dir/main.cpp.o.provides.build: CMakeFiles/WordSearch.dir/main.cpp.o
+CMakeFiles/WordSearch.dir/wsearch.cpp.o.provides.build: CMakeFiles/WordSearch.dir/wsearch.cpp.o
 
 
 # Object files for target WordSearch
 WordSearch_OBJECTS = \
-"CMakeFiles/WordSearch.dir/main.cpp.o"
+"CMakeFiles/WordSearch.dir/wsearch.cpp.o"
 
 # External object files for target WordSearch
 WordSearch_EXTERNAL_OBJECTS =
 
-WordSearch.exe: CMakeFiles/WordSearch.dir/main.cpp.o
+WordSearch.exe: CMakeFiles/WordSearch.dir/wsearch.cpp.o
 WordSearch.exe: CMakeFiles/WordSearch.dir/build.make
 WordSearch.exe: CMakeFiles/WordSearch.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/WordSearch/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable WordSearch.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/WordSearch/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable WordSearch.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/WordSearch.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -99,7 +99,7 @@ CMakeFiles/WordSearch.dir/build: WordSearch.exe
 
 .PHONY : CMakeFiles/WordSearch.dir/build
 
-CMakeFiles/WordSearch.dir/requires: CMakeFiles/WordSearch.dir/main.cpp.o.requires
+CMakeFiles/WordSearch.dir/requires: CMakeFiles/WordSearch.dir/wsearch.cpp.o.requires
 
 .PHONY : CMakeFiles/WordSearch.dir/requires
 
@@ -108,6 +108,6 @@ CMakeFiles/WordSearch.dir/clean:
 .PHONY : CMakeFiles/WordSearch.dir/clean
 
 CMakeFiles/WordSearch.dir/depend:
-	cd "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/WordSearch/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/WordSearch" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/WordSearch" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/WordSearch/cmake-build-debug" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/WordSearch/cmake-build-debug" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/1-Homework_Due.1.23.2017/WordSearch/cmake-build-debug/CMakeFiles/WordSearch.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/WordSearch/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/WordSearch" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/WordSearch" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/WordSearch/cmake-build-debug" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/WordSearch/cmake-build-debug" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/WordSearch/cmake-build-debug/CMakeFiles/WordSearch.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/WordSearch.dir/depend
 

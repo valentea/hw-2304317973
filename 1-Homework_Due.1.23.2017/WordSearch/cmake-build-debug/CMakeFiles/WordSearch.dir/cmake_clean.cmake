@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/WordSearch.dir/main.cpp.o"
+  "CMakeFiles/WordSearch.dir/wsearch.cpp.o"
   "WordSearch.pdb"
   "WordSearch.exe"
   "libWordSearch.dll.a"
