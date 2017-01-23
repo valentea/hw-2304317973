@@ -99,9 +99,5 @@ int main(int argc, char *argv[]) {
     delete[] teamA;
     delete[] teamB;
 
-    for (int j = 0; j < 6; ++j) {
-        cout << "teast" << endl;
-    }
-
     return 0;
 }
