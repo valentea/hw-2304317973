@@ -178,7 +178,11 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    //printGrid(mygrid); //UNCOMMENT TO VIEW INPUT GRID
+    for (int i = 0; i < 5; ++i) {
+        cout << "this is a  git hub test" << endl;
+    }
+
+    printGrid(mygrid); //UNCOMMENT TO VIEW INPUT GRID
     findWord(mygrid, targetWord);
     return 0;
 }
