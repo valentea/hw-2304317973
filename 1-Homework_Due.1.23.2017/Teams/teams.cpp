@@ -62,8 +62,7 @@ void combinationUtil(string *&names, int numberOfPlayers, int teamSize, int tota
     }
     if (aIndex >= numberOfPlayers) {
         return;
-    }
-    teamA[totalIndex] = names[aIndex];
+    }    teamA[totalIndex] = names[aIndex];
     combinationUtil(names, numberOfPlayers, teamSize, totalIndex + 1, teamA, aIndex + 1, teamB);
     combinationUtil(names, numberOfPlayers, teamSize, totalIndex, teamA, aIndex + 1, teamB);
 }
@@ -99,6 +98,10 @@ int main(int argc, char *argv[]) {
     delete[] names;
     delete[] teamA;
     delete[] teamB;
+
+    for (int j = 0; j < 6; ++j) {
+        cout << "teast" << endl;
+    }
 
     return 0;
 }
