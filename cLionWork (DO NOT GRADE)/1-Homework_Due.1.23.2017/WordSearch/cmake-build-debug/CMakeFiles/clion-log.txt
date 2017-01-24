@@ -1,0 +1,4 @@
+C:\Users\Alex\.CLion2016.3\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/WordSearch"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/1-Homework_Due.1.23.2017/WordSearch/cmake-build-debug
