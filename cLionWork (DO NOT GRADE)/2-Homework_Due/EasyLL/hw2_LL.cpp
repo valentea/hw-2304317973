@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <sstream>
 
 using namespace std;
 
@@ -11,7 +12,7 @@ struct Item{
 Item* concatenate(Item* head1, Item* head2);
 void removeEvens(Item*& head);
 double findAverage(Item* head);
-void constructList(Item* head, int val);
+void constructList(Item* &head, int val);
 
 //Item *concatenate(Item* head1, Item* head2){
 //    Item* temp;
@@ -57,7 +58,16 @@ int main(int argc, char* argv[]) {
 
     Item* headListOne = NULL;
     Item* headListTwo = NULL;
-    constructList(headListOne, 10);
+    string temp;
+    while(getline(ifile,temp)) {
+        int addNumber;
+        stringstream listNumbers(temp);
+        if(!(listNumbers >> addNumber).fail()) {
+            constructList(headListOne, addNumber);
+            cout << headListOne->val << endl;
+            headListOne = headListOne->next;
+        } else{ break;}
+    }
 
     return 7;
 
