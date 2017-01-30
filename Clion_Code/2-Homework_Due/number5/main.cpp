@@ -16,20 +16,23 @@ void constructList(Item* &head, int val);
 int listLength(Item* head);
 
 int listLength(Item* head){
+    Item* temp = head;
     int count;
-    while(head != NULL){
+    while(temp != NULL){
         count++;
-        head = head->next;
+        temp = temp->next;
     }
     return count;
 }
-
+double runningTotal = 0;
 double findAverage(Item* head){
     double runningTotal = 0;
-    if(head != NULL){
-        runningTotal = head->val + findAverage(head->next);
+    if (head == NULL) {
+        cout << "exit here" << endl;
+        return runningTotal;
     }
     else {
+        runningTotal = head->val + findAverage(head->next);
         return runningTotal;
     }
 }
@@ -53,17 +56,30 @@ void removeEvens(Item* &head) {
     return;
 }
 
-Item* concatenate(Item* head1, Item* head2) {
+//Item* concatenate(Item* head1, Item* head2) {
+//
+//    if (head1 == NULL) return head2;
+//    else if (head2 == NULL) return head1;
+//
+//    else if (head1 != NULL && head2->val != NULL) {
+//        head1->next = concatenate(head1->next, head2);
+//        return head1;
+//    } else {
+//        head2->next = concatenate(head2->next, head1);
+//        return head2;
+//    }
+//}
 
-    if (head1 == NULL) return head2;
-    else if (head2 == NULL) return head1;
+Item* concatenate(Item* list1, Item* list2) {
+    if (list1 == NULL) return list2;
+    if (list2 == NULL) return list1;
 
-    else if (head1 != NULL && head2->val != NULL) {
-        head1->next = concatenate(head1->next, head2);
-        return head1;
+    if (list1->val < list2->val) {
+        list1->next = concatenate(list1->next, list2);
+        return list1;
     } else {
-        head2->next = concatenate(head2->next, head1);
-        return head2;
+        list2->next = concatenate(list2->next, list1);
+        return list2;
     }
 }
 
@@ -126,14 +142,22 @@ int main(int argc, char* argv[]) {
     Item* bigList = concatenate(headListOne, headListTwo);
     cout << "makes it this far 6" << endl;
 
+
+
     //REMOVE ALL EVEN NUMBERS
     removeEvens(bigList);
     cout << "makes it this far 7" << endl;
 
 
+
+
     //FIND AVERAGE
     double totalSum = findAverage(bigList);
-    double average = totalSum / listLength(bigList);
+    int length = listLength(bigList);
+    double average = totalSum / length;
+    cout << "makes it this far 9" << endl;
+    cout << "total sum: " << totalSum << endl;
+    cout << "list length: " << length;// << endl;
     cout << "average: " << average << endl;
 
     return 4;
