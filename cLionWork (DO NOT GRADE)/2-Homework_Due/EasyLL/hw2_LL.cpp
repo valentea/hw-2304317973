@@ -13,23 +13,40 @@ Item* concatenate(Item* head1, Item* head2);
 void removeEvens(Item*& head);
 double findAverage(Item* head);
 void constructList(Item* &head, int val);
+int listLength(Item* head);
 
-int count = 0;
+int listLength(Item* head){
+    int count;
+    while(head != NULL){
+        count++;
+        head = head->next;
+    }
+    return count;
+}
+
+double findAverage(Item* head){
+    double runningTotal = 0;
+    if(head != NULL){
+        runningTotal = head->val + findAverage(head->next);
+    }
+    else {
+        return runningTotal;
+    }
+}
+
 void removeEvens(Item* &head) {
-    while (head != NULL) {
-        cout << "count " << count << endl;
-        cout << "Bool Val: " << head.v
-             << endl;
+    if (head != NULL) {
         if ((head->val % 2) == 0) {
-            removeEvens(head->next->next);
-            count++;
-        } else {
+            Item* deleteNode = new Item;
+            deleteNode = head->next;   // Step 1: save ptr to next
+            head = deleteNode;  // Step 2: reassign current->next ptr
+            removeEvens(head);
+        } else{
             removeEvens(head->next);
-            count++;
+
         }
     }
         return;
-
 }
 
 Item* concatenate(Item* head1, Item* head2) {
@@ -97,14 +114,13 @@ int main(int argc, char* argv[]) {
 
     //REMOVE ALL EVEN NUMBERS
     removeEvens(bigList);
-    cout << "bigList" << endl;
-    while(bigList!=NULL){
-        cout << bigList->val << endl;
-        bigList = bigList->next;
-    }
 
+    //FIND AVERAGE
+    double totalSum = findAverage(bigList);
+    double average = totalSum / listLength(bigList);
+    cout << "average: " << average << endl;
 
-    return 7;
+    return 1;
 
 
 }
