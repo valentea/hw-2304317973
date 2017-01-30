@@ -1,8 +1,7 @@
 cmake_minimum_required(VERSION 3.3)
-project(hw_lists)
+project(hw2)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-
-set(SOURCE_FILES hw2_LL.cpp)
-add_executable(hw_lists ${SOURCE_FILES})
+set(SOURCE_FILES main.cpp)
+add_executable(hw2 ${SOURCE_FILES})

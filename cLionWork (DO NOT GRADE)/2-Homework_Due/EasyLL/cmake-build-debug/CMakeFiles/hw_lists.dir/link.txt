@@ -1,1 +1,0 @@
-/usr/bin/c++.exe   -std=c++11 -g  -Wl,--enable-auto-import CMakeFiles/hw_lists.dir/hw2_LL.cpp.o  -o hw_lists.exe -Wl,--out-implib,libhw_lists.dll.a -Wl,--major-image-version,0,--minor-image-version,0  
