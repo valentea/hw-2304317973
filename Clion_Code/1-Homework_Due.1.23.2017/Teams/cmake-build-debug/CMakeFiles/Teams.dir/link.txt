@@ -1,0 +1,1 @@
+/usr/bin/c++.exe  -g  -Wl,--enable-auto-import CMakeFiles/Teams.dir/teams.cpp.o  -o Teams.exe -Wl,--out-implib,libTeams.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
