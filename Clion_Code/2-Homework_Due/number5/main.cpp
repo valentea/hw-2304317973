@@ -17,13 +17,15 @@ int listLength(Item* head);
 
 int listLength(Item* head){
     Item* temp = head;
-    int count;
+    int count = 0;
     while(temp != NULL){
         count++;
         temp = temp->next;
     }
     return count;
 }
+
+
 double runningTotal = 0;
 double findAverage(Item* head){
     double runningTotal = 0;
@@ -150,14 +152,13 @@ int main(int argc, char* argv[]) {
 
 
 
-
     //FIND AVERAGE
     double totalSum = findAverage(bigList);
     int length = listLength(bigList);
     double average = totalSum / length;
     cout << "makes it this far 9" << endl;
     cout << "total sum: " << totalSum << endl;
-    cout << "list length: " << length;// << endl;
+    cout << "list length: " << length << endl;
     cout << "average: " << average << endl;
 
     return 4;
