@@ -81,7 +81,7 @@ Item* concatenate(Item* list1, Item* list2) {
         list2->next = concatenate(list2->next, list1);
         return list2;
     }
-}
+}cf
 
 void constructList(Item* &head, int val){
     Item* newHead = new Item;
