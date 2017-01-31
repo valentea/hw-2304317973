@@ -26,7 +26,6 @@ int listLength(Item* head){
 }
 
 
-double runningTotal = 0;
 double findAverage(Item* head){
     double runningTotal = 0;
     if (head == NULL) {
