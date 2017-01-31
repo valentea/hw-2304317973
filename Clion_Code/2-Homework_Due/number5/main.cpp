@@ -155,9 +155,6 @@ int main(int argc, char* argv[]) {
     double totalSum = findAverage(bigList);
     int length = listLength(bigList);
     double average = totalSum / length;
-    cout << "makes it this far 9" << endl;
-    cout << "total sum: " << totalSum << endl;
-    cout << "list length: " << length << endl;
     cout << "average: " << average << endl;
 
     return 4;

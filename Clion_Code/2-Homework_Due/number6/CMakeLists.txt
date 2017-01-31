@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.6)
+project(number6)
+
+set(CMAKE_CXX_STANDARD 11)
+
+set(SOURCE_FILES
+        llistdbl.cpp
+        llistdbl.h
+        testAddToEmptyList.cpp)
+
+add_executable(number6 ${SOURCE_FILES})
