@@ -161,11 +161,11 @@ int main(int argc, char* argv[]) {
     outFile.close();
 
     while(NULL != headListOne){
-        delete headListOne;
+        delete[] headListOne;
         headListOne = headListOne->next;
     }
     while(NULL != headListTwo){
-        delete headListTwo;
+        delete[] headListTwo;
         headListTwo = headListTwo->next;
     }
 
