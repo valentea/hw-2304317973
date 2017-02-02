@@ -61,6 +61,7 @@ void removeEvens(Item* &head) {
             deleteNode = head->next;
             head = deleteNode;
             removeEvens(head);
+            delete deleteNode;
         } else{
             removeEvens(head->next);
             return;
@@ -98,6 +99,7 @@ void constructList(Item* &head, int val){
         }
         temp->next = newHead;
     }
+    delete newHead;
     return;
 }
 
