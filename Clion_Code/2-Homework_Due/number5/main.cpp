@@ -160,15 +160,20 @@ int main(int argc, char* argv[]) {
     outFile << fixed << setprecision(1) << average;
     outFile.close();
 
-    while(NULL != headListOne){
-        Item* temp  = headListOne;
-        headListOne = headListOne->next;
-        delete temp;
-    }
-    while(NULL != headListTwo){
-        delete[] headListTwo;
-        headListTwo = headListTwo->next;
-    }
+
+
+
+//    while(NULL != headListOne){
+//        Item* temp1  = headListOne;
+//        headListOne = headListOne->next;
+//        delete temp1;
+//    }
+//
+//    while(NULL != headListTwo){
+//        Item* temp2 = headListTwo;
+//        headListTwo = headListTwo->next;
+//        delete temp2;
+//    }
 
 
     return 99;
