@@ -57,8 +57,7 @@ void removeEvens(Item* &head) {
     }
     else{
         if ((head->val % 2) == 0) {
-            Item* deleteNode = new Item(NULL, NULL);
-            deleteNode = head->next;
+            Item* deleteNode = head->next;
             head = deleteNode;
             removeEvens(head);
         } else{
@@ -75,7 +74,7 @@ Item* concatenate(Item* head1, Item* head2) {
     if (head1 == NULL) return head2;
     else if (head2 == NULL) return head1;
 
-    else if (head1->val != NULL && head2->val != NULL) {
+    else if (head1->val != 0 && head2->val != 0) {
         head1->next = concatenate(head1->next, head2);
         return head1;
     } else {
@@ -85,7 +84,7 @@ Item* concatenate(Item* head1, Item* head2) {
 }
 
 void constructList(Item* &head, int val){
-    Item* newHead = new Item(NULL, NULL);
+    Item* newHead = new Item(0, NULL);
     newHead->val = val;
     newHead->next = NULL;
     if(head == NULL){
