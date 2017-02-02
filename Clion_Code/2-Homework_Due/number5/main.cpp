@@ -84,9 +84,7 @@ Item* concatenate(Item* head1, Item* head2) {
 }
 
 void constructList(Item* &head, int val){
-    Item* newHead = new Item(0, NULL);
-    newHead->val = val;
-    newHead->next = NULL;
+    Item* newHead = new Item(val, NULL);
     if(head == NULL){
         head = newHead;
     }
@@ -116,8 +114,8 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    Item *headListOne = NULL;
-    Item *headListTwo = NULL;
+    Item* headListOne = NULL;
+    Item* headListTwo = NULL;
     string temp;
     //MAKE ORIGINAL TWO LL
     getline(ifile, temp);
@@ -162,17 +160,17 @@ int main(int argc, char* argv[]) {
 
 
 
-//    while(NULL != headListOne){
-//        Item* temp1  = headListOne;
-//        headListOne = headListOne->next;
-//        delete temp1;
-//    }
-//
-//    while(NULL != headListTwo){
-//        Item* temp2 = headListTwo;
-//        headListTwo = headListTwo->next;
-//        delete temp2;
-//    }
+    while(NULL != headListOne){
+        Item* temp1  = headListOne;
+        headListOne = headListOne->next;
+        delete temp1;
+    }
+
+    while(NULL != headListTwo){
+        Item* temp2 = headListTwo;
+        headListTwo = headListTwo->next;
+        delete temp2;
+    }
 
 
     return 99;
