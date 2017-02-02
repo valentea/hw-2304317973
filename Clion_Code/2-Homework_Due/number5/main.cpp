@@ -172,6 +172,11 @@ int main(int argc, char* argv[]) {
         delete temp2;
     }
 
+    while(NULL != bigList){
+        Item* temp2 = bigList;
+        bigList = bigList->next;
+        delete temp2;
+    }
 
     return 99;
 
