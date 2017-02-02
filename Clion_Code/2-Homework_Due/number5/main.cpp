@@ -14,6 +14,7 @@ void removeEvens(Item*& head);
 double findAverage(Item* head);
 void constructList(Item* &head, int val);
 int listLength(Item* head);
+void printList(std::ostream& ofile, Item* head);
 
 int listLength(Item* head){
     Item* temp = head;
@@ -25,11 +26,20 @@ int listLength(Item* head){
     return count;
 }
 
+void printList(std::ostream& ofile, Item* head)
+{
+    if(head == NULL)
+        ofile << std::endl;
+    else {
+        ofile << head->val << " ";
+        printList(ofile, head->next);
+    }
+}
+
 
 double findAverage(Item* head){
     double runningTotal = 0;
     if (head == NULL) {
-        cout << "exit here" << endl;
         return runningTotal;
     }
     else {
@@ -105,10 +115,11 @@ void constructList(Item* &head, int val){
 
 
 int main(int argc, char* argv[]) {
-    if (argc > 2) {
-        cerr << "Only need input.in" << endl;
+    if (argc > 3) {
+        cerr << "Only need input.txt and output.txt" << endl;
         return 1;
     }
+
 
     ifstream ifile(argv[1]);
     if (ifile.fail()) {
@@ -123,31 +134,30 @@ int main(int argc, char* argv[]) {
     getline(ifile, temp);
     int addNumber;
     stringstream numberListOne(temp);
-    cout << "makes it this far" << endl;
     while (numberListOne >> addNumber){
-        cout << "makes it this far 1" << endl;
-        cout << "addNumber: " << addNumber << endl;
         constructList(headListOne, addNumber);
     }
-    cout << "makes it this far 2" << endl;
+    if(0 == listLength(headListOne)){
+        cout << "average: 0.0" << endl;
+        return 1;
+    }
     getline(ifile, temp);
-    cout << "makes it this far 3" << endl;
     stringstream numberListTwo(temp);
     while (numberListTwo >> addNumber){
-        cout << "makes it this far 4" << endl;
         constructList(headListTwo, addNumber);
     }
 
-    //MAKE ONE BIG LIST
-    cout << "makes it this far 5" << endl;
-    Item* bigList = concatenate(headListOne, headListTwo);
-    cout << "makes it this far 6" << endl;
+    ofstream outFile;
+    outFile.open(argv[2]);
 
+    //MAKE ONE BIG LIST
+    Item* bigList = concatenate(headListOne, headListTwo);
+    printList(outFile, bigList);
 
 
     //REMOVE ALL EVEN NUMBERS
     removeEvens(bigList);
-    cout << "makes it this far 7" << endl;
+    printList(outFile, bigList);
 
 
 
@@ -156,8 +166,12 @@ int main(int argc, char* argv[]) {
     int length = listLength(bigList);
     double average = totalSum / length;
     cout << "average: " << average << endl;
+    printList(outFile, bigList);
 
-    return 4;
+    outFile.close();
+
+
+    return 1;
 
 
 }
