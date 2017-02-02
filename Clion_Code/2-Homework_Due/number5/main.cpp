@@ -164,6 +164,10 @@ int main(int argc, char* argv[]) {
         delete headListOne;
         headListOne = headListOne->next;
     }
+    while(NULL != headListTwo){
+        delete headListTwo;
+        headListTwo = headListTwo->next;
+    }
 
 
     return 99;
