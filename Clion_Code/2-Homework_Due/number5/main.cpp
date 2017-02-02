@@ -61,7 +61,6 @@ void removeEvens(Item* &head) {
             deleteNode = head->next;
             head = deleteNode;
             removeEvens(head);
-            delete deleteNode;
         } else{
             removeEvens(head->next);
             return;
@@ -99,7 +98,6 @@ void constructList(Item* &head, int val){
         }
         temp->next = newHead;
     }
-    delete newHead;
     return;
 }
 
@@ -147,13 +145,25 @@ int main(int argc, char* argv[]) {
     removeEvens(bigList);
     printList(outFile, bigList);
 
+    if(0 == listLength(headListOne) || 0 == listLength(headListTwo)){
+        printList(outFile, bigList);
+        outFile << fixed << setprecision(2) << 0;
+        cout << "average: " << fixed << setprecision(2) << 0;
+        return 1;
+    }
+
 
     //FIND AVERAGE
     double average  = findAverage(bigList) / listLength(bigList);
     cout << "average: " << fixed << setprecision(1) <<  average << endl;
     printList(outFile, bigList);
-    outFile << setprecision(1) << average;
+    outFile << fixed << setprecision(1) << average;
     outFile.close();
+
+    while(NULL != headListOne){
+        delete headListOne;
+        headListOne = headListOne->next;
+    }
 
 
     return 99;
