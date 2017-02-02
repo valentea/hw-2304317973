@@ -38,27 +38,16 @@ void printList(std::ostream& ofile, Item* head)
     }
 }
 
-
 double findAverage(Item* head){
     double runningTotal = 0;
     if (head == NULL) {
         return runningTotal;
     }
     else {
-        runningTotal = head->val + findAverage(head->next);
-        return runningTotal;
+        return runningTotal + head->val + findAverage(head->next);
     }
 }
 
-//double fetchAverage(Book input){
-//    String key = ""/*key logic*/;
-//    List<Book> booklist =  bookShelf.get(key);
-//    double avg = 0.0;
-//    for(Book b: booklist){
-//        avg += b.price;
-//    }
-//    return avg/booklist.size();
-//}
 
 
 
@@ -138,10 +127,6 @@ int main(int argc, char* argv[]) {
     while (numberListOne >> addNumber){
         constructList(headListOne, addNumber);
     }
-    if(0 == listLength(headListOne)){
-        cout << "average: 0.0" << endl;
-        return 1;
-    }
     getline(ifile, temp);
     stringstream numberListTwo(temp);
     while (numberListTwo >> addNumber){
@@ -162,14 +147,14 @@ int main(int argc, char* argv[]) {
 
 
     //FIND AVERAGE
-    double average  = findAverage(bigList);
-    cout << "average: " << average << endl;
+    double average  = findAverage(bigList) / listLength(bigList);
+    cout << "average: " << fixed << setprecision(1) <<  average << endl;
     printList(outFile, bigList);
-
+    outFile << setprecision(1) << average;
     outFile.close();
 
 
-    return 11;
+    return 99;
 
 
 }
