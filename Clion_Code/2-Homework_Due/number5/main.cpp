@@ -1,10 +1,12 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <iomanip>
 
 using namespace std;
 
 struct Item{
+    Item(int v, Item* n) { val = v; next = n; }
     int val;
     Item* next;
 };
@@ -48,13 +50,25 @@ double findAverage(Item* head){
     }
 }
 
+//double fetchAverage(Book input){
+//    String key = ""/*key logic*/;
+//    List<Book> booklist =  bookShelf.get(key);
+//    double avg = 0.0;
+//    for(Book b: booklist){
+//        avg += b.price;
+//    }
+//    return avg/booklist.size();
+//}
+
+
+
 void removeEvens(Item* &head) {
     if (head == NULL) {
         return;
     }
     else{
         if ((head->val % 2) == 0) {
-            Item* deleteNode = new Item;
+            Item* deleteNode = new Item(NULL, NULL);
             deleteNode = head->next;
             head = deleteNode;
             removeEvens(head);
@@ -67,35 +81,22 @@ void removeEvens(Item* &head) {
     return;
 }
 
-//Item* concatenate(Item* head1, Item* head2) {
-//
-//    if (head1 == NULL) return head2;
-//    else if (head2 == NULL) return head1;
-//
-//    else if (head1 != NULL && head2->val != NULL) {
-//        head1->next = concatenate(head1->next, head2);
-//        return head1;
-//    } else {
-//        head2->next = concatenate(head2->next, head1);
-//        return head2;
-//    }
-//}
+Item* concatenate(Item* head1, Item* head2) {
 
-Item* concatenate(Item* list1, Item* list2) {
-    if (list1 == NULL) return list2;
-    if (list2 == NULL) return list1;
+    if (head1 == NULL) return head2;
+    else if (head2 == NULL) return head1;
 
-    if (list1->val < list2->val) {
-        list1->next = concatenate(list1->next, list2);
-        return list1;
+    else if (head1->val != NULL && head2->val != NULL) {
+        head1->next = concatenate(head1->next, head2);
+        return head1;
     } else {
-        list2->next = concatenate(list2->next, list1);
-        return list2;
+        head2->next = concatenate(head2->next, head1);
+        return head2;
     }
 }
 
 void constructList(Item* &head, int val){
-    Item* newHead = new Item;
+    Item* newHead = new Item(NULL, NULL);
     newHead->val = val;
     newHead->next = NULL;
     if(head == NULL){
@@ -160,18 +161,15 @@ int main(int argc, char* argv[]) {
     printList(outFile, bigList);
 
 
-
     //FIND AVERAGE
-    double totalSum = findAverage(bigList);
-    int length = listLength(bigList);
-    double average = totalSum / length;
+    double average  = findAverage(bigList);
     cout << "average: " << average << endl;
     printList(outFile, bigList);
 
     outFile.close();
 
 
-    return 1;
+    return 11;
 
 
 }
