@@ -161,8 +161,9 @@ int main(int argc, char* argv[]) {
     outFile.close();
 
     while(NULL != headListOne){
-        delete[] headListOne;
+        Item* temp  = headListOne;
         headListOne = headListOne->next;
+        delete temp;
     }
     while(NULL != headListTwo){
         delete[] headListTwo;
