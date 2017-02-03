@@ -52,21 +52,17 @@ double findAverage(Item* head){
 
 
 void removeEvens(Item* &head) {
-    if (head == NULL) {
-        return;
-    }
-    else{
+    if (head != NULL) {
+
         if ((head->val % 2) == 0) {
             Item* deleteNode = head->next;
+            delete head;
             head = deleteNode;
             removeEvens(head);
         } else{
             removeEvens(head->next);
-            return;
-
         }
     }
-    return;
 }
 
 Item* concatenate(Item* head1, Item* head2) {
@@ -106,6 +102,8 @@ int main(int argc, char* argv[]) {
         cerr << "Only need input.txt and output.txt" << endl;
         return 1;
     }
+    ofstream outFile;
+    outFile.open(argv[2]);
 
 
     ifstream ifile(argv[1]);
@@ -124,14 +122,15 @@ int main(int argc, char* argv[]) {
     while (numberListOne >> addNumber){
         constructList(headListOne, addNumber);
     }
+   // printList(outFile, headListOne);
     getline(ifile, temp);
     stringstream numberListTwo(temp);
     while (numberListTwo >> addNumber){
         constructList(headListTwo, addNumber);
     }
+   // printList(outFile, headListTwo);
 
-    ofstream outFile;
-    outFile.open(argv[2]);
+
 
     //MAKE ONE BIG LIST
     Item* bigList = concatenate(headListOne, headListTwo);
@@ -144,8 +143,8 @@ int main(int argc, char* argv[]) {
 
     if(0 == listLength(headListOne) || 0 == listLength(headListTwo)){
         printList(outFile, bigList);
-        outFile << fixed << setprecision(2) << 0;
-        cout << "average: " << fixed << setprecision(2) << 0;
+        outFile << "0.0" << endl;
+        cout << "average: 0.0";
         return 1;
     }
 
