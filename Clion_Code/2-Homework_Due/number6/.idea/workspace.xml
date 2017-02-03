@@ -11,13 +11,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f3a9900-6af6-4d9c-b256-3bc4b61e8b15" name="Default" comment="number 6">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/llistdbl_test.cpp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testAddToEmptyList.cpp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/number6.iml" afterPath="$PROJECT_DIR$/.idea/number6.iml" />
+    <list default="true" id="2f3a9900-6af6-4d9c-b256-3bc4b61e8b15" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/llistdbl.cpp" afterPath="$PROJECT_DIR$/llistdbl.cpp" />
     </list>
     <ignored path="number6.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -139,7 +134,6 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="FullScreen" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
@@ -335,7 +329,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1486082013299</updated>
-      <workItem from="1486094953654" duration="11266000" />
+      <workItem from="1486094953654" duration="11289000" />
     </task>
     <task id="LOCAL-00001" summary="number 6">
       <created>1486091656368</created>
@@ -344,11 +338,18 @@
       <option name="project" value="LOCAL" />
       <updated>1486091656368</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="number 6 finished">
+      <created>1486106482135</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1486106482135</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11266000" />
+    <option name="totallyTimeSpent" value="11289000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -391,7 +392,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="number 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="number 6" />
+    <MESSAGE value="number 6 finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="number 6 finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
