@@ -165,7 +165,7 @@ int main(int argc, char* argv[]) {
 //        headListOne = headListOne->next;
 //        delete temp1;
 //    }
-
+//
 //    while(NULL != headListTwo){
 //        Item* temp2 = headListTwo;
 //        headListTwo = headListTwo->next;
@@ -178,7 +178,7 @@ int main(int argc, char* argv[]) {
         delete temp2;
     }
 
-    return 99;
+    return 1;
 
 
 }
