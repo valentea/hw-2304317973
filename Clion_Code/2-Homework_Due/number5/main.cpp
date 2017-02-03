@@ -140,8 +140,6 @@ int main(int argc, char* argv[]) {
     removeEvens(bigList);
     printList(outFile, bigList);
 
-    double average  = findAverage(bigList) / listLength(bigList);
-
     if(0 == listLength(headListOne) || 0 == listLength(headListTwo)){
         printList(outFile, bigList);
         outFile << "0.0" << endl;
@@ -151,7 +149,7 @@ int main(int argc, char* argv[]) {
 
 
     //FIND AVERAGE
- //   double average  = findAverage(bigList) / listLength(bigList);
+    double average  = findAverage(bigList) / listLength(bigList);
     cout << "average: " << fixed << setprecision(1) <<  average << endl;
     printList(outFile, bigList);
     outFile << fixed << setprecision(1) << average;
@@ -160,17 +158,7 @@ int main(int argc, char* argv[]) {
 
 
 
-//    while(NULL != headListOne){
-//        Item* temp1  = headListOne;
-//        headListOne = headListOne->next;
-//        delete temp1;
-//    }
-//
-//    while(NULL != headListTwo){
-//        Item* temp2 = headListTwo;
-//        headListTwo = headListTwo->next;
-//        delete temp2;
-//    }
+
 
     while(NULL != bigList){
         Item* temp2 = bigList;
