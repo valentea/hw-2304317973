@@ -53,7 +53,6 @@ double findAverage(Item* head){
 
 void removeEvens(Item* &head) {
     if (head != NULL) {
-
         if ((head->val % 2) == 0) {
             Item* deleteNode = head->next;
             delete head;
@@ -141,6 +140,8 @@ int main(int argc, char* argv[]) {
     removeEvens(bigList);
     printList(outFile, bigList);
 
+    double average  = findAverage(bigList) / listLength(bigList);
+
     if(0 == listLength(headListOne) || 0 == listLength(headListTwo)){
         printList(outFile, bigList);
         outFile << "0.0" << endl;
@@ -150,7 +151,7 @@ int main(int argc, char* argv[]) {
 
 
     //FIND AVERAGE
-    double average  = findAverage(bigList) / listLength(bigList);
+ //   double average  = findAverage(bigList) / listLength(bigList);
     cout << "average: " << fixed << setprecision(1) <<  average << endl;
     printList(outFile, bigList);
     outFile << fixed << setprecision(1) << average;
