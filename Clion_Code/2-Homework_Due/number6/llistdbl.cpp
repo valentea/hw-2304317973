@@ -26,30 +26,67 @@ int LListDbl::size() const {
  * Complete the following function
  */
 void LListDbl::insert(int loc, const double &val) {
-    Item* temp = new Item;
+    Item *temp = new Item;
     temp->val = val;
-    if(loc == 0){
-        temp->prev = NULL;
-        temp->next = NULL;
+    temp->prev = NULL;
+    temp->next = NULL;
+
+    if(loc < 0 || loc > size()) return;
+
+    if (size() == loc && loc != 0) {
+        Item *current = getNodeAt(loc - 1);
+        temp->prev = current;
+        current->next = temp;
+        tail_ = temp;
+        size_++;
+    } else if (empty()) {
         head_ = temp;
         tail_ = temp;
         size_++;
+    } else if (loc == 0 ) {
+        Item* current = getNodeAt(loc);
+        temp->next = current;
+        current->prev = temp;
+        head_ = temp;
+        size_++;
+    } else {
+        Item *current = getNodeAt(loc);
+        Item *current1 = getNodeAt(loc - 1);
+        temp->next = current;
+        current->prev = temp;
+        temp->prev = current1;
+        current1->next = temp;
+        size_++;
     }
-    else if(size() == 1){
-        temp->prev = head_;
-        temp->next = NULL;
-        tail_ = temp;
-    }
-
-
-
 }
 
 /**
  * Complete the following function
  */
 void LListDbl::remove(int loc) {
+    if(loc < 0 || loc > size()-1) return;
 
+    if(loc == size() - 1){
+        Item* temp = getNodeAt(loc);
+        temp->next = NULL;
+        tail_ = temp;
+        size_--;
+    }
+    else if(loc == 0){
+        Item* temp = getNodeAt(loc + 1);
+        temp->prev = NULL;
+        head_ = temp;
+        size_--;
+    }else{
+        Item* temp = getNodeAt(loc);
+        Item* currForward = getNodeAt(loc + 1);
+        Item* currBehind = getNodeAt(loc - 1);
+        temp->next = currForward;
+        temp->prev = currBehind;
+        currBehind->next = temp;
+        currForward->prev = temp;
+        size_--;
+    }
 }
 
 void LListDbl::set(int loc, const double &val) {
@@ -86,8 +123,7 @@ LListDbl::Item *LListDbl::getNodeAt(int loc) const {
             loc--;
         }
         return temp;
-    }
-    else {
+    } else {
         //throw std::invalid_argument("bad location");
         return NULL;
     }

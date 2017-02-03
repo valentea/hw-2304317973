@@ -6,6 +6,6 @@ set(CMAKE_CXX_STANDARD 11)
 set(SOURCE_FILES
         llistdbl.cpp
         llistdbl.h
-        testAddToEmptyList.cpp)
+        llistdbl_test.cpp)
 
 add_executable(number6 ${SOURCE_FILES})
