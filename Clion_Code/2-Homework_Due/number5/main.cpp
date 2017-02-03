@@ -160,17 +160,17 @@ int main(int argc, char* argv[]) {
 
 
 
-    while(NULL != headListOne){
-        Item* temp1  = headListOne;
-        headListOne = headListOne->next;
-        delete temp1;
-    }
+//    while(NULL != headListOne){
+//        Item* temp1  = headListOne;
+//        headListOne = headListOne->next;
+//        delete temp1;
+//    }
 
-    while(NULL != headListTwo){
-        Item* temp2 = headListTwo;
-        headListTwo = headListTwo->next;
-        delete temp2;
-    }
+//    while(NULL != headListTwo){
+//        Item* temp2 = headListTwo;
+//        headListTwo = headListTwo->next;
+//        delete temp2;
+//    }
 
     while(NULL != bigList){
         Item* temp2 = bigList;
