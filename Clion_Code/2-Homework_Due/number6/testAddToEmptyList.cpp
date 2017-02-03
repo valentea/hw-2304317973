@@ -4,39 +4,48 @@
 using namespace std;
 
 int main() {
-  LListDbl list;
+    LListDbl list;
 
-  // Check if the list is initially empty.
-  if (list.empty()) {
-    cout << "SUCCESS: List is empty initially." << endl;
-  } else {
-    cout << "FAIL: List is not empty initially when it should be." << endl;
-  }
+//    // Check if the list is initially empty.
+//    if (list.empty()) {
+//        cout << "SUCCESS: List is empty initially." << endl;
+//    } else {
+//        cout << "FAIL: List is not empty initially when it should be." << endl;
+//    }
 
-  // Insert an item at the head.
-  list.insert(0, 3.5);
+    // Insert an item at the head.
+    cout << "start" << endl;
+    list.insert(0, 0);
+    cout << "0: " << list.get(0);
+    list.insert(1, 1);
+    cout << "1: " << list.get(1);
+    list.insert(2, 2);
+    cout << "2: " << list.get(2);
+
+
+
 
   // Check if the list is still empty.
-  if (!list.empty()) {
-    cout << "SUCCESS: List is not empty after one insertion." << endl;
-  } else {
-    cout << "FAIL: List is empty after one insertion." << endl;
-  }
+//    if (!list.empty()) {
+//        cout << "SUCCESS: List is not empty after one insertion." << endl;
+//    } else {
+//        cout << "FAIL: List is empty after one insertion." << endl;
+//    }
+//
+//    if (list.size() == 1) {
+//        cout << "SUCCESS: List has size 1 after one insertion." << endl;
+//    } else {
+//        cout << "FAIL: List has size " << list.size() << " after one insertion.";
+//        cout << endl;
+//    }
+//
+//    // Check if the value is correct.
+//    if (list.get(0) == 3.5) {
+//        cout << "SUCCESS: 3.5 is at the 0th index of the list." << endl;
+//    } else {
+//        cout << "FAIL: 3.5 is not at the 0th index of the list, " << list.get(0);
+//        cout << " is instead." << endl;
+//    }
 
-  if (list.size() == 1) {
-    cout << "SUCCESS: List has size 1 after one insertion." << endl;
-  } else {
-    cout << "FAIL: List has size " << list.size() << " after one insertion.";
-    cout << endl;
-  }
-
-  // Check if the value is correct.
-  if (list.get(0) == 3.5) {
-    cout << "SUCCESS: 3.5 is at the 0th index of the list." << endl;
-  } else {
-    cout << "FAIL: 3.5 is not at the 0th index of the list, " << list.get(0);
-    cout << " is instead." << endl;
-  }
-
-  return 0;
+    return 0;
 }
