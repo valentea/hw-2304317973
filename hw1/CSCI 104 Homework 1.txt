@@ -1,0 +1,29 @@
+1A)
+1. Yes
+2. No
+3. No
+4. Yes
+5. No
+6. No
+7. No
+8. Yes
+
+1B)
+Any text editor or IDE as long as it works with the gcc/g++ compiler provided with the Virtual Machine
+
+1c)
+2
+
+1D)
+2 and 4 if possable
+
+2A)
+3
+
+2B1) git add hw1q2b.cpp
+     git commit -m "Homework 1 track"
+
+2B2) git log
+
+2C) it would do nothing other than attach a blank 'commit' with all the files. If you add some text after a '-m' it would add that text as a commit to the file online. 
+
