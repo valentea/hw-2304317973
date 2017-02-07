@@ -1,3 +1,0 @@
-Teams.cpp: A program that takes a file that is preluded with a number and then an amount of names that match with that number. Using those names this program makes a list of all the possable 2 team combinations. Must have an even number of people in a file to be valid.
-
-wSearch.cpp: A progam that takes ".in" file that contains a grid of characters and a traget word. Then searches the grid and out puts the location(s) of the target word. 
