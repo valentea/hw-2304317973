@@ -1,1 +1,0 @@
-/usr/bin/c++.exe   -std=c++11 -g  -Wl,--enable-auto-import CMakeFiles/number5.dir/main.cpp.o  -o number5.exe -Wl,--out-implib,libnumber5.dll.a -Wl,--major-image-version,0,--minor-image-version,0  
