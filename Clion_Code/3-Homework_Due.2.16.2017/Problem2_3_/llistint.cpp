@@ -83,7 +83,6 @@ void LListInt::remove(int loc) {
         temp->next->prev = temp->prev;
         temp->prev->next = temp->next;
         size_--;
-        delete(temp);
     }
 }
 
@@ -105,7 +104,7 @@ int const &LListInt::get(int loc) const {
 void LListInt::clear() {
     while (head_ != NULL) {
         Item *temp = head_->next;
-        delete head_;
+        //delete head_;
         head_ = temp;
     }
     tail_ = NULL;
@@ -128,7 +127,7 @@ LListInt::Item *LListInt::getNodeAt(int loc) const {
 }
 
 
-LListInt::LListInt(const LListInt& other){ //ASK TA, INSERT TAKES O(1), BUT getNodeAt TAKES O(n)?
+LListInt::LListInt(const LListInt& other){
     size_ = 0;
     for (int i = 0; i < other.size(); ++i) {
         insert(i, other.get(i));
@@ -166,12 +165,31 @@ LListInt& LListInt::operator=(const LListInt& other){
 }
 
 
-LListInt& LListInt::operator+=(const LListInt& other){
-    Item *temp = this->tail_;
+LListInt& LListInt::operator+=(LListInt& other){
+    Item *temp = new Item;
+    temp->val = this->tail_->val;
+    temp->prev = this->tail_->prev;
     this->tail_->prev->next = temp;
-    this->tail_->prev = other.tail_;
-    other.head_->prev = temp;
-    temp->next = other.head_->next->prev;
+
+    Item *temp1 = new Item;
+    temp1->val = other.head_->val;
+    temp1->next = other.head_->next;
+    other.head_->next->prev = temp1;
+
+
+    temp->next = temp1;
+    temp1->prev = temp;
+
+    this->tail_ = other.tail_;
+    other.tail_->prev->next = this->tail_;
+
     this->size_ = this->size_ + other.size_;
+
+    other.head_ = NULL;
+    other.tail_ = NULL;
+    other.size_ = 0;
+
+
+
     return *this;
 }

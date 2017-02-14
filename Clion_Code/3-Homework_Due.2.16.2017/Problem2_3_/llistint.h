@@ -76,12 +76,13 @@ public:
      * myList1 += myList1 should be prohibited.
      * This function must run in O(1)
      */
-    LListInt& operator+=(const LListInt& other);
+    LListInt& operator+=(LListInt& other);
 
     /**
      * Adds an item to the back of the list in O(1) time
      */
     void push_back(const int& val);
+
 
     /**
      * Deletes all items in the list

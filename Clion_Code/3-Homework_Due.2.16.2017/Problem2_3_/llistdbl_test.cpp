@@ -3,6 +3,16 @@
 
 using namespace std;
 
+ostream& operator<<(ostream &os, const LListInt& list) {
+    for (int i = 0; i < list.size(); ++i) {
+        os << list.get(i) << " ";
+        if ((i+1) % 10 == 0) {
+            cout << endl;
+        }
+    }
+    return os;
+}
+
 
 int main() {
 
@@ -149,57 +159,26 @@ int main() {
 //    cout << "====================PASSED ALL REQUIRED TESTS====================" << endl;
 
     LListInt list;
-    for (int i = 0; i < 8; ++i) {
+    for (int i = 0; i < 10; ++i) {
         list.insert(i, i);
     }
-    cout << "first: ";
-    for (int j = 0; j < list.size(); ++j) {
-        cout << list.get(j) << " ";
-    }
-    cout << endl;
-    LListInt test = list;
-    cout << "second: ";
-    for (int j = 0; j < test.size(); ++j) {
-        cout << test.get(j) << " ";
-    }
-    cout << endl;
+    cout << "list: " << endl;
+    cout << list << endl;
+
+    LListInt test(list);
+    cout << "test: " << endl;
+    cout << test << endl;
 
     LListInt test2;
     test2 = test;
-    cout << "third: ";
-    for (int j = 0; j < test2.size(); ++j) {
-        cout << test2.get(j) << " ";
-    }
-    cout << endl;
-
-    list.push_back(10);
-    test.push_back(100);
-    test2.push_back(1000);
-
-    cout << "first: ";
-    for (int j = 0; j < list.size(); ++j) {
-        cout << list.get(j) << " ";
-    }
-    cout << endl;
-    cout << "second: ";
-    for (int j = 0; j < test.size(); ++j) {
-        cout << test.get(j) << " ";
-    }
-    cout << endl;
-    cout << "third: ";
-    for (int j = 0; j < test2.size(); ++j) {
-        cout << test2.get(j) << " ";
-    }
-    cout << endl;
+    cout << "test2: " << endl;
+    cout << test2 << endl;
 
 
-    test += test2;
-    cout << test.size() << endl;
-    cout << "second: ";
-    for (int j = 0; j < test.size(); ++j) {
-        cout << test.get(j) << " ";
-    }
-    cout << endl;
+
+    test += test2 += list;
+    cout << "test.2: " << endl;
+    cout << test << endl;
 
 
 
