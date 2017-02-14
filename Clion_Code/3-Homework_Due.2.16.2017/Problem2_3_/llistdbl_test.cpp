@@ -194,11 +194,13 @@ int main() {
 
 
     test += test2;
+    cout << test.size() << endl;
     cout << "second: ";
     for (int j = 0; j < test.size(); ++j) {
         cout << test.get(j) << " ";
     }
     cout << endl;
+
 
 
     return 1;

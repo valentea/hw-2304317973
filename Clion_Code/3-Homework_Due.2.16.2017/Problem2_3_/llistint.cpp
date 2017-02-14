@@ -144,7 +144,7 @@ void LListInt::push_back(const int& val) {
         head_ = temp;
         tail_ = temp;
         size_++;
-    }
+    } else{
     Item *temp = new Item;
     temp->val = val;
     temp->next = NULL;
@@ -153,11 +153,13 @@ void LListInt::push_back(const int& val) {
     current->next = temp;
     tail_ = temp;
     size_++;
+    }
 }
 
 LListInt& LListInt::operator=(const LListInt& other){
     this->clear();
     for (int i = 0; i < other.size(); ++i) {
+//      this->insert(i, other.get(i));
         this->push_back(other.get(i));
     }
     return *this;
@@ -165,8 +167,11 @@ LListInt& LListInt::operator=(const LListInt& other){
 
 
 LListInt& LListInt::operator+=(const LListInt& other){
-    this->tail_->next = other.head_;
-    other.head_->prev = this->tail_;
+    Item *temp = this->tail_;
+    this->tail_->prev->next = temp;
+    this->tail_->prev = other.tail_;
+    other.head_->prev = temp;
+    temp->next = other.head_->next->prev;
     this->size_ = this->size_ + other.size_;
     return *this;
 }
