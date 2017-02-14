@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include <iostream>
 
+
 using namespace std;
 
 LListInt::LListInt() {
@@ -64,17 +65,15 @@ void LListInt::insert(int loc, const int &val) {
  * Complete the following function
  */
 void LListInt::remove(int loc) {
-    if(loc < 0 || loc > size()-1) {cout << "you fail" << endl; return;}
+    if(loc < 0 || loc > size()-1) return;
 
     if(loc == size() - 1){
-        cout << "loc == size" << endl;
         Item* temp = getNodeAt(loc);
         temp->next = NULL;
         tail_ = temp;
         size_--;
     }
     else if(loc == 0){
-        cout << "loc == 0" << endl;
         Item* temp = getNodeAt(loc + 1);
         temp->prev = NULL;
         head_ = temp;
@@ -129,6 +128,45 @@ LListInt::Item *LListInt::getNodeAt(int loc) const {
 }
 
 
-LListInt::LListInt(const LListInt& other){
+LListInt::LListInt(const LListInt& other){ //ASK TA, INSERT TAKES O(1), BUT getNodeAt TAKES O(n)?
+    size_ = 0;
+    for (int i = 0; i < other.size(); ++i) {
+        insert(i, other.get(i));
+    }
+}
 
+void LListInt::push_back(const int& val) {
+    if(size_ == 0){
+        Item *temp = new Item;
+        temp->val = val;
+        temp->prev = NULL;
+        temp->next = NULL;
+        head_ = temp;
+        tail_ = temp;
+        size_++;
+    }
+    Item *temp = new Item;
+    temp->val = val;
+    temp->next = NULL;
+    Item *current = tail_;
+    temp->prev = current;
+    current->next = temp;
+    tail_ = temp;
+    size_++;
+}
+
+LListInt& LListInt::operator=(const LListInt& other){
+    this->clear();
+    for (int i = 0; i < other.size(); ++i) {
+        this->push_back(other.get(i));
+    }
+    return *this;
+}
+
+
+LListInt& LListInt::operator+=(const LListInt& other){
+    this->tail_->next = other.head_;
+    other.head_->prev = this->tail_;
+    this->size_ = this->size_ + other.size_;
+    return *this;
 }
