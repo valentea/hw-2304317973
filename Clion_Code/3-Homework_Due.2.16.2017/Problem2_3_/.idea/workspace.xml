@@ -12,12 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="def666e1-2a18-4d0f-888f-36605484924e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Problem2_3_.exe" afterPath="$PROJECT_DIR$/cmake-build-debug/Problem2_3_.exe" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Problem2_3_.exe.stackdump" afterPath="$PROJECT_DIR$/cmake-build-debug/Problem2_3_.exe.stackdump" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/llistdbl_test.cpp" afterPath="$PROJECT_DIR$/llistdbl_test.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/llistint.cpp" afterPath="$PROJECT_DIR$/llistint.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -339,12 +336,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1487036419013</updated>
-      <workItem from="1487036423788" duration="19368000" />
+      <workItem from="1487036423788" duration="19407000" />
     </task>
+    <task id="LOCAL-00001" summary="Homework 3, Promblem 2 almost done">
+      <created>1487057773946</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1487057773946</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19368000" />
+    <option name="totallyTimeSpent" value="19407000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -377,7 +382,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Homework 3, Promblem 2 almost done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework 3, Promblem 2 almost done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
