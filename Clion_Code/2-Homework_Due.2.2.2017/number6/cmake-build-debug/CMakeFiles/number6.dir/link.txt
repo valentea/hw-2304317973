@@ -1,0 +1,1 @@
+/usr/bin/c++.exe  -g  -Wl,--enable-auto-import CMakeFiles/number6.dir/llistdbl.cpp.o CMakeFiles/number6.dir/testAddToEmptyList.cpp.o  -o number6.exe -Wl,--out-implib,libnumber6.dll.a -Wl,--major-image-version,0,--minor-image-version,0  
