@@ -12,10 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="def666e1-2a18-4d0f-888f-36605484924e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Problem2_3_.exe" afterPath="$PROJECT_DIR$/cmake-build-debug/Problem2_3_.exe" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gTesting/test.cpp" afterPath="$PROJECT_DIR$/gTesting/test.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/llistdbl_test.cpp" afterPath="$PROJECT_DIR$/llistdbl_test.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/llistint.cpp" afterPath="$PROJECT_DIR$/llistint.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Problem2_3_.exe.stackdump" afterPath="$PROJECT_DIR$/cmake-build-debug/Problem2_3_.exe.stackdump" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,7 +52,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="llistint.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="llistint.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/llistint.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="139">
@@ -75,7 +74,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gTesting/test.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="568">
@@ -374,7 +373,7 @@
       <updated>1487036419013</updated>
       <workItem from="1487036423788" duration="21496000" />
       <workItem from="1487140005267" duration="630000" />
-      <workItem from="1487143876646" duration="2148000" />
+      <workItem from="1487143876646" duration="2284000" />
     </task>
     <task id="LOCAL-00001" summary="Homework 3, Promblem 2 almost done">
       <created>1487057773946</created>
@@ -425,11 +424,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487145693608</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Homework 3, Promblem 3 almost done">
+      <created>1487146033068</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1487146033069</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24274000" />
+    <option name="totallyTimeSpent" value="24410000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -587,16 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/llistint.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="171" column="4" lean-forward="false" selection-start-line="171" selection-start-column="4" selection-end-line="171" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/llistdbl_test.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
@@ -612,6 +608,16 @@
         <state relative-caret-position="568">
           <caret line="118" column="21" lean-forward="false" selection-start-line="118" selection-start-column="21" selection-end-line="118" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/llistint.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="171" column="4" lean-forward="false" selection-start-line="171" selection-start-column="4" selection-end-line="171" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
