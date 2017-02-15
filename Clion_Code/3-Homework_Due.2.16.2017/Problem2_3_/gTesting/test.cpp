@@ -115,6 +115,10 @@ TEST_F(LListIntTest, AddSumEmptyList){
     }
 }
 
+TEST_F(LListIntTest, OstreamOperatorBasic){
+    //HELP! TALK TO SOMEONE
+}
+
 
 
 
