@@ -166,6 +166,9 @@ LListInt& LListInt::operator=(const LListInt& other){
 
 
 LListInt& LListInt::operator+=(LListInt& other){
+    if(this->head_ == other.head_){
+        return *this;
+    }
     Item *temp = new Item;
     temp->val = this->tail_->val;
     temp->prev = this->tail_->prev;
@@ -188,8 +191,6 @@ LListInt& LListInt::operator+=(LListInt& other){
     other.head_ = NULL;
     other.tail_ = NULL;
     other.size_ = 0;
-
-
 
     return *this;
 }

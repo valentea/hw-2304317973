@@ -7,9 +7,9 @@ protected:
    LListIntTest() {
 
 	}
-	
+
 	virtual ~LListIntTest() {
-	
+
 	}
 
 	virtual void SetUp() {
@@ -17,7 +17,7 @@ protected:
 		   myList.push_back(i);
 		}
 	}
-	
+
 	virtual void TearDown() {
 	   //myList.clear();
 	}
@@ -29,13 +29,13 @@ TEST_F(LListIntTest, CopyConstructorTestSize) {
    LListInt test(myList);
    ASSERT_TRUE(test.size() == myList.size());
 }
-   
+
 TEST_F(LListIntTest, CopyConstructorTestVals){
    LListInt test(myList);
    for(int i = 0; i < test.size(); i++){
    	EXPECT_TRUE(test.get(i) == myList.get(i));
    }
-}   
+}
 
 TEST_F(LListIntTest, CopyConstructorTestEmptyList){
    LListInt test(myList);
@@ -49,14 +49,14 @@ TEST_F(LListIntTest, AssignmentOperatorTestSize) {
    test = myList;
    ASSERT_TRUE(test.size() == myList.size());
 }
-   
+
 TEST_F(LListIntTest, AssignmentOperatorTestVals){
    LListInt test;
    test = myList;
    for(int i = 0; i < test.size(); i++){
-   	EXPECT_TRUE(test.get(i) == myList.get(i));
+      EXPECT_TRUE(test.get(i) == myList.get(i));
    }
-}   
+}
 
 TEST_F(LListIntTest, AssignmentOperatorTestEmptyList){
    LListInt test;
@@ -72,9 +72,22 @@ TEST_F(LListIntTest, PushBackBasic){
 }
 
 TEST_F(LListIntTest, PushBackEmpty){
-   myList.clear();
+    myList.clear();
 	myList.push_back(10);
-	EXPECT_EQ(myList.get(myList.size()), 10);
+	EXPECT_EQ(myList.get(myList.size()-1), 10);
 }
+
+TEST_F(LListIntTest, AddSumBasic){
+    LListInt myList2;
+    for(int i = 0; i < 10; ++i){
+        myList2.push_back(i+myList.size());
+    }
+    myList += myList2;
+    for(int i = 0; i < myList.size()){
+        EXPECT_EQ(myList(i), i);
+    }
+}
+
+
 
 

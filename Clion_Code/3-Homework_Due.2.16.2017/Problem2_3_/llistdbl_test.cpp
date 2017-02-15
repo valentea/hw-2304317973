@@ -176,7 +176,7 @@ int main() {
 
 
 
-    test += test2 += list;
+    test += test += list;
     cout << "test.2: " << endl;
     cout << test << endl;
 
