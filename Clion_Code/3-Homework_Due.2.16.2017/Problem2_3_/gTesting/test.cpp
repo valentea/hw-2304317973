@@ -83,6 +83,7 @@ TEST_F(LListIntTest, AddSumBasic){
         myList2.push_back(i+myList.size());
     }
     myList += myList2;
+    ASSERT_TRUE(myList2.size() == 0);
     for(int i = 0; i < myList.size(); ++i){
         EXPECT_EQ(myList.get(i), i);
     }
@@ -98,6 +99,17 @@ TEST_F(LListIntTest, AddSumMultiple){
         myList3.push_back(i+myList.size()+myList2.size());
     }
     myList += myList2 += myList3;
+    ASSERT_TRUE(myList2.size() == 0);
+    ASSERT_TRUE(myList3.size() == 0);
+    for(int i = 0; i < myList.size(); ++i){
+        EXPECT_EQ(myList.get(i), i);
+    }
+}
+
+TEST_F(LListIntTest, AddSumEmptyList){
+    LListInt myList2;
+    myList += myList2;
+    ASSERT_TRUE(myList2.size() == 0);
     for(int i = 0; i < myList.size(); ++i){
         EXPECT_EQ(myList.get(i), i);
     }
