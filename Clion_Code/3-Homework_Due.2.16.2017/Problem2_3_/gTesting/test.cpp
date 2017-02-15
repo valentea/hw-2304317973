@@ -115,7 +115,12 @@ TEST_F(LListIntTest, AddSumEmptyList){
     }
 }
 
-
+TEST_F(LListIntTest, AddSumToSelf){
+    myList += myList;
+    for(int i = 0; i < myList.size(); ++i){
+        EXPECT_EQ(myList.get(i), i);
+    }
+}
 
 
 

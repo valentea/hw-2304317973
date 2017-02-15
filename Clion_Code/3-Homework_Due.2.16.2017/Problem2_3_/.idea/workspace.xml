@@ -14,6 +14,7 @@
     <list default="true" id="def666e1-2a18-4d0f-888f-36605484924e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gTesting/test.cpp" afterPath="$PROJECT_DIR$/gTesting/test.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/llistdbl_test.cpp" afterPath="$PROJECT_DIR$/llistdbl_test.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/llistint.cpp" afterPath="$PROJECT_DIR$/llistint.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -44,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/llistdbl_test.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="500">
-              <caret line="178" column="24" lean-forward="false" selection-start-line="178" selection-start-column="24" selection-end-line="178" selection-end-column="24" />
+              <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -52,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="llistint.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="llistint.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/llistint.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="196" column="5" lean-forward="false" selection-start-line="196" selection-start-column="5" selection-end-line="196" selection-end-column="5" />
+            <state relative-caret-position="139">
+              <caret line="171" column="4" lean-forward="false" selection-start-line="171" selection-start-column="4" selection-end-line="171" selection-end-column="4" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -74,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gTesting/test.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+            <state relative-caret-position="568">
+              <caret line="118" column="21" lean-forward="false" selection-start-line="118" selection-start-column="21" selection-end-line="118" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -107,8 +108,8 @@
       <list>
         <option value="$PROJECT_DIR$/llistint.h" />
         <option value="$PROJECT_DIR$/llistdbl_test.cpp" />
-        <option value="$PROJECT_DIR$/gTesting/test.cpp" />
         <option value="$PROJECT_DIR$/llistint.cpp" />
+        <option value="$PROJECT_DIR$/gTesting/test.cpp" />
       </list>
     </option>
   </component>
@@ -373,7 +374,7 @@
       <updated>1487036419013</updated>
       <workItem from="1487036423788" duration="21496000" />
       <workItem from="1487140005267" duration="630000" />
-      <workItem from="1487143876646" duration="1810000" />
+      <workItem from="1487143876646" duration="2148000" />
     </task>
     <task id="LOCAL-00001" summary="Homework 3, Promblem 2 almost done">
       <created>1487057773946</created>
@@ -417,11 +418,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487145116984</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Homework 3, Promblem 3 almost done">
+      <created>1487145693608</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1487145693608</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23936000" />
+    <option name="totallyTimeSpent" value="24274000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -433,11 +441,11 @@
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31019038" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2818792" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2818792" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39980826" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39980826" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -468,11 +476,11 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/llistdbl_test.cpp</url>
-          <line>178</line>
-          <option name="timeStamp" value="15" />
+          <line>184</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="16" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -579,10 +587,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/llistint.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="171" column="4" lean-forward="false" selection-start-line="171" selection-start-column="4" selection-end-line="171" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/llistdbl_test.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
-          <caret line="178" column="24" lean-forward="false" selection-start-line="178" selection-start-column="24" selection-end-line="178" selection-end-column="24" />
+          <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
@@ -591,19 +609,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gTesting/test.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+        <state relative-caret-position="568">
+          <caret line="118" column="21" lean-forward="false" selection-start-line="118" selection-start-column="21" selection-end-line="118" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/llistint.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="196" column="5" lean-forward="false" selection-start-line="196" selection-start-column="5" selection-end-line="196" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

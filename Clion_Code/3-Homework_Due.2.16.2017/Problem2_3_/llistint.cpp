@@ -169,6 +169,9 @@ LListInt& LListInt::operator+=(LListInt& other){
     if(this->head_ == other.head_){
         return *this;
     }
+    else if(other.size() == 0){
+        return *this;
+    }
     else {
         Item *temp = new Item;
         temp->val = this->tail_->val;

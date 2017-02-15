@@ -176,9 +176,15 @@ int main() {
 
 
 
-    test += test += list;
+    test += list;
     cout << "test.2: " << endl;
     cout << test << endl;
+
+    LListInt blank;
+
+    test2 += blank;
+    cout << "test2.blank: " << endl;
+    cout << test2 << endl;
 
 
 
