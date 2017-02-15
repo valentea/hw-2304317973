@@ -169,31 +169,30 @@ LListInt& LListInt::operator+=(LListInt& other){
     if(this->head_ == other.head_){
         return *this;
     }
+    else {
+        Item *temp = new Item;
+        temp->val = this->tail_->val;
+        temp->prev = this->tail_->prev;
+        this->tail_->prev->next = temp;
 
-    Item *temp = new Item;
-    temp->val = this->tail_->val;
-    temp->prev = this->tail_->prev;
-    this->tail_->prev->next = temp;
-
-    Item *temp1 = new Item;
-    temp1->val = other.head_->val;
-    temp1->next = other.head_->next;
-    other.head_->next->prev = temp1;
-
-
-    temp->next = temp1;
-    temp1->prev = temp;
-
-    this->tail_ = other.tail_;
-    other.tail_->prev->next = this->tail_;
-
-    this->size_ = this->size_ + other.size_;
-
-    other.head_ = NULL;
-    other.tail_ = NULL;
-    other.size_ = 0;
+        Item *temp1 = new Item;
+        temp1->val = other.head_->val;
+        temp1->next = other.head_->next;
+        other.head_->next->prev = temp1;
 
 
+        temp->next = temp1;
+        temp1->prev = temp;
 
-    return *this;
+        this->tail_ = other.tail_;
+        other.tail_->prev->next = this->tail_;
+
+        this->size_ = this->size_ + other.size_;
+
+        other.head_ = NULL;
+        other.tail_ = NULL;
+        other.size_ = 0;
+
+        return *this;
+    }
 }

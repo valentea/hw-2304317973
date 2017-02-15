@@ -14,6 +14,7 @@
     <list default="true" id="def666e1-2a18-4d0f-888f-36605484924e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gTesting/test.cpp" afterPath="$PROJECT_DIR$/gTesting/test.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/llistint.cpp" afterPath="$PROJECT_DIR$/llistint.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="llistint.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="llistint.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/llistint.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="169" column="21" lean-forward="false" selection-start-line="169" selection-start-column="21" selection-end-line="169" selection-end-column="21" />
+            <state relative-caret-position="564">
+              <caret line="196" column="5" lean-forward="false" selection-start-line="196" selection-start-column="5" selection-end-line="196" selection-end-column="5" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -73,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gTesting/test.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="118" column="27" lean-forward="false" selection-start-line="118" selection-start-column="27" selection-end-line="118" selection-end-column="27" />
+            <state relative-caret-position="433">
+              <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -91,6 +92,7 @@
       <find>double</find>
       <find>cop</find>
       <find>test1</find>
+      <find>get(</find>
     </findStrings>
     <replaceStrings>
       <replace>int</replace>
@@ -104,9 +106,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/llistint.h" />
-        <option value="$PROJECT_DIR$/llistint.cpp" />
         <option value="$PROJECT_DIR$/llistdbl_test.cpp" />
         <option value="$PROJECT_DIR$/gTesting/test.cpp" />
+        <option value="$PROJECT_DIR$/llistint.cpp" />
       </list>
     </option>
   </component>
@@ -371,7 +373,7 @@
       <updated>1487036419013</updated>
       <workItem from="1487036423788" duration="21496000" />
       <workItem from="1487140005267" duration="630000" />
-      <workItem from="1487143876646" duration="1230000" />
+      <workItem from="1487143876646" duration="1810000" />
     </task>
     <task id="LOCAL-00001" summary="Homework 3, Promblem 2 almost done">
       <created>1487057773946</created>
@@ -408,11 +410,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487144895478</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Homework 3, Promblem 3 almost done">
+      <created>1487145116984</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1487145116984</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23356000" />
+    <option name="totallyTimeSpent" value="23936000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -446,7 +455,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Homework 3, Promblem 2 almost done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework 3, Promblem 2 almost done" />
+    <MESSAGE value="Homework 3, Promblem 3 almost done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework 3, Promblem 3 almost done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -579,21 +589,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/llistint.cpp">
+    <entry file="file://$PROJECT_DIR$/gTesting/test.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="169" column="21" lean-forward="false" selection-start-line="169" selection-start-column="21" selection-end-line="169" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="433">
+          <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gTesting/test.cpp">
+    <entry file="file://$PROJECT_DIR$/llistint.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="118" column="27" lean-forward="false" selection-start-line="118" selection-start-column="27" selection-end-line="118" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="564">
+          <caret line="196" column="5" lean-forward="false" selection-start-line="196" selection-start-column="5" selection-end-line="196" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
