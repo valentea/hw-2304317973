@@ -59,7 +59,6 @@ void LListInt::insert(int loc, const int &val) {
         current1->next = temp;
         size_++;
     }
-    delete temp;
 }
 
 /**
