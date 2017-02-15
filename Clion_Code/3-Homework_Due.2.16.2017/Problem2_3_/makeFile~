@@ -1,0 +1,24 @@
+BIN_DIR = bin
+CXX = g++
+CPPFLAGS = -Wall -g
+
+
+all: $(BIN_DIR)/homework3.2and3
+	./$(BIN_DIR)/homework3.2and3
+	
+$(BIN_DIR)/.dirstamp:
+	mkdir -p $(BIN_DIR)
+	touch $(BIN_DIR)/.dirstamp
+
+$(BIN_DIR)/homework3.2and3: $(BIN_DIR)/llistint.o $(BIN_DIR)/.dirstamp
+	$(CXX) -g -Wall $(BIN_DIR)/llistint.o llistdbl_test.cpp -o $(BIN_DIR)/homework3.2and3
+    
+
+$(BIN_DIR)/attackMove.o: lib/llistint.h src/llistint.cpp $(BIN_DIR)/.dirstamp
+	$(CXX) -g -Wall -c src/llistint.cpp -o $(BIN_DIR)/llistint.o
+	
+
+	
+.PHONY: clean
+clean:
+	rm -rf $(BIN_DIR)
