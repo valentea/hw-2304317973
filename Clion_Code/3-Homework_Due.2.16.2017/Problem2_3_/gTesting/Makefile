@@ -5,15 +5,22 @@ BIN_DIR  = bin
 GTEST_LL = -I /usr/include/gtest/ -l gtest -l gtest_main -pthread
 
 
+$(BIN_DIR)/.dirstamp:
+	mkdir -p $(BIN_DIR)
+	touch $(BIN_DIR)/.dirstamp
+
 $(BIN_DIR)/LListGTest: test.cpp $(BIN_DIR)/llistint.o
 	$(CC) $(CPPFLAGS) $^ $(GTEST_LL) -o $@
+	
+$(BIN_DIR)/llistint.o: $(BIN_DIR)/.dirstamp llistint.cpp llistint.h
+	$(CXX) $(CPPFLAGS) -c llistint.cpp -o $(BIN_DIR)/llistint.o
 
-.PHONY: tests clean
+.PHONY: clean listtest
 
-tests: $(BIN_DIR)/LListGTest
+listtest: $(BIN_DIR)/LListGTest
 	-@$(BIN_DIR)/LListGTest
 	-@echo "--- All Tested!---"
 
 clean:
-	-@rm -rf $(BIN_DIR)/LListGTest
+	-@rm -rf $(BIN_DIR)
 	-@echo "--- All Clean!---"
