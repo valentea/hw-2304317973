@@ -193,9 +193,11 @@ LListInt& LListInt::operator+=(LListInt& other){
         this->size_ = this->size_ + other.size_;
 
         other.head_ = NULL;
-        other.tail_ = NULL;
+        othlser.tail_ = NULL;
         other.size_ = 0;
 
         return *this;
     }
 }
+
+// MAKE gTest FOR '<<' OPERATOR
