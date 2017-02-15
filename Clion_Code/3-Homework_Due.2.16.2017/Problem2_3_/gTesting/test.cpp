@@ -83,8 +83,23 @@ TEST_F(LListIntTest, AddSumBasic){
         myList2.push_back(i+myList.size());
     }
     myList += myList2;
-    for(int i = 0; i < myList.size()){
-        EXPECT_EQ(myList(i), i);
+    for(int i = 0; i < myList.size(); ++i){
+        EXPECT_EQ(myList.get(i), i);
+    }
+}
+
+TEST_F(LListIntTest, AddSumMultiple){
+    LListInt myList2;
+    LListInt myList3;
+    for(int i = 0; i < 10; ++i){
+        myList2.push_back(i+myList.size());
+    }
+    for(int i = 0; i < 10; ++i){
+        myList3.push_back(i+myList.size()+myList2.size());
+    }
+    myList += myList2 += myList3;
+    for(int i = 0; i < myList.size(); ++i){
+        EXPECT_EQ(myList.get(i), i);
     }
 }
 
