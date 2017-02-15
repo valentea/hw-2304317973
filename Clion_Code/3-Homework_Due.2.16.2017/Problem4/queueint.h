@@ -1,5 +1,6 @@
 #ifndef QUEUEINT_H
 #define QUEUEINT_H
+#include "llistint.h"
 
 
 class QueueInt {
@@ -45,7 +46,7 @@ private:
     /**
      * Data members -- YOU COMPLETE!!!
      */
-
+LListInt myList;
 
 
 };
