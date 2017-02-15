@@ -4,7 +4,7 @@ project(Problem2_3_)
 set(CMAKE_CXX_STANDARD 11)
 
 set(SOURCE_FILES
-        llistdbl_test.cpp
+        llistint_test.cpp
         llistint.cpp
         llistint.h)
 

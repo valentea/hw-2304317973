@@ -7,7 +7,7 @@ all: llistint_test
 	
 
 llistint_test: llistint.o
-	$(CXX) -g -Wall llistint.o llistdbl_test.cpp -o llistint_test
+	$(CXX) -g -Wall llistint.o llistint_test.cpp -o llistint_test
     
 
 llistint.o: llistint.h llistint.cpp
