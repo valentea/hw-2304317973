@@ -27,12 +27,12 @@ int LListInt::size() const {
  * Complete the following function
  */
 void LListInt::insert(int loc, const int &val) {
+    if(loc < 0 || loc > size()) return;
+
     Item *temp = new Item;
     temp->val = val;
     temp->prev = NULL;
     temp->next = NULL;
-
-    if(loc < 0 || loc > size()) return;
 
     if (size() == loc && loc != 0) {
         Item *current = getNodeAt(loc - 1);
@@ -59,6 +59,7 @@ void LListInt::insert(int loc, const int &val) {
         current1->next = temp;
         size_++;
     }
+    delete temp;
 }
 
 /**
