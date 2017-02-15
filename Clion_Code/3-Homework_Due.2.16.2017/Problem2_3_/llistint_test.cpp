@@ -26,6 +26,9 @@ int main() {
     list.insert(1, 2);
     list.insert(1, 3);
 
+    LListInt list2;
+
+    list += list2;
 
 
     return 1;

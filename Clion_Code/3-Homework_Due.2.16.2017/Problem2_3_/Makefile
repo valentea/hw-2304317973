@@ -4,6 +4,7 @@ CPPFLAGS = -Wall -g
 
 
 all: llistint_test
+	./llistint_test
 	
 
 llistint_test: llistint.o
@@ -16,5 +17,6 @@ llistint.o: llistint.h llistint.cpp
 
 	
 .PHONY: clean
+
 clean:
 	rm -f llistint.o

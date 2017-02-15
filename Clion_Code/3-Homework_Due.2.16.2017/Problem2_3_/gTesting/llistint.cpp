@@ -11,6 +11,19 @@ LListInt::LListInt() {
     size_ = 0;
 }
 
+LListInt::LListInt(const LListInt& other){
+    if(other.size() == 0){
+        head_ = NULL;
+        tail_ = NULL;
+        size_ = 0;
+    }else{
+        size_ = 0;
+        for (int i = 0; i < other.size(); ++i) {
+            insert(i, other.get(i));
+        }
+    }
+}
+
 LListInt::~LListInt() {
     clear();
 }
@@ -27,12 +40,12 @@ int LListInt::size() const {
  * Complete the following function
  */
 void LListInt::insert(int loc, const int &val) {
+    if(loc < 0 || loc > size()) return;
+
     Item *temp = new Item;
     temp->val = val;
     temp->prev = NULL;
     temp->next = NULL;
-
-    if(loc < 0 || loc > size()) return;
 
     if (size() == loc && loc != 0) {
         Item *current = getNodeAt(loc - 1);
@@ -104,7 +117,7 @@ int const &LListInt::get(int loc) const {
 void LListInt::clear() {
     while (head_ != NULL) {
         Item *temp = head_->next;
-        //delete head_;
+        delete head_;
         head_ = temp;
     }
     tail_ = NULL;
@@ -123,14 +136,6 @@ LListInt::Item *LListInt::getNodeAt(int loc) const {
     } else {
         //throw std::invalid_argument("bad location");
         return NULL;
-    }
-}
-
-
-LListInt::LListInt(const LListInt& other){
-    size_ = 0;
-    for (int i = 0; i < other.size(); ++i) {
-        insert(i, other.get(i));
     }
 }
 
@@ -169,28 +174,35 @@ LListInt& LListInt::operator+=(LListInt& other){
     if(this->head_ == other.head_){
         return *this;
     }
-    Item *temp = new Item;
-    temp->val = this->tail_->val;
-    temp->prev = this->tail_->prev;
-    this->tail_->prev->next = temp;
+    else if(other.size() == 0){
+        return *this;
+    }
+    else {
+        Item *temp = new Item;
+        temp->val = this->tail_->val;
+        temp->prev = this->tail_->prev;
+        this->tail_->prev->next = temp;
 
-    Item *temp1 = new Item;
-    temp1->val = other.head_->val;
-    temp1->next = other.head_->next;
-    other.head_->next->prev = temp1;
+        Item *temp1 = new Item;
+        temp1->val = other.head_->val;
+        temp1->next = other.head_->next;
+        other.head_->next->prev = temp1;
 
 
-    temp->next = temp1;
-    temp1->prev = temp;
+        temp->next = temp1;
+        temp1->prev = temp;
 
-    this->tail_ = other.tail_;
-    other.tail_->prev->next = this->tail_;
+        this->tail_ = other.tail_;
+        other.tail_->prev->next = this->tail_;
 
-    this->size_ = this->size_ + other.size_;
+        this->size_ = this->size_ + other.size_;
 
-    other.head_ = NULL;
-    other.tail_ = NULL;
-    other.size_ = 0;
+        other.head_ = NULL;
+        other.tail_ = NULL;
+        other.size_ = 0;
 
-    return *this;
+        return *this;
+    }
 }
+
+// MAKE gTest FOR '<<' OPERATOR

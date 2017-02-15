@@ -104,7 +104,7 @@ int const &LListInt::get(int loc) const {
 void LListInt::clear() {
     while (head_ != NULL) {
         Item *temp = head_->next;
-        //delete head_;
+        delete head_;
         head_ = temp;
     }
     tail_ = NULL;

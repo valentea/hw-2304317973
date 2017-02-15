@@ -1,5 +1,6 @@
 #include "llistint.h"
 #include "gtest/gtest.h"
+#include <iostream>
 
 class LListIntTest : public testing::Test {
 protected:
@@ -19,7 +20,7 @@ protected:
 	}
 
 	virtual void TearDown() {
-	   //myList.clear();
+	   myList.clear();
 	}
 
 	LListInt myList;
@@ -33,15 +34,16 @@ TEST_F(LListIntTest, CopyConstructorTestSize) {
 TEST_F(LListIntTest, CopyConstructorTestVals){
    LListInt test(myList);
    for(int i = 0; i < test.size(); i++){
-   	EXPECT_TRUE(test.get(i) == myList.get(i));
+    EXPECT_TRUE(test.get(i) == myList.get(i));
    }
 }
 
 TEST_F(LListIntTest, CopyConstructorTestEmptyList){
-   LListInt test(myList);
    myList.clear();
-   LListInt test1(myList);
-   ASSERT_TRUE(test1.size() == myList.size());
+   ASSERT_TRUE(myList.size() == 0);
+   LListInt test(myList);
+   ASSERT_TRUE(test.size() == myList.size());
+   ASSERT_TRUE(test.size() == 0);
 }
 
 TEST_F(LListIntTest, AssignmentOperatorTestSize) {
@@ -59,8 +61,8 @@ TEST_F(LListIntTest, AssignmentOperatorTestVals){
 }
 
 TEST_F(LListIntTest, AssignmentOperatorTestEmptyList){
-   LListInt test;
-   test = myList;
+   LListInt myList2;
+   myList2 = myList;
    myList.clear();
    LListInt test1(myList);
    ASSERT_TRUE(test1.size() == myList.size());
@@ -104,23 +106,20 @@ TEST_F(LListIntTest, AddSumMultiple){
     for(int i = 0; i < myList.size(); ++i){
         EXPECT_EQ(myList.get(i), i);
     }
+  }
+
+TEST_F(LListIntTest, AddSumToSelf){
+      myList += myList;
+          for(int i = 0; i < myList.size(); ++i){
+        EXPECT_EQ(myList.get(i), i);
+    }
 }
 
 TEST_F(LListIntTest, AddSumEmptyList){
     LListInt myList2;
-    myList += myList2;
     ASSERT_TRUE(myList2.size() == 0);
+    myList += myList2;
     for(int i = 0; i < myList.size(); ++i){
         EXPECT_EQ(myList.get(i), i);
     }
 }
-
-TEST_F(LListIntTest, AddSumToSelf){
-    myList += myList;
-    for(int i = 0; i < myList.size(); ++i){
-        EXPECT_EQ(myList.get(i), i);
-    }
-}
-
-
-

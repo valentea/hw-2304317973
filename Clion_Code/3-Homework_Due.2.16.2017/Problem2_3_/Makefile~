@@ -1,19 +1,22 @@
-# Let's declare some variables
-CC       = g++
+BIN_DIR = bin
+CXX = g++
 CPPFLAGS = -Wall -g
-BIN_DIR  = bin
-GTEST_LL = -I /usr/include/gtest/ -l gtest -l gtest_main -pthread
 
 
-$(BIN_DIR)/LListGTest: test.cpp $(BIN_DIR)/llistint.o
-	$(CC) $(CPPFLAGS) $^ $(GTEST_LL) -o $@
+all: llistint_test
+	
 
-.PHONY: tests clean
+llistint_test: llistint.o
+	$(CXX) -g -Wall llistint.o llistint_test.cpp -o llistint_test
+    
 
-tests: $(BIN_DIR)/LListGTest
-	-@$(BIN_DIR)/LListGTest
-	-@echo "--- All Tested!---"
+llistint.o: llistint.h llistint.cpp
+	$(CXX) -g -Wall -c llistint.cpp -o llistint.o
+	
 
+	
+.PHONY: clean valgrind
 clean:
-	-@rm -rf $(BIN_DIR)/LListGTest
-	-@echo "--- All Clean!---"
+	rm -f llistint.o
+valgrind:
+   valgrind --leak-check=yes ./llistint_test
