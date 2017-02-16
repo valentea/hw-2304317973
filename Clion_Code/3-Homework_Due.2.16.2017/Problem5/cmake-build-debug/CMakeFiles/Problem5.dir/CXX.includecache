@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/3-Homework_Due.2.16.2017/Problem5/llistint.cpp
+llistint.h
+/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/3-Homework_Due.2.16.2017/Problem5/llistint.h
+cstdlib
+-
+iostream
+-
+
+/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/3-Homework_Due.2.16.2017/Problem5/llistint.h
+
+/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/3-Homework_Due.2.16.2017/Problem5/queueint.cpp
+llistint.h
+/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/3-Homework_Due.2.16.2017/Problem5/llistint.h
+queueint.h
+/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/3-Homework_Due.2.16.2017/Problem5/queueint.h
+cstdlib
+-
+
+/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/3-Homework_Due.2.16.2017/Problem5/queueint.h
+llistint.h
+/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/3-Homework_Due.2.16.2017/Problem5/llistint.h
+
+/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/3-Homework_Due.2.16.2017/Problem5/scheduling.cpp
+iostream
+-
+fstream
+-
+string
+-
+sstream
+-
+queueint.h
+/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/3-Homework_Due.2.16.2017/Problem5/queueint.h
+
