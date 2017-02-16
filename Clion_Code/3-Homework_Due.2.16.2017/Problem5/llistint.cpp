@@ -11,12 +11,12 @@ LListInt::LListInt() {
     size_ = 0;
 }
 
-LListInt::LListInt(const LListInt& other){
-    if(other.size() == 0){
+LListInt::LListInt(const LListInt &other) {
+    if (other.size() == 0) {
         head_ = NULL;
         tail_ = NULL;
         size_ = 0;
-    }else{
+    } else {
         size_ = 0;
         for (int i = 0; i < other.size(); ++i) {
             insert(i, other.get(i));
@@ -40,7 +40,7 @@ int LListInt::size() const {
  * Complete the following function
  */
 void LListInt::insert(int loc, const int &val) {
-    if(loc < 0 || loc > size()) return;
+    if (loc < 0 || loc > size()) return;
 
     Item *temp = new Item;
     temp->val = val;
@@ -57,8 +57,8 @@ void LListInt::insert(int loc, const int &val) {
         head_ = temp;
         tail_ = temp;
         size_++;
-    } else if (loc == 0 ) {
-        Item* current = getNodeAt(loc);
+    } else if (loc == 0) {
+        Item *current = getNodeAt(loc);
         temp->next = current;
         current->prev = temp;
         head_ = temp;
@@ -78,21 +78,20 @@ void LListInt::insert(int loc, const int &val) {
  * Complete the following function
  */
 void LListInt::remove(int loc) {
-    if(loc < 0 || loc > size()-1) return;
+    if (loc < 0 || loc > size() - 1) return;
 
-    if(loc == size() - 1){
-        Item* temp = getNodeAt(loc);
+    if (loc == size() - 1) {
+        Item *temp = getNodeAt(loc);
         temp->next = NULL;
         tail_ = temp;
         size_--;
-    }
-    else if(loc == 0){
-        Item* temp = getNodeAt(loc + 1);
+    } else if (loc == 0) {
+        Item *temp = getNodeAt(loc + 1);
         temp->prev = NULL;
         head_ = temp;
         size_--;
-    }else{
-        Item* temp = getNodeAt(loc);
+    } else {
+        Item *temp = getNodeAt(loc);
         temp->next->prev = temp->prev;
         temp->prev->next = temp->next;
         size_--;
@@ -139,8 +138,8 @@ LListInt::Item *LListInt::getNodeAt(int loc) const {
     }
 }
 
-void LListInt::push_back(const int& val) {
-    if(size_ == 0){
+void LListInt::push_back(const int &val) {
+    if (size_ == 0) {
         Item *temp = new Item;
         temp->val = val;
         temp->prev = NULL;
@@ -148,61 +147,69 @@ void LListInt::push_back(const int& val) {
         head_ = temp;
         tail_ = temp;
         size_++;
-    } else{
-    Item *temp = new Item;
-    temp->val = val;
-    temp->next = NULL;
-    Item *current = tail_;
-    temp->prev = current;
-    current->next = temp;
-    tail_ = temp;
-    size_++;
+    } else {
+        Item *temp = new Item;
+        temp->val = val;
+        temp->next = NULL;
+        temp->prev = tail_;
+        tail_->next = temp;
+        tail_ = temp;
+        size_++;
     }
 }
 
-LListInt& LListInt::operator=(const LListInt& other){
+LListInt &LListInt::operator=(const LListInt &other) {
     this->clear();
     for (int i = 0; i < other.size(); ++i) {
-//      this->insert(i, other.get(i));
         this->push_back(other.get(i));
     }
     return *this;
 }
 
 
-LListInt& LListInt::operator+=(LListInt& other){
-    if(this->head_ == other.head_){
+LListInt &LListInt::operator+=(LListInt &other) {
+    if (this->head_ == other.head_) {
         return *this;
-    }
-    else if(other.size() == 0){
+    } else if (other.size() == 0) {
         return *this;
-    }
-    else {
-        Item *temp = new Item;
-        temp->val = this->tail_->val;
-        temp->prev = this->tail_->prev;
-        this->tail_->prev->next = temp;
-
-        Item *temp1 = new Item;
-        temp1->val = other.head_->val;
-        temp1->next = other.head_->next;
-        other.head_->next->prev = temp1;
-
-
-        temp->next = temp1;
-        temp1->prev = temp;
-
-        this->tail_ = other.tail_;
-        other.tail_->prev->next = this->tail_;
-
-        this->size_ = this->size_ + other.size_;
-
+    } else if (this->size() == 1) {
+        tail_ = other.tail_;
+        other.head_->prev = head_;
+        head_->next = other.head_;
+        size_ = size_ + other.size_;
         other.head_ = NULL;
         other.tail_ = NULL;
         other.size_ = 0;
-
+        return *this;
+    } else if(this->size_ == 0) {
+        head_ = other.head_;
+        tail_ = other.tail_;
+        size_ = other.size_;
+        other.head_ = NULL;
+        other.tail_ = NULL;
+        other.size_ = 0;
+        return *this;
+    } else {
+        tail_->next = other.head_;
+        tail_ = other.tail_;
+        size_ += other.size();
+        other.head_ = NULL;
+        other.tail_ = NULL;
+        other.size_ = 0;
         return *this;
     }
 }
+
+ostream &operator<<(ostream &os, const LListInt &list) {
+    for (int i = 0; i < list.size(); ++i) {
+        os << list.get(i) << " ";
+        if ((i + 1) % 10 == 0) {
+            cout << endl;
+        }
+    }
+    return os;
+}
+
+
 
 // MAKE gTest FOR '<<' OPERATOR

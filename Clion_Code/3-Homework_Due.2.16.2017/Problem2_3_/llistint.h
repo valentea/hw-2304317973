@@ -1,5 +1,6 @@
 #ifndef LLISTInt_H
 #define LLISTInt_H
+#include <ostream>
 
 class LListInt {
 public:
@@ -18,6 +19,7 @@ public:
      * Destructor
      */
     ~LListInt();
+
 
     /**
      * Copy constructor [must run in O(n) where n=size of other]
@@ -99,6 +101,9 @@ public:
      */
     // You determine the signature
 
+
+    
+
 private:
     /**
      * Returns a pointer to the item at index, pos
@@ -113,5 +118,8 @@ private:
     Item* tail_;
     int size_;
 };
+
+//class ostream;
+std::ostream& operator<<(std::ostream &os, const LListInt& list);
 
 #endif

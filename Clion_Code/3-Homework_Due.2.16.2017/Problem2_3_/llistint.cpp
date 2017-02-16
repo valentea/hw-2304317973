@@ -11,6 +11,19 @@ LListInt::LListInt() {
     size_ = 0;
 }
 
+LListInt::LListInt(const LListInt& other){
+    if(other.size() == 0){
+        head_ = NULL;
+        tail_ = NULL;
+        size_ = 0;
+    }else{
+        size_ = 0;
+        for (int i = 0; i < other.size(); ++i) {
+            insert(i, other.get(i));
+        }
+    }
+}
+
 LListInt::~LListInt() {
     clear();
 }
@@ -126,14 +139,6 @@ LListInt::Item *LListInt::getNodeAt(int loc) const {
     }
 }
 
-
-LListInt::LListInt(const LListInt& other){
-    size_ = 0;
-    for (int i = 0; i < other.size(); ++i) {
-        insert(i, other.get(i));
-    }
-}
-
 void LListInt::push_back(const int& val) {
     if(size_ == 0){
         Item *temp = new Item;
@@ -147,10 +152,8 @@ void LListInt::push_back(const int& val) {
     Item *temp = new Item;
     temp->val = val;
     temp->next = NULL;
-    temp->prev = tail_->prev;
-    if(tail_->prev != NULL){
-      tail_->prev->next = temp;
-    }
+    temp->prev = tail_;
+    tail_->next = temp;
     tail_ = temp;
     size_++;
     }
@@ -174,31 +177,27 @@ LListInt& LListInt::operator+=(LListInt& other){
         return *this;
     }
     else {
-        Item *temp = new Item;
-        temp->val = this->tail_->val;
-        temp->prev = this->tail_->prev;
-        this->tail_->prev->next = temp;
-
-        Item *temp1 = new Item;
-        temp1->val = other.head_->val;
-        temp1->next = other.head_->next;
-        other.head_->next->prev = temp1;
-
-
-        temp->next = temp1;
-        temp1->prev = temp;
-
-        this->tail_ = other.tail_;
-        other.tail_->prev->next = this->tail_;
-
-        this->size_ = this->size_ + other.size_;
-
-        other.head_ = NULL;
-        other.tail_ = NULL;
-        other.size_ = 0;
+    tail_->next = other.head_;
+    tail_ = other.tail_;
+    size_ += other.size();
+    other.head_ = NULL;
+    other.tail_ = NULL;
+    other.size_ = 0;
 
         return *this;
     }
 }
+
+ostream& operator<<(ostream &os, const LListInt& list) {
+    for (int i = 0; i < list.size(); ++i) {
+        os << list.get(i) << " ";
+        if ((i+1) % 10 == 0) {
+            cout << endl;
+        }
+    }
+    return os;
+}
+
+
 
 // MAKE gTest FOR '<<' OPERATOR

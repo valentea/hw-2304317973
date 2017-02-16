@@ -3,6 +3,7 @@
 #include <string>
 #include <sstream>
 #include "queueint.h"
+
 using namespace std;
 
 
@@ -14,15 +15,14 @@ using namespace std;
  * @return Queue of jobs (represented by their size) 
  *         read from the line of the file
  */
-QueueInt readLine(ifstream &inf)
-{
+QueueInt readLine(ifstream &inf) {
     string line;
     getline(inf, line);
     QueueInt retval;
-    if(inf.fail()) return retval;
+    if (inf.fail()) return retval;
     stringstream ss(line);
     int value;
-    while(ss >> value) {
+    while (ss >> value) {
         retval.push(value);
     }
     return retval;
@@ -38,8 +38,7 @@ QueueInt readLine(ifstream &inf)
  */
 void scheduleAndPrintJob(const int iteration,
                          const int value,
-                         const int resourceIndex)
-{
+                         const int resourceIndex) {
 
     cout << "Iteration: " << iteration
          << ", Scheduled: " << value
@@ -59,17 +58,17 @@ void scheduleAndPrintJob(const int iteration,
  * @param numResources Number of available resources
  */
 void scheduleJobs(int *resources,
-                  QueueInt& jobqueue,
+                  QueueInt &jobqueue,
                   const int iteration,
                   const int numResources) {
 
     // You complete.
     // Be sure to call scheduleAndPrintJob when you schedule a job
     //
-    int max = sizeof(resources);
+    int kickout = 0;
     for (int i = 0; i < numResources; i++) {
-        while(resources[i] != 0) {
-            if((resources[i] - jobqueue.front()) < 0){
+        while (resources[i] != 0 && !jobqueue.empty()) {
+            if ((resources[i] - jobqueue.front()) < 0) {
                 break;
             }
             resources[i] -= jobqueue.front();
@@ -77,9 +76,23 @@ void scheduleJobs(int *resources,
             jobqueue.pop();
         }
     }
-
+    if (jobqueue.empty()) {
+        return;
+    }
+    QueueInt temp;
     for (int j = 0; j < numResources; ++j) {
-        if(resources[j] != 0){
+        if (resources[j] != 0 && j != 0) {
+            while(jobqueue.front() > resources[j] && kickout < jobqueue.size()) {
+                temp.push(jobqueue.front());
+                jobqueue.pop();
+                jobqueue.push(temp.front());
+                kickout++;
+            }
+            if(kickout == jobqueue.size()){
+                return;
+            }
+            scheduleJobs(resources, jobqueue, iteration, numResources);
+        } else if (resources[j] != 0) {
             scheduleJobs(resources, jobqueue, iteration, numResources);
         }
     }
@@ -109,52 +122,34 @@ int main(int argc, char *argv[]) {
     int *resources = new int[numResources];
     double loading = 0;
 
-    while( (!inf.fail()) || (!jobqueue.empty()) ) {
+    while ((!inf.fail()) || (!jobqueue.empty())) {
         iteration++;
         // reset resources
-        cout << numResources << " ::: " << capacity << endl;
         for (int i = 0; i < numResources; i++) {
             resources[i] = capacity;
-            cout << "i: " << i << ". resources[i]: " << resources[i] << endl;
         }
-        cout << endl;
 
         /*************** Add your code here ****************/
-        if(!jobqueue.empty()){
-            QueueInt temp = readLine(inf);
-            jobqueue.concatenate(temp);
-        }else{
-            jobqueue = readLine(inf);
-        }
-
-
+        QueueInt temp = readLine(inf);
+        jobqueue.concatenate(temp);
         scheduleJobs(resources, jobqueue, iteration, numResources);
-
-
-
-
-
-
-
-
         /*************** Stop your code here ***************/
 
         // Loading Computation
         double total = 0;
-        for(int i=0; i < numResources; i++) {
-            total += capacity-resources[i];
+        for (int i = 0; i < numResources; i++) {
+            total += capacity - resources[i];
         }
-        loading += total / (capacity*numResources);
+        loading += total / (capacity * numResources);
 
     }
     cout << "Average loading: ";
-    if(iteration == 0) {
+    if (iteration == 0) {
         cout << 0.0 << endl;
-    }
-    else {
+    } else {
         cout << loading / (iteration) << endl;
     }
     inf.close();
-    delete [] resources;
-    return 0;
+    delete[] resources;
+    return 1;
 }

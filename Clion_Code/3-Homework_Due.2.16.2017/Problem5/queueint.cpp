@@ -30,5 +30,5 @@ int const & QueueInt::front() const{
 }
 
 void QueueInt::concatenate(QueueInt& other){
-    this->myList += other.myList;
+    myList += other.myList;
 }
