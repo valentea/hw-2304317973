@@ -3,22 +3,20 @@ CXX = g++
 CPPFLAGS = -Wall -g
 
 
-all: $(BIN_DIR)/homework3.2and3
-	./$(BIN_DIR)/homework3.2and3
+all: llistint_test
 	
-$(BIN_DIR)/.dirstamp:
-	mkdir -p $(BIN_DIR)
-	touch $(BIN_DIR)/.dirstamp
 
-$(BIN_DIR)/homework3.2and3: $(BIN_DIR)/llistint.o $(BIN_DIR)/.dirstamp
-	$(CXX) -g -Wall $(BIN_DIR)/llistint.o llistdbl_test.cpp -o $(BIN_DIR)/homework3.2and3
+llistint_test: llistint.o
+	$(CXX) -g -Wall llistint.o llistint_test.cpp -o llistint_test
     
 
-$(BIN_DIR)/attackMove.o: lib/llistint.h src/llistint.cpp $(BIN_DIR)/.dirstamp
-	$(CXX) -g -Wall -c src/llistint.cpp -o $(BIN_DIR)/llistint.o
+llistint.o: llistint.h llistint.cpp
+	$(CXX) -g -Wall -c llistint.cpp -o llistint.o
 	
 
 	
-.PHONY: clean
+.PHONY: clean valgrind
 clean:
-	rm -rf $(BIN_DIR)
+	rm -f llistint.o
+valgrind:
+   valgrind --leak-check=yes ./llistint_test
