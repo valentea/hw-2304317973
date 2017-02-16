@@ -1,6 +1,8 @@
 #include "llistint.h"
 #include "gtest/gtest.h"
 #include <iostream>
+#include <string>
+#include <sstream>
 
 class LListIntTest : public testing::Test {
 protected:
@@ -25,6 +27,42 @@ protected:
 
 	LListInt myList;
 };
+
+TEST_F(LListIntTest, Nothing){
+
+}
+
+/**
+
+TEST_F(LListIntTest, printFullList){
+  std::string test = "0 1 2 3 4 5 6 7 8 9 ";
+  std::stringstream ss;
+  ss << myList;
+  std::string myListString = ss.str();
+  ASSERT_STREQ(test, myListString);
+}
+
+TEST_F(LListIntTest, printOversizedList){
+  std::string test = "0 1 2 3 4 5 6 7 8 9 \n10 11 12 13 14 15 16 17 18 19 ";
+  for(int i = 0; i < 10; ++i){
+       myList.push_back(i + myList.size());
+    }
+  std::stringstream ss;
+  ss << myList;
+  std::string myListString = ss.str();
+  ASSERT_STREQ(test, myListString);
+}
+
+TEST_F(LListIntTest, printEmptyList){
+  std::string test = "";
+  myList.clear();
+  std::stringstream ss;
+  ss << myList;
+  std::string myListString = ss.str();
+  ASSERT_STREQ(test, myListString);
+}
+
+**/
 
 TEST_F(LListIntTest, CopyConstructorTestSize) {
    LListInt test(myList);
@@ -74,7 +112,7 @@ TEST_F(LListIntTest, PushBackBasic){
 }
 
 TEST_F(LListIntTest, PushBackEmpty){
-    myList.clear();
+  myList.clear();
 	myList.push_back(10);
 	EXPECT_EQ(myList.get(myList.size()-1), 10);
 }

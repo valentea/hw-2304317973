@@ -147,9 +147,10 @@ void LListInt::push_back(const int& val) {
     Item *temp = new Item;
     temp->val = val;
     temp->next = NULL;
-    Item *current = tail_;
-    temp->prev = current;
-    current->next = temp;
+    temp->prev = tail_->prev;
+    if(tail_->prev != NULL){
+      tail_->prev->next = temp;
+    }
     tail_ = temp;
     size_++;
     }
