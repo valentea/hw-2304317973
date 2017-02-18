@@ -22,6 +22,7 @@ Clause::Clause(const vector<int> &vars)
 int Clause::eval(std::map<int, int> &varValues) {
     /* You complete */
     bool preChangeTruthVal = isTrue_;
+    int falseCount = 0;
     for (auto &variableInput: varValues) {
         for(auto statement: vars_){
             if(variableInput.first == intabs(statement)){
@@ -32,14 +33,15 @@ int Clause::eval(std::map<int, int> &varValues) {
                     isTrue_ = true;
                 }
                 if(variableInput.second == 0 && statement > 0){
-                    isTrue_ = false;
+                    falseCount++;
                 }
                 if(variableInput.second == 1 && statement < 0){
-                    isTrue_ = false;
+                    falseCount++;
                 }
             }
         }
     }
+    if(falseCount == vars_.size()) isTrue_ = false;
     if(preChangeTruthVal == isTrue_){
         return UNK;
     }else if(isTrue_){
@@ -70,7 +72,6 @@ CNFFormula::CNFFormula(int nVars, const vector<Clause *> &clauses)
             }
         }
     }
-
 }
 
 CNFFormula::~CNFFormula() {
