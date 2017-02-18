@@ -6,14 +6,15 @@
 #include <set>
 #include <map>
 
-enum ValEnum {UNK=-1, VAL0=0, VAL1=1};
+enum ValEnum {
+    UNK = -1, VAL0 = 0, VAL1 = 1
+};
 
 
 /**
  * Models one clause in a CNF formula
  */
-class Clause
-{
+class Clause {
 public:
 
     /**
@@ -25,7 +26,7 @@ public:
      * Constructs a Clause from its list of variables and their
      *  negated/true form (x = true form, -x = negated form)
      */
-    Clause(const std::vector<int>& vars);
+    Clause(const std::vector<int> &vars);
 
     /**
      * Given a map of the variables and their values
@@ -41,15 +42,15 @@ public:
      *          0 if the clause's status is unchanged from
      *            the last evaluation
      */
-    int eval(std::map<int,int>& varValues);
+    int eval(std::map<int, int > &varValues);
 
     /**
      * Return a copy of the variable list
      */
-    std::vector<int> vars() const
-    {
+    std::vector<int> vars() const {
         return vars_;
     }
+
 private:
     // vars (x or -x) present in the clause
     std::vector<int> vars_;
@@ -61,8 +62,7 @@ private:
 /**
  * Models and performs operations on a CNFFormula
  */
-class CNFFormula
-{
+class CNFFormula {
 public:
     /**
      * Constructs a CNFFormula given a number of variables
@@ -76,7 +76,7 @@ public:
      *                   object (i.e. CNFFormula is responsible
      *                   for their deallocation)
      */
-    CNFFormula(int nVars, const std::vector<Clause*>& clauses);
+    CNFFormula(int nVars, const std::vector<Clause *> &clauses);
 
     /**
      * Destructor
@@ -107,11 +107,12 @@ public:
      * in the assignment writeup.
      */
     void printVarValues() const;
+
 private:
-    // UNK = unassigned, VAL0=false, VAL1=true
+        //UNK = unknown, VAL0=false, VAL1=true;
     std::map<int,int> varValues_;
-    std::map<int, std::set<Clause*> > varToClauses_;
-    std::vector<Clause*> clauses_;
+    std::map<int, std::set<Clause *> > varToClauses_;
+    std::vector<Clause *> clauses_;
     unsigned int numSatisfied_;
 
 };
