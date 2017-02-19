@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/3-Homework_Due.2.16.2017/Problem2_3_/llistdbl_test.cpp
-llistint.h
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/3-Homework_Due.2.16.2017/Problem2_3_/llistint.h
-iostream
--
-
 /cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/3-Homework_Due.2.16.2017/Problem2_3_/llistint.cpp
 llistint.h
 /cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/3-Homework_Due.2.16.2017/Problem2_3_/llistint.h
@@ -21,4 +15,14 @@ iostream
 -
 
 /cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/3-Homework_Due.2.16.2017/Problem2_3_/llistint.h
+ostream
+-
+
+/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/3-Homework_Due.2.16.2017/Problem2_3_/llistint_test.cpp
+llistint.h
+/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/3-Homework_Due.2.16.2017/Problem2_3_/llistint.h
+iostream
+-
+sstream
+-
 

@@ -57,28 +57,28 @@ include CMakeFiles/Problem2_3_.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Problem2_3_.dir/flags.make
 
-CMakeFiles/Problem2_3_.dir/llistdbl_test.cpp.o: CMakeFiles/Problem2_3_.dir/flags.make
-CMakeFiles/Problem2_3_.dir/llistdbl_test.cpp.o: ../llistdbl_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/3-Homework_Due.2.16.2017/Problem2_3_/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Problem2_3_.dir/llistdbl_test.cpp.o"
-	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Problem2_3_.dir/llistdbl_test.cpp.o -c "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/3-Homework_Due.2.16.2017/Problem2_3_/llistdbl_test.cpp"
+CMakeFiles/Problem2_3_.dir/llistint_test.cpp.o: CMakeFiles/Problem2_3_.dir/flags.make
+CMakeFiles/Problem2_3_.dir/llistint_test.cpp.o: ../llistint_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/3-Homework_Due.2.16.2017/Problem2_3_/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Problem2_3_.dir/llistint_test.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Problem2_3_.dir/llistint_test.cpp.o -c "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/3-Homework_Due.2.16.2017/Problem2_3_/llistint_test.cpp"
 
-CMakeFiles/Problem2_3_.dir/llistdbl_test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Problem2_3_.dir/llistdbl_test.cpp.i"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/3-Homework_Due.2.16.2017/Problem2_3_/llistdbl_test.cpp" > CMakeFiles/Problem2_3_.dir/llistdbl_test.cpp.i
+CMakeFiles/Problem2_3_.dir/llistint_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Problem2_3_.dir/llistint_test.cpp.i"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/3-Homework_Due.2.16.2017/Problem2_3_/llistint_test.cpp" > CMakeFiles/Problem2_3_.dir/llistint_test.cpp.i
 
-CMakeFiles/Problem2_3_.dir/llistdbl_test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Problem2_3_.dir/llistdbl_test.cpp.s"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/3-Homework_Due.2.16.2017/Problem2_3_/llistdbl_test.cpp" -o CMakeFiles/Problem2_3_.dir/llistdbl_test.cpp.s
+CMakeFiles/Problem2_3_.dir/llistint_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Problem2_3_.dir/llistint_test.cpp.s"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/3-Homework_Due.2.16.2017/Problem2_3_/llistint_test.cpp" -o CMakeFiles/Problem2_3_.dir/llistint_test.cpp.s
 
-CMakeFiles/Problem2_3_.dir/llistdbl_test.cpp.o.requires:
+CMakeFiles/Problem2_3_.dir/llistint_test.cpp.o.requires:
 
-.PHONY : CMakeFiles/Problem2_3_.dir/llistdbl_test.cpp.o.requires
+.PHONY : CMakeFiles/Problem2_3_.dir/llistint_test.cpp.o.requires
 
-CMakeFiles/Problem2_3_.dir/llistdbl_test.cpp.o.provides: CMakeFiles/Problem2_3_.dir/llistdbl_test.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Problem2_3_.dir/build.make CMakeFiles/Problem2_3_.dir/llistdbl_test.cpp.o.provides.build
-.PHONY : CMakeFiles/Problem2_3_.dir/llistdbl_test.cpp.o.provides
+CMakeFiles/Problem2_3_.dir/llistint_test.cpp.o.provides: CMakeFiles/Problem2_3_.dir/llistint_test.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Problem2_3_.dir/build.make CMakeFiles/Problem2_3_.dir/llistint_test.cpp.o.provides.build
+.PHONY : CMakeFiles/Problem2_3_.dir/llistint_test.cpp.o.provides
 
-CMakeFiles/Problem2_3_.dir/llistdbl_test.cpp.o.provides.build: CMakeFiles/Problem2_3_.dir/llistdbl_test.cpp.o
+CMakeFiles/Problem2_3_.dir/llistint_test.cpp.o.provides.build: CMakeFiles/Problem2_3_.dir/llistint_test.cpp.o
 
 
 CMakeFiles/Problem2_3_.dir/llistint.cpp.o: CMakeFiles/Problem2_3_.dir/flags.make
@@ -107,13 +107,13 @@ CMakeFiles/Problem2_3_.dir/llistint.cpp.o.provides.build: CMakeFiles/Problem2_3_
 
 # Object files for target Problem2_3_
 Problem2_3__OBJECTS = \
-"CMakeFiles/Problem2_3_.dir/llistdbl_test.cpp.o" \
+"CMakeFiles/Problem2_3_.dir/llistint_test.cpp.o" \
 "CMakeFiles/Problem2_3_.dir/llistint.cpp.o"
 
 # External object files for target Problem2_3_
 Problem2_3__EXTERNAL_OBJECTS =
 
-Problem2_3_.exe: CMakeFiles/Problem2_3_.dir/llistdbl_test.cpp.o
+Problem2_3_.exe: CMakeFiles/Problem2_3_.dir/llistint_test.cpp.o
 Problem2_3_.exe: CMakeFiles/Problem2_3_.dir/llistint.cpp.o
 Problem2_3_.exe: CMakeFiles/Problem2_3_.dir/build.make
 Problem2_3_.exe: CMakeFiles/Problem2_3_.dir/link.txt
@@ -125,7 +125,7 @@ CMakeFiles/Problem2_3_.dir/build: Problem2_3_.exe
 
 .PHONY : CMakeFiles/Problem2_3_.dir/build
 
-CMakeFiles/Problem2_3_.dir/requires: CMakeFiles/Problem2_3_.dir/llistdbl_test.cpp.o.requires
+CMakeFiles/Problem2_3_.dir/requires: CMakeFiles/Problem2_3_.dir/llistint_test.cpp.o.requires
 CMakeFiles/Problem2_3_.dir/requires: CMakeFiles/Problem2_3_.dir/llistint.cpp.o.requires
 
 .PHONY : CMakeFiles/Problem2_3_.dir/requires
