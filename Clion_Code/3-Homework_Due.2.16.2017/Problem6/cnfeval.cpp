@@ -31,7 +31,7 @@ bool readCNFFile(char *filename,
         cerr << "Couldn't open file" << endl;
         return 1;
     }
-    int numC;
+    int numC = -1;
     char cmd;
     string myline;
     bool problemFound = false;
@@ -111,7 +111,7 @@ int main(int argc, char *argv[]) {
         cerr << "Error..." << endl;
         return 1;
     }
-      printClauses(clauses);//////////////////////////////////////////////////////////////////////////////
+    //printClauses(clauses);
     CNFFormula cnf(numVars, clauses);
 
     string cmd, line;
@@ -144,6 +144,5 @@ int main(int argc, char *argv[]) {
             }
         }
     }
-
     return 0;
 }

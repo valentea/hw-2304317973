@@ -42,7 +42,7 @@ public:
      *          0 if the clause's status is unchanged from
      *            the last evaluation
      */
-    int eval(std::map<int, int > &varValues);
+    int eval(std::map<int, ValEnum> &varValues);
 
     /**
      * Return a copy of the variable list
@@ -109,8 +109,8 @@ public:
     void printVarValues() const;
 
 private:
-        //UNK = unknown, VAL0=false, VAL1=true;
-    std::map<int,int> varValues_;
+    //UNK = unknown, VAL0=false, VAL1=true;
+    std::map<int, ValEnum> varValues_;
     std::map<int, std::set<Clause *> > varToClauses_;
     std::vector<Clause *> clauses_;
     unsigned int numSatisfied_;
