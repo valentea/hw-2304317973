@@ -1,0 +1,8 @@
+//
+// Created by Alex Valente on 2/26/17.
+//
+
+#ifndef INC_4_HOMEWORK_DUE_3_7_2017_CLOTHING_H
+#define INC_4_HOMEWORK_DUE_3_7_2017_CLOTHING_H
+
+#endif //INC_4_HOMEWORK_DUE_3_7_2017_CLOTHING_H

@@ -10,6 +10,11 @@ CMakeFiles/4_Homework_Due_3_7_2017.dir/amazon.cpp.o: ../user.h
 CMakeFiles/4_Homework_Due_3_7_2017.dir/amazon.cpp.o: ../util.h
 
 CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.o: ../book.cpp
+CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.o: ../book.h
+CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.o: ../product.h
+CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.o: ../product_parser.h
+
+CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.o: ../clothing.cpp
 
 CMakeFiles/4_Homework_Due_3_7_2017.dir/db_parser.cpp.o: ../datastore.h
 CMakeFiles/4_Homework_Due_3_7_2017.dir/db_parser.cpp.o: ../db_parser.cpp
@@ -19,10 +24,15 @@ CMakeFiles/4_Homework_Due_3_7_2017.dir/db_parser.cpp.o: ../product_parser.h
 CMakeFiles/4_Homework_Due_3_7_2017.dir/db_parser.cpp.o: ../user.h
 CMakeFiles/4_Homework_Due_3_7_2017.dir/db_parser.cpp.o: ../util.h
 
+CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.o: ../movie.cpp
+CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.o: ../movie.h
+
 CMakeFiles/4_Homework_Due_3_7_2017.dir/product.cpp.o: ../product.cpp
 CMakeFiles/4_Homework_Due_3_7_2017.dir/product.cpp.o: ../product.h
 
 CMakeFiles/4_Homework_Due_3_7_2017.dir/product_parser.cpp.o: ../book.h
+CMakeFiles/4_Homework_Due_3_7_2017.dir/product_parser.cpp.o: ../clothing.h
+CMakeFiles/4_Homework_Due_3_7_2017.dir/product_parser.cpp.o: ../movie.h
 CMakeFiles/4_Homework_Due_3_7_2017.dir/product_parser.cpp.o: ../product.h
 CMakeFiles/4_Homework_Due_3_7_2017.dir/product_parser.cpp.o: ../product_parser.cpp
 CMakeFiles/4_Homework_Due_3_7_2017.dir/product_parser.cpp.o: ../product_parser.h

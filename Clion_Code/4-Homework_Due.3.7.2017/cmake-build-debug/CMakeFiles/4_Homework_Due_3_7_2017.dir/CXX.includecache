@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/amazon.cpp
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/amazon.cpp
 iostream
 -
 fstream
@@ -22,19 +22,37 @@ iomanip
 algorithm
 -
 product.h
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product.h
 db_parser.h
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/db_parser.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/db_parser.h
 product_parser.h
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product_parser.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product_parser.h
 util.h
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/util.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/util.h
 
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/book.cpp
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/book.cpp
+product.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product.h
+product_parser.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product_parser.h
+book.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/book.h
+set
+-
+sstream
+-
 
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/book.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/book.h
+product.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product.h
+product_parser.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product_parser.h
 
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/datastore.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/clothing.cpp
+
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/clothing.h
+
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/datastore.h
 string
 -
 set
@@ -42,11 +60,11 @@ set
 vector
 -
 product.h
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product.h
 user.h
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/user.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/user.h
 
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/db_parser.cpp
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/db_parser.cpp
 iostream
 -
 fstream
@@ -64,11 +82,11 @@ cctype
 locale
 -
 db_parser.h
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/db_parser.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/db_parser.h
 util.h
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/util.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/util.h
 
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/db_parser.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/db_parser.h
 iostream
 -
 string
@@ -76,23 +94,29 @@ string
 map
 -
 datastore.h
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/datastore.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/datastore.h
 product.h
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product.h
 user.h
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/user.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/user.h
 product_parser.h
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product_parser.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product_parser.h
 
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product.cpp
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/movie.cpp
+movie.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/movie.h
+
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/movie.h
+
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product.cpp
 sstream
 -
 iomanip
 -
 product.h
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product.h
 
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product.h
 iostream
 -
 string
@@ -104,41 +128,41 @@ vector
 algorithm
 -
 
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product_parser.cpp
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product_parser.cpp
 iostream
 -
 sstream
 -
 product_parser.h
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product_parser.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product_parser.h
 book.h
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/book.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/book.h
 clothing.h
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/clothing.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/clothing.h
 movie.h
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/movie.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/movie.h
 util.h
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/util.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/util.h
 
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product_parser.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product_parser.h
 string
 -
 iostream
 -
 product.h
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product.h
 
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/user.cpp
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/user.cpp
 user.h
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/user.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/user.h
 
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/user.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/user.h
 iostream
 -
 string
 -
 
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/util.cpp
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/util.cpp
 iostream
 -
 sstream
@@ -148,9 +172,9 @@ cctype
 algorithm
 -
 util.h
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/util.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/util.h
 
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/util.h
+/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/util.h
 string
 -
 iostream

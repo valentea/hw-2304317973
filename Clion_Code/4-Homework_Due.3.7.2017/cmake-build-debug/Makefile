@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/Alex/.CLion2016.3/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/Alex/.CLion2016.3/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017"
+CMAKE_SOURCE_DIR = /Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug"
+CMAKE_BINARY_DIR = /Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Sprin
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/cygdrive/c/Users/Alex/.CLion2016.3/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/cygdrive/c/Users/Alex/.CLion2016.3/system/cygwin_cmake/bin/cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles /Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,6 +177,33 @@ book.cpp.s:
 	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.s
 .PHONY : book.cpp.s
 
+clothing.o: clothing.cpp.o
+
+.PHONY : clothing.o
+
+# target to build an object file
+clothing.cpp.o:
+	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.o
+.PHONY : clothing.cpp.o
+
+clothing.i: clothing.cpp.i
+
+.PHONY : clothing.i
+
+# target to preprocess a source file
+clothing.cpp.i:
+	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.i
+.PHONY : clothing.cpp.i
+
+clothing.s: clothing.cpp.s
+
+.PHONY : clothing.s
+
+# target to generate assembly for a file
+clothing.cpp.s:
+	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.s
+.PHONY : clothing.cpp.s
+
 db_parser.o: db_parser.cpp.o
 
 .PHONY : db_parser.o
@@ -203,6 +230,33 @@ db_parser.s: db_parser.cpp.s
 db_parser.cpp.s:
 	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/db_parser.cpp.s
 .PHONY : db_parser.cpp.s
+
+movie.o: movie.cpp.o
+
+.PHONY : movie.o
+
+# target to build an object file
+movie.cpp.o:
+	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.o
+.PHONY : movie.cpp.o
+
+movie.i: movie.cpp.i
+
+.PHONY : movie.i
+
+# target to preprocess a source file
+movie.cpp.i:
+	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.i
+.PHONY : movie.cpp.i
+
+movie.s: movie.cpp.s
+
+.PHONY : movie.s
+
+# target to generate assembly for a file
+movie.cpp.s:
+	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.s
+.PHONY : movie.cpp.s
 
 product.o: product.cpp.o
 
@@ -327,9 +381,15 @@ help:
 	@echo "... book.o"
 	@echo "... book.i"
 	@echo "... book.s"
+	@echo "... clothing.o"
+	@echo "... clothing.i"
+	@echo "... clothing.s"
 	@echo "... db_parser.o"
 	@echo "... db_parser.i"
 	@echo "... db_parser.s"
+	@echo "... movie.o"
+	@echo "... movie.i"
+	@echo "... movie.s"
 	@echo "... product.o"
 	@echo "... product.i"
 	@echo "... product.s"

@@ -1,9 +1,9 @@
 #include <iostream>
 #include <sstream>
 #include "product_parser.h"
-#include "book.h"
-#include "clothing.h"
-#include "movie.h"
+#include "Book.h"
+#include "Clothing.h"
+#include "Movie.h"
 #include "util.h"
 using namespace std;
 
@@ -82,6 +82,7 @@ void ProductParser::parseCommonProduct(std::istream& is,
 
 ProductBookParser::ProductBookParser() : ProductParser()
 {
+
 }
 
 Product* ProductBookParser::parseSpecificProduct(std::string category,
