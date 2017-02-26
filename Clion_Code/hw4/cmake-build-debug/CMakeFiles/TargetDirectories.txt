@@ -1,3 +1,0 @@
-/Users/Alex/hw-2304317973/Clion_Code/hw4/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/Alex/hw-2304317973/Clion_Code/hw4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/Alex/hw-2304317973/Clion_Code/hw4/cmake-build-debug/CMakeFiles/hw4.dir

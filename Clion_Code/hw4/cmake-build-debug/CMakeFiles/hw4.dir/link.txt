@@ -1,1 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/c++    -std=c++11 -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/hw4.dir/amazon.cpp.o CMakeFiles/hw4.dir/db_parser.cpp.o CMakeFiles/hw4.dir/product.cpp.o CMakeFiles/hw4.dir/product_parser.cpp.o CMakeFiles/hw4.dir/user.cpp.o CMakeFiles/hw4.dir/util.cpp.o  -o hw4  
