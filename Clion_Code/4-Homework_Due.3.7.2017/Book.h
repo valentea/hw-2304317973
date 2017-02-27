@@ -12,7 +12,7 @@ public:
 
     std::string displayString();
 
-    void Book::dump(std::ostream& os);
+    void dump(std::ostream& os);
 
 
 

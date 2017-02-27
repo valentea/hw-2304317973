@@ -1,10 +1,11 @@
 #ifndef MOVIE_H
 #define MOVIE_H
 
-#include "product.h";
+#include "product.h"
+#include "product_parser.h"
 
 
-class Movie {
+class Movie : public Product{
 public:
     Movie(const std::string category, const std::string name, double price, int qty, std::string genre, std::string rating);
 
@@ -12,7 +13,7 @@ public:
 
     std::string displayString();
 
-    void Movie::dump(std::ostream& os);
+    void dump(std::ostream& os);
 
 
 
@@ -26,4 +27,4 @@ protected:
 };
 
 
-#endif /
+#endif

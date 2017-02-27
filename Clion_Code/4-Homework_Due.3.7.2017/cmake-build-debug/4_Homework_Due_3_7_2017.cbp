@@ -80,19 +80,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Book.cpp">
+			<Option target="4_Homework_Due_3_7_2017"/>
+		</Unit>
+		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Book.h">
+			<Option target="4_Homework_Due_3_7_2017"/>
+		</Unit>
+		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Clothing.cpp">
+			<Option target="4_Homework_Due_3_7_2017"/>
+		</Unit>
+		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Clothing.h">
+			<Option target="4_Homework_Due_3_7_2017"/>
+		</Unit>
+		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Movie.cpp">
+			<Option target="4_Homework_Due_3_7_2017"/>
+		</Unit>
+		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Movie.h">
+			<Option target="4_Homework_Due_3_7_2017"/>
+		</Unit>
 		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/amazon.cpp">
-			<Option target="4_Homework_Due_3_7_2017"/>
-		</Unit>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/book.cpp">
-			<Option target="4_Homework_Due_3_7_2017"/>
-		</Unit>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/book.h">
-			<Option target="4_Homework_Due_3_7_2017"/>
-		</Unit>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/clothing.cpp">
-			<Option target="4_Homework_Due_3_7_2017"/>
-		</Unit>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/clothing.h">
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
 		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/database.txt">
@@ -105,12 +111,6 @@
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
 		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/db_parser.h">
-			<Option target="4_Homework_Due_3_7_2017"/>
-		</Unit>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/movie.cpp">
-			<Option target="4_Homework_Due_3_7_2017"/>
-		</Unit>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/movie.h">
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
 		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product.cpp">

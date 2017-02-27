@@ -16,7 +16,6 @@ Movie::Movie(const std::string category, const std::string name, double price, i
 
 std::set<std::string> Movie::keyWords(){
     std::set<std::string> keyWord;
-    keyWord.insert(category_);
 
     stringstream name(name_);
     string searchableTermName;
@@ -31,7 +30,7 @@ std::set<std::string> Movie::keyWords(){
 
 std::string Movie::displayString(){
     std::string output;
-    output = category_ + name_ + std::to_string(price_) + qty_ + ISBN_ + author_;
+    output = category_ + name_ + std::to_string(price_) + std::to_string(qty_) + genre_ + rating_;
     return output;
 }
 
@@ -39,7 +38,7 @@ std::string Movie::displayString(){
 
 
 
-void Book::dump(std::ostream& os){
+void Movie::dump(std::ostream& os){
     Product::dump(os);
-    os << ISBN_ << "\n" << author_ << endl;
+    os << genre_ << "\n" << rating_ << endl;
 }

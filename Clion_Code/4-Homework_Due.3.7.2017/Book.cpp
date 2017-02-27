@@ -16,7 +16,6 @@ Book::Book(const std::string category, const std::string name, double price, int
 
 std::set<std::string> Book::keyWords(){
     std::set<std::string> keyWord;
-    keyWord.insert(category_);
 
     stringstream name(name_);
     string searchableTermName;
@@ -37,7 +36,7 @@ std::set<std::string> Book::keyWords(){
 
 std::string Book::displayString(){
     std::string output;
-    output = category_ + name_ + std::to_string(price_) + qty_ + ISBN_ + author_;
+    output = category_ + name_ + std::to_string(price_) + std::to_string(qty_) + ISBN_ + author_;
     return output;
 }
 

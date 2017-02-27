@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Book.cpp" "/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.o"
+  "/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Clothing.cpp" "/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.o"
+  "/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Movie.cpp" "/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.o"
   "/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/amazon.cpp" "/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/amazon.cpp.o"
-  "/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/book.cpp" "/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.o"
-  "/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/clothing.cpp" "/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.o"
   "/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/db_parser.cpp" "/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/db_parser.cpp.o"
-  "/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/movie.cpp" "/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.o"
   "/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product.cpp" "/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/product.cpp.o"
   "/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product_parser.cpp" "/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/product_parser.cpp.o"
   "/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/user.cpp" "/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/user.cpp.o"

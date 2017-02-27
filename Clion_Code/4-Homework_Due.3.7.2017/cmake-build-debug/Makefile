@@ -123,6 +123,87 @@ depend:
 	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/build
 .PHONY : 4_Homework_Due_3_7_2017/fast
 
+Book.o: Book.cpp.o
+
+.PHONY : Book.o
+
+# target to build an object file
+Book.cpp.o:
+	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.o
+.PHONY : Book.cpp.o
+
+Book.i: Book.cpp.i
+
+.PHONY : Book.i
+
+# target to preprocess a source file
+Book.cpp.i:
+	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.i
+.PHONY : Book.cpp.i
+
+Book.s: Book.cpp.s
+
+.PHONY : Book.s
+
+# target to generate assembly for a file
+Book.cpp.s:
+	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.s
+.PHONY : Book.cpp.s
+
+Clothing.o: Clothing.cpp.o
+
+.PHONY : Clothing.o
+
+# target to build an object file
+Clothing.cpp.o:
+	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.o
+.PHONY : Clothing.cpp.o
+
+Clothing.i: Clothing.cpp.i
+
+.PHONY : Clothing.i
+
+# target to preprocess a source file
+Clothing.cpp.i:
+	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.i
+.PHONY : Clothing.cpp.i
+
+Clothing.s: Clothing.cpp.s
+
+.PHONY : Clothing.s
+
+# target to generate assembly for a file
+Clothing.cpp.s:
+	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.s
+.PHONY : Clothing.cpp.s
+
+Movie.o: Movie.cpp.o
+
+.PHONY : Movie.o
+
+# target to build an object file
+Movie.cpp.o:
+	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.o
+.PHONY : Movie.cpp.o
+
+Movie.i: Movie.cpp.i
+
+.PHONY : Movie.i
+
+# target to preprocess a source file
+Movie.cpp.i:
+	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.i
+.PHONY : Movie.cpp.i
+
+Movie.s: Movie.cpp.s
+
+.PHONY : Movie.s
+
+# target to generate assembly for a file
+Movie.cpp.s:
+	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.s
+.PHONY : Movie.cpp.s
+
 amazon.o: amazon.cpp.o
 
 .PHONY : amazon.o
@@ -150,60 +231,6 @@ amazon.cpp.s:
 	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/amazon.cpp.s
 .PHONY : amazon.cpp.s
 
-book.o: book.cpp.o
-
-.PHONY : book.o
-
-# target to build an object file
-book.cpp.o:
-	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.o
-.PHONY : book.cpp.o
-
-book.i: book.cpp.i
-
-.PHONY : book.i
-
-# target to preprocess a source file
-book.cpp.i:
-	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.i
-.PHONY : book.cpp.i
-
-book.s: book.cpp.s
-
-.PHONY : book.s
-
-# target to generate assembly for a file
-book.cpp.s:
-	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.s
-.PHONY : book.cpp.s
-
-clothing.o: clothing.cpp.o
-
-.PHONY : clothing.o
-
-# target to build an object file
-clothing.cpp.o:
-	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.o
-.PHONY : clothing.cpp.o
-
-clothing.i: clothing.cpp.i
-
-.PHONY : clothing.i
-
-# target to preprocess a source file
-clothing.cpp.i:
-	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.i
-.PHONY : clothing.cpp.i
-
-clothing.s: clothing.cpp.s
-
-.PHONY : clothing.s
-
-# target to generate assembly for a file
-clothing.cpp.s:
-	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.s
-.PHONY : clothing.cpp.s
-
 db_parser.o: db_parser.cpp.o
 
 .PHONY : db_parser.o
@@ -230,33 +257,6 @@ db_parser.s: db_parser.cpp.s
 db_parser.cpp.s:
 	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/db_parser.cpp.s
 .PHONY : db_parser.cpp.s
-
-movie.o: movie.cpp.o
-
-.PHONY : movie.o
-
-# target to build an object file
-movie.cpp.o:
-	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.o
-.PHONY : movie.cpp.o
-
-movie.i: movie.cpp.i
-
-.PHONY : movie.i
-
-# target to preprocess a source file
-movie.cpp.i:
-	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.i
-.PHONY : movie.cpp.i
-
-movie.s: movie.cpp.s
-
-.PHONY : movie.s
-
-# target to generate assembly for a file
-movie.cpp.s:
-	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.s
-.PHONY : movie.cpp.s
 
 product.o: product.cpp.o
 
@@ -375,21 +375,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... 4_Homework_Due_3_7_2017"
+	@echo "... Book.o"
+	@echo "... Book.i"
+	@echo "... Book.s"
+	@echo "... Clothing.o"
+	@echo "... Clothing.i"
+	@echo "... Clothing.s"
+	@echo "... Movie.o"
+	@echo "... Movie.i"
+	@echo "... Movie.s"
 	@echo "... amazon.o"
 	@echo "... amazon.i"
 	@echo "... amazon.s"
-	@echo "... book.o"
-	@echo "... book.i"
-	@echo "... book.s"
-	@echo "... clothing.o"
-	@echo "... clothing.i"
-	@echo "... clothing.s"
 	@echo "... db_parser.o"
 	@echo "... db_parser.i"
 	@echo "... db_parser.s"
-	@echo "... movie.o"
-	@echo "... movie.i"
-	@echo "... movie.s"
 	@echo "... product.o"
 	@echo "... product.i"
 	@echo "... product.s"

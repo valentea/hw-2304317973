@@ -201,76 +201,76 @@ CMakeFiles/4_Homework_Due_3_7_2017.dir/util.cpp.o.provides: CMakeFiles/4_Homewor
 CMakeFiles/4_Homework_Due_3_7_2017.dir/util.cpp.o.provides.build: CMakeFiles/4_Homework_Due_3_7_2017.dir/util.cpp.o
 
 
-CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.o: CMakeFiles/4_Homework_Due_3_7_2017.dir/flags.make
-CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.o: ../book.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.o -c /Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/book.cpp
+CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.o: CMakeFiles/4_Homework_Due_3_7_2017.dir/flags.make
+CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.o: ../Book.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.o -c /Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Book.cpp
 
-CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/book.cpp > CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.i
+CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Book.cpp > CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.i
 
-CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/book.cpp -o CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.s
+CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Book.cpp -o CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.s
 
-CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.o.requires:
+CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.o.requires:
 
-.PHONY : CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.o.requires
+.PHONY : CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.o.requires
 
-CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.o.provides: CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.o.requires
-	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.o.provides.build
-.PHONY : CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.o.provides
+CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.o.provides: CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.o.requires
+	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.o.provides.build
+.PHONY : CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.o.provides
 
-CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.o.provides.build: CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.o
-
-
-CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.o: CMakeFiles/4_Homework_Due_3_7_2017.dir/flags.make
-CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.o: ../clothing.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.o -c /Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/clothing.cpp
-
-CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/clothing.cpp > CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.i
-
-CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/clothing.cpp -o CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.s
-
-CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.o.requires:
-
-.PHONY : CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.o.requires
-
-CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.o.provides: CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.o.requires
-	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.o.provides.build
-.PHONY : CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.o.provides
-
-CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.o.provides.build: CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.o
+CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.o.provides.build: CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.o
 
 
-CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.o: CMakeFiles/4_Homework_Due_3_7_2017.dir/flags.make
-CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.o: ../movie.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.o -c /Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/movie.cpp
+CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.o: CMakeFiles/4_Homework_Due_3_7_2017.dir/flags.make
+CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.o: ../Clothing.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.o -c /Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Clothing.cpp
 
-CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/movie.cpp > CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.i
+CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Clothing.cpp > CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.i
 
-CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/movie.cpp -o CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.s
+CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Clothing.cpp -o CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.s
 
-CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.o.requires:
+CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.o.requires:
 
-.PHONY : CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.o.requires
+.PHONY : CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.o.requires
 
-CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.o.provides: CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.o.requires
-	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.o.provides.build
-.PHONY : CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.o.provides
+CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.o.provides: CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.o.requires
+	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.o.provides.build
+.PHONY : CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.o.provides
 
-CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.o.provides.build: CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.o
+CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.o.provides.build: CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.o
+
+
+CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.o: CMakeFiles/4_Homework_Due_3_7_2017.dir/flags.make
+CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.o: ../Movie.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.o -c /Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Movie.cpp
+
+CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Movie.cpp > CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.i
+
+CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Movie.cpp -o CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.s
+
+CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.o.requires:
+
+.PHONY : CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.o.requires
+
+CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.o.provides: CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.o.requires
+	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.o.provides.build
+.PHONY : CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.o.provides
+
+CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.o.provides.build: CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.o
 
 
 # Object files for target 4_Homework_Due_3_7_2017
@@ -281,9 +281,9 @@ CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.o.provides.build: CMakeFiles/4_
 "CMakeFiles/4_Homework_Due_3_7_2017.dir/product_parser.cpp.o" \
 "CMakeFiles/4_Homework_Due_3_7_2017.dir/user.cpp.o" \
 "CMakeFiles/4_Homework_Due_3_7_2017.dir/util.cpp.o" \
-"CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.o" \
-"CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.o" \
-"CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.o"
+"CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.o" \
+"CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.o" \
+"CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.o"
 
 # External object files for target 4_Homework_Due_3_7_2017
 4_Homework_Due_3_7_2017_EXTERNAL_OBJECTS =
@@ -294,9 +294,9 @@ CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.o.provides.build: CMakeFiles/4_
 4_Homework_Due_3_7_2017: CMakeFiles/4_Homework_Due_3_7_2017.dir/product_parser.cpp.o
 4_Homework_Due_3_7_2017: CMakeFiles/4_Homework_Due_3_7_2017.dir/user.cpp.o
 4_Homework_Due_3_7_2017: CMakeFiles/4_Homework_Due_3_7_2017.dir/util.cpp.o
-4_Homework_Due_3_7_2017: CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.o
-4_Homework_Due_3_7_2017: CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.o
-4_Homework_Due_3_7_2017: CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.o
+4_Homework_Due_3_7_2017: CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.o
+4_Homework_Due_3_7_2017: CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.o
+4_Homework_Due_3_7_2017: CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.o
 4_Homework_Due_3_7_2017: CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make
 4_Homework_Due_3_7_2017: CMakeFiles/4_Homework_Due_3_7_2017.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable 4_Homework_Due_3_7_2017"
@@ -313,9 +313,9 @@ CMakeFiles/4_Homework_Due_3_7_2017.dir/requires: CMakeFiles/4_Homework_Due_3_7_2
 CMakeFiles/4_Homework_Due_3_7_2017.dir/requires: CMakeFiles/4_Homework_Due_3_7_2017.dir/product_parser.cpp.o.requires
 CMakeFiles/4_Homework_Due_3_7_2017.dir/requires: CMakeFiles/4_Homework_Due_3_7_2017.dir/user.cpp.o.requires
 CMakeFiles/4_Homework_Due_3_7_2017.dir/requires: CMakeFiles/4_Homework_Due_3_7_2017.dir/util.cpp.o.requires
-CMakeFiles/4_Homework_Due_3_7_2017.dir/requires: CMakeFiles/4_Homework_Due_3_7_2017.dir/book.cpp.o.requires
-CMakeFiles/4_Homework_Due_3_7_2017.dir/requires: CMakeFiles/4_Homework_Due_3_7_2017.dir/clothing.cpp.o.requires
-CMakeFiles/4_Homework_Due_3_7_2017.dir/requires: CMakeFiles/4_Homework_Due_3_7_2017.dir/movie.cpp.o.requires
+CMakeFiles/4_Homework_Due_3_7_2017.dir/requires: CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.o.requires
+CMakeFiles/4_Homework_Due_3_7_2017.dir/requires: CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.o.requires
+CMakeFiles/4_Homework_Due_3_7_2017.dir/requires: CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.o.requires
 
 .PHONY : CMakeFiles/4_Homework_Due_3_7_2017.dir/requires
 
