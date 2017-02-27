@@ -12,7 +12,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e8a06ad-4f19-4d80-bcec-144e8f460674" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Problem2_3_/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Problem2_3_/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/Book.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/Book.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/Clothing.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/Clothing.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/Movie.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/Movie.h" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/book.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/book.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/3.6.3/CMakeRCCompiler.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/3.6.3/CompilerIdC/a.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/3.6.3/CompilerIdCXX/a.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/CXX.includecache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/depend.internal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/Progress/1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/Progress/2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/Progress/4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/Progress/7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/Progress/count.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../2017_Application_SrCounselors.doc" afterPath="$PROJECT_DIR$/../../../2017_Application_SrCounselors.doc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/3.6.3/CMakeDetermineCompilerABI_C.bin" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/3.6.3/CMakeDetermineCompilerABI_C.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/3.6.3/CMakeDetermineCompilerABI_CXX.bin" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/3.6.3/CMakeDetermineCompilerABI_CXX.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/feature_tests.bin" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/feature_tests.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/CMakeLists.txt" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/4_Homework_Due_3_7_2017.cbp" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/4_Homework_Due_3_7_2017.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeCache.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/3.6.3/CMakeCCompiler.cmake" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/3.6.3/CMakeCCompiler.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/3.6.3/CMakeCXXCompiler.cmake" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/3.6.3/CMakeCXXCompiler.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/3.6.3/CMakeSystem.cmake" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/3.6.3/CMakeSystem.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/cmake_clean.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/depend.make" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/flags.make" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/link.txt" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/link.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/progress.make" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/Makefile.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/Makefile2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/clion-environment.txt" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/clion-environment.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/clion-log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/feature_tests.c" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/feature_tests.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/feature_tests.cxx" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/feature_tests.cxx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/progress.marks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/cmake_install.cmake" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/cmake-build-debug/cmake_install.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/product_parser.cpp" afterPath="$PROJECT_DIR$/../../4-Homework_Due.3.7.2017/product_parser.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,72 +73,24 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file leaf-file-name="input0.cnf" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/inFiles/input0.cnf">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="34">
-                    <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="1" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file leaf-file-name="input1.cnf" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/inFiles/input1.cnf">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="0">
-                    <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="input2.cnf" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/inFiles/input2.cnf">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="0">
-                    <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="308">
               <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cnfeval.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cnfeval.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cnfeval.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+            <state relative-caret-position="-1326">
+              <caret line="36" column="30" lean-forward="true" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -98,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cnf.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cnf.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cnf.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="61" column="54" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+            <state relative-caret-position="1518">
+              <caret line="69" column="41" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -111,8 +111,8 @@
       <file leaf-file-name="cnf.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cnf.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
-              <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+            <state relative-caret-position="1848">
+              <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -152,10 +152,10 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1176" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="2418" />
+    <option name="height" value="1468" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -208,6 +208,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Application.Build All">
     <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Problem6" TARGET_NAME="Problem6" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
@@ -407,6 +408,7 @@
       <workItem from="1487472644504" duration="7006000" />
       <workItem from="1487487902942" duration="4924000" />
       <workItem from="1487541945939" duration="222000" />
+      <workItem from="1488164961228" duration="173000" />
     </task>
     <task id="LOCAL-00001" summary="using late day for # 6">
       <created>1487415882060</created>
@@ -433,19 +435,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40807000" />
+    <option name="totallyTimeSpent" value="40980000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="2418" height="1468" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24710222" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24673134" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292402" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26558006" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292402" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -481,6 +483,40 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cnfeval.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cnf.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cnf.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1848">
+          <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -614,19 +650,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="308">
           <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cnfeval.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -634,7 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="101" column="10" lean-forward="false" selection-start-line="101" selection-start-column="10" selection-end-line="101" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -652,6 +677,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cnf.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1848">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/inFiles/input1.cnf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -660,34 +693,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cnf.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1518">
+          <caret line="69" column="41" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cnfeval.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1326">
+          <caret line="36" column="30" lean-forward="true" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/inFiles/input2.cnf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="110">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/inFiles/input0.cnf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="44">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cnf.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cnf.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="61" column="54" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
           <folding />
         </state>
       </provider>
