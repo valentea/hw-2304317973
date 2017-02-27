@@ -8,12 +8,11 @@ class Book : public Product{
 public:
     Book(const std::string category, const std::string name, double price, int qty, std::string ISBN, std::string author);
 
-    std::set<std::string> keyWords();
+    std::set<std::string> keywords() const;
 
-    std::string displayString();
+    std::string displayString() const;
 
-    void dump(std::ostream& os);
-
+    void dump(std::ostream& os) const;
 
 
 protected:
@@ -21,7 +20,7 @@ protected:
     double price_;
     int qty_;
     std::string category_;
-    std::string ISBN_;
+    std::string isbn_;
     std::string author_;
 };
 

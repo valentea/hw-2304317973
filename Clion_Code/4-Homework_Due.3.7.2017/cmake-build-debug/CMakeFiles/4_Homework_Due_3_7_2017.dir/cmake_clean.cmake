@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.o"
   "CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.o"
   "CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.o"
+  "CMakeFiles/4_Homework_Due_3_7_2017.dir/mydatastore.cpp.o"
   "4_Homework_Due_3_7_2017.pdb"
   "4_Homework_Due_3_7_2017.exe"
   "lib4_Homework_Due_3_7_2017.dll.a"

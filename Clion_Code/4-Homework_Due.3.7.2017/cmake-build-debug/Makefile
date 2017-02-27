@@ -258,6 +258,33 @@ db_parser.cpp.s:
 	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/db_parser.cpp.s
 .PHONY : db_parser.cpp.s
 
+mydatastore.o: mydatastore.cpp.o
+
+.PHONY : mydatastore.o
+
+# target to build an object file
+mydatastore.cpp.o:
+	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/mydatastore.cpp.o
+.PHONY : mydatastore.cpp.o
+
+mydatastore.i: mydatastore.cpp.i
+
+.PHONY : mydatastore.i
+
+# target to preprocess a source file
+mydatastore.cpp.i:
+	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/mydatastore.cpp.i
+.PHONY : mydatastore.cpp.i
+
+mydatastore.s: mydatastore.cpp.s
+
+.PHONY : mydatastore.s
+
+# target to generate assembly for a file
+mydatastore.cpp.s:
+	$(MAKE) -f CMakeFiles/4_Homework_Due_3_7_2017.dir/build.make CMakeFiles/4_Homework_Due_3_7_2017.dir/mydatastore.cpp.s
+.PHONY : mydatastore.cpp.s
+
 product.o: product.cpp.o
 
 .PHONY : product.o
@@ -390,6 +417,9 @@ help:
 	@echo "... db_parser.o"
 	@echo "... db_parser.i"
 	@echo "... db_parser.s"
+	@echo "... mydatastore.o"
+	@echo "... mydatastore.i"
+	@echo "... mydatastore.s"
 	@echo "... product.o"
 	@echo "... product.i"
 	@echo "... product.s"

@@ -14,7 +14,7 @@ Clothing::Clothing(const std::string category, const std::string name, double pr
 
 }
 
-std::set<std::string> Clothing::keyWords(){
+std::set<std::string> Clothing::keywords() const{
     std::set<std::string> keyWord;
 
     stringstream name(name_);
@@ -32,7 +32,7 @@ std::set<std::string> Clothing::keyWords(){
     return keyWord;
 }
 
-std::string Clothing::displayString(){
+std::string Clothing::displayString() const{
     std::string output;
     output = category_ + name_ + std::to_string(price_) + std::to_string(qty_) + size_ + brand_;
     return output;
@@ -42,7 +42,7 @@ std::string Clothing::displayString(){
 
 
 
-void Clothing::dump(std::ostream& os){
+void Clothing::dump(std::ostream& os) const{
     Product::dump(os);
     os << size_ << "\n" << brand_ << endl;
 }

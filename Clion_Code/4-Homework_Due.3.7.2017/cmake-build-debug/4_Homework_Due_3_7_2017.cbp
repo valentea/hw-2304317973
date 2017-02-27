@@ -104,13 +104,16 @@
 		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/database.txt">
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/datastore.h">
-			<Option target="4_Homework_Due_3_7_2017"/>
-		</Unit>
 		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/db_parser.cpp">
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/db_parser.h">
+			<Option target="4_Homework_Due_3_7_2017"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/mydatastore.cpp">
+			<Option target="4_Homework_Due_3_7_2017"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/mydatastore.h">
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product.cpp">

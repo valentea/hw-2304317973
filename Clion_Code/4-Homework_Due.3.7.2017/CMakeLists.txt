@@ -6,7 +6,6 @@ set(CMAKE_CXX_STANDARD 11)
 set(SOURCE_FILES
         amazon.cpp
         database.txt
-        datastore.h
         db_parser.cpp
         db_parser.h
         product.cpp
@@ -16,6 +15,6 @@ set(SOURCE_FILES
         user.cpp
         user.h
         util.cpp
-        util.h Book.h Book.cpp Clothing.h Clothing.cpp Movie.cpp Movie.h)
+        util.h Book.h Book.cpp Clothing.h Clothing.cpp Movie.cpp Movie.h mydatastore.cpp mydatastore.h)
 
 add_executable(4_Homework_Due_3_7_2017 ${SOURCE_FILES})
