@@ -16,6 +16,6 @@ set(SOURCE_FILES
         user.cpp
         user.h
         util.cpp
-        util.h book.h book.cpp)
+        util.h Book.h Book.cpp Clothing.h Clothing.cpp Movie.cpp Movie.h)
 
 add_executable(4_Homework_Due_3_7_2017 ${SOURCE_FILES})

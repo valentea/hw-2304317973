@@ -80,13 +80,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Book.cpp">
+			<Option target="4_Homework_Due_3_7_2017"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Book.h">
+			<Option target="4_Homework_Due_3_7_2017"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Clothing.cpp">
+			<Option target="4_Homework_Due_3_7_2017"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Clothing.h">
+			<Option target="4_Homework_Due_3_7_2017"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Movie.cpp">
+			<Option target="4_Homework_Due_3_7_2017"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Movie.h">
+			<Option target="4_Homework_Due_3_7_2017"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/amazon.cpp">
-			<Option target="4_Homework_Due_3_7_2017"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/book.cpp">
-			<Option target="4_Homework_Due_3_7_2017"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/book.h">
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/database.txt">
