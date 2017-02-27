@@ -11,7 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04c2f692-6e7e-421a-b8ac-be5aacfc94a6" name="Default" comment="homework 4 cont">
+    <list default="true" id="04c2f692-6e7e-421a-b8ac-be5aacfc94a6" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/2" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/7" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -448,7 +448,7 @@
       <updated>1487911813532</updated>
       <workItem from="1487911814903" duration="4917000" />
       <workItem from="1488053451789" duration="3962000" />
-      <workItem from="1488130814417" duration="15024000" />
+      <workItem from="1488130814417" duration="15055000" />
     </task>
     <task id="LOCAL-00001" summary="homework 4 cont">
       <created>1488152533328</created>
@@ -457,11 +457,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488152533328</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="homework 4 cont">
+      <created>1488163715977</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1488163715977</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23903000" />
+    <option name="totallyTimeSpent" value="23934000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
