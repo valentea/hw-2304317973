@@ -24,11 +24,11 @@ std::set<std::string> parseStringToWords(string rawWords) {
         }
         for (int i = 0; i < uncheckedWord.length(); ++i) { //LOOP THROUGH ALL CHAR IN WORD
             if (ispunct(uncheckedWord[i])) { //CHECK TO SEE IF A CHAR IS PUNCTUATION
-                if(uncheckedWord[i] == uncheckedWord.back() && uncheckedWord.length() < 2){
+                if(uncheckedWord[i] == uncheckedWord.at(uncheckedWord.length()-1) && uncheckedWord.length() < 2){
                     break;
                 }
                 string temp = uncheckedWord.substr(0,  i);
-                if(uncheckedWord[i] == uncheckedWord.back()){
+                if(uncheckedWord[i] == uncheckedWord.at(uncheckedWord.length()-1)){
                     uncheckedWord = temp;
                     continue;
                 }

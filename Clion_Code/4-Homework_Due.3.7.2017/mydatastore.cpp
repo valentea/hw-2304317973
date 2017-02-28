@@ -23,7 +23,7 @@ void MyDataStore::addProduct(Product *p) {
 void MyDataStore::addUser(User *u) {
     userList_.insert(u); //ADD USER TO userList_ (MyDataStore DATA MEMBER)
     vector<Product *> emptyCart;
-    pair<User *, vector<Product *>> personalCart; //FOR EVERY USER IN DataStore, MAKE A CART PAIR AND INSERT TO cart_
+    pair<User *, vector<Product *> > personalCart; //FOR EVERY USER IN DataStore, MAKE A CART PAIR AND INSERT TO cart_
     personalCart.first = u;
     personalCart.second = emptyCart;
     cart_.insert(personalCart);
@@ -38,7 +38,7 @@ void MyDataStore::dump(std::ostream &ofile) {
 }
 
 std::vector<Product *> MyDataStore::search(std::vector<std::string> &terms, int type) {
-    std::set<std::set<std::string>> anything;
+    std::set<std::set<std::string> > anything;
     vector<Product *> hits;
 
     set<string> termsSet;
@@ -82,7 +82,7 @@ void MyDataStore::addToCart(string userName, Product *hit) {
          user != userList_.end(); user++) { //LOOP THROUGH ALL USERS IN DATA FILE
         if ((*user)->getName() == userName) { //AND FIND ONE THAT MATCHES SAME USERNAME
             userFound = true;
-            map<User *, vector<Product *>>::iterator it;
+            map<User *, vector<Product *> >::iterator it;
             it = cart_.find(*user); //FIND THE SPECIFIC CART FOR GIVEN USER
             it->second.push_back(hit); //ADD hit PROD TO CART FOR GIVEN USER
         }
@@ -114,7 +114,7 @@ void MyDataStore::buyCart(string userName) {
          user != userList_.end(); user++) { //LOOP THROUGH ALL USERS IN DATA FILE
         if ((*user)->getName() == userName) { //AND FIND ONE THAT MATCHES SAME USERNAME
             userFound = true;
-            map<User *, vector<Product *>>::iterator it;
+            map<User *, vector<Product *> >::iterator it;
             it = cart_.find(*user); //LOOK AT SPESIFIC USER CART
             for (vector<Product *>::iterator singleProdFromCart = it->second.begin();
                  singleProdFromCart != it->second.end(); singleProdFromCart++) { //LOOP THROUGH ALL PRODUCTS IN CART
