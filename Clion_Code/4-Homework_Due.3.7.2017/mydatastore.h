@@ -25,6 +25,7 @@ public:
     void dump(std::ostream& ofile);
     void addToCart(std::string userName, Product* hit);
     std::vector<Product *> viewCart(std::string userName);
+    void buyCart(std::string userName);
 
 protected:
     std::set<Product *> productList_;
