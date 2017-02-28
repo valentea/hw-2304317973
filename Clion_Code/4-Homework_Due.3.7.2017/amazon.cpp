@@ -116,8 +116,8 @@ int main(int argc, char* argv[])
                 string user;
                 ss >> user;
                 vector<Product *> personalProd;
-                personalProd = ds.viewCart(user);
-                displayProducts(personalProd);
+                personalProd = ds.viewCart(user); //RETURN VECTOR WITH USER CART PRODS
+                displayProducts(personalProd); //ASK IF WE CAN USE THIS OR IF WE MUST MAKE OUR OWN PRINT FN
             }else if ( cmd == "BUYCART" ) {
                 string user;
                 ss >> user;
