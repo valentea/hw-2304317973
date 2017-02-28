@@ -39,7 +39,7 @@ std::set<std::string> Clothing::keywords() const{
 
 std::string Clothing::displayString() const{
     std::string output;
-    string priceS;
+    string priceS; //TURN THE DOUBLE IN TO A STRING AND ONLY USE 5 CHARS (INCLUDING ".")
     priceS = to_string(price_);
     priceS.resize(5);
     output = name_ + "\nBrand: " + brand_ + " Size: " + size_ + "\n" + priceS + " " + std::to_string(qty_) + " left.";

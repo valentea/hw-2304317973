@@ -12,16 +12,17 @@
 #include "mydatastore.h"
 
 using namespace std;
+
 struct ProdNameSorter {
-    bool operator()(Product* p1, Product* p2) {
+    bool operator()(Product *p1, Product *p2) {
         return (p1->getName() < p2->getName());
     }
 };
-void displayProducts(vector<Product*>& hits);
 
-int main(int argc, char* argv[])
-{
-    if(argc < 2) {
+void displayProducts(vector<Product *> &hits);
+
+int main(int argc, char *argv[]) {
+    if (argc < 2) {
         cerr << "Please specify a database file" << endl;
         return 1;
     }
@@ -35,11 +36,11 @@ int main(int argc, char* argv[])
 
 
     // Instantiate the individual section and product parsers we want
-    ProductSectionParser* productSectionParser = new ProductSectionParser;
+    ProductSectionParser *productSectionParser = new ProductSectionParser;
     productSectionParser->addProductParser(new ProductBookParser);
     productSectionParser->addProductParser(new ProductClothingParser);
     productSectionParser->addProductParser(new ProductMovieParser);
-    UserSectionParser* userSectionParser = new UserSectionParser;
+    UserSectionParser *userSectionParser = new UserSectionParser;
 
     // Instantiate the parser
     DBParser parser;
@@ -47,7 +48,7 @@ int main(int argc, char* argv[])
     parser.addSectionParser("users", userSectionParser);
 
     // Now parse the database to populate the DataStore
-    if( parser.parse(argv[1], ds) ) {
+    if (parser.parse(argv[1], ds)) {
         cerr << "Error parsing!" << endl;
         return 1;
     }
@@ -62,70 +63,68 @@ int main(int argc, char* argv[])
     cout << "  QUIT new_db_filename               " << endl;
     cout << "====================================" << endl;
 
-    vector<Product*> hits;
+    vector<Product *> hits;
     bool done = false;
-    while(!done) {
+    while (!done) {
         cout << "\nEnter command: " << endl;
         string line;
-        getline(cin,line);
+        getline(cin, line);
         stringstream ss(line);
         string cmd;
-        if((ss >> cmd)) {
-            if( cmd == "AND") {
+        if ((ss >> cmd)) {
+            if (cmd == "AND") {
                 string term;
                 vector<string> terms;
-                while(ss >> term) {
+                while (ss >> term) {
                     term = convToLower(term);
                     terms.push_back(term);
                 }
                 hits = ds.search(terms, 0);
                 displayProducts(hits);
-            }
-            else if ( cmd == "OR" ) {
+            } else if (cmd == "OR") {
                 string term;
                 vector<string> terms;
-                while(ss >> term) {
+                while (ss >> term) {
                     term = convToLower(term);
                     terms.push_back(term);
                 }
                 hits = ds.search(terms, 1);
                 displayProducts(hits);
-            }
-            else if ( cmd == "QUIT") {
+            } else if (cmd == "QUIT") {
                 string filename;
-                if(ss >> filename) {
+                if (ss >> filename) {
                     ofstream ofile(filename.c_str());
                     ds.dump(ofile);
                     ofile.close();
                 }
                 done = true;
-            }else if ( cmd == "ADD" ) { //ADD HIT TO USER'S CART
+            } else if (cmd == "ADD") { //ADD HIT TO USER'S CART
                 string term;
                 vector<string> terms;
-                while(ss >> term){
+                while (ss >> term) {
                     terms.push_back(term);
                 }
-                int hitsIndex = stoi(terms[1])-1;
-                if(hitsIndex > hits.size()-1 || hitsIndex < 0){
+                int hitsIndex = stoi(terms[1]) - 1;
+                if (hitsIndex > hits.size() - 1 || hitsIndex < 0) {
                     cout << "Invalid Request: Invalid Hit Product" << endl;
-                }else {
+                } else {
                     ds.addToCart(terms[0],
                                  hits[hitsIndex]); //ADD THE HIT PRODUCT (hits[i] and i = i-1 for indexing)TO THE USERS CART
                 }
-            }else if ( cmd == "VIEWCART" ) {
+            } else if (cmd == "VIEWCART") {
                 string user;
                 ss >> user;
                 vector<Product *> personalProd;
                 personalProd = ds.viewCart(user); //RETURN VECTOR WITH USER CART PRODS
                 displayProducts(personalProd); //ASK IF WE CAN USE THIS OR IF WE MUST MAKE OUR OWN PRINT FN
-            }else if ( cmd == "BUYCART" ) {
+            } else if (cmd == "BUYCART") {
                 string user;
                 ss >> user;
                 ds.buyCart(user);
             }
 
 
-	    /* Add support for other commands here */
+                /* Add support for other commands here */
 
 
 
@@ -139,11 +138,10 @@ int main(int argc, char* argv[])
     return 0;
 }
 
-void displayProducts(vector<Product*>& hits)
-{
+void displayProducts(vector<Product *> &hits) {
     int resultNo = 1;
     std::sort(hits.begin(), hits.end(), ProdNameSorter());
-    for(vector<Product*>::iterator it = hits.begin(); it != hits.end(); ++it) {
+    for (vector<Product *>::iterator it = hits.begin(); it != hits.end(); ++it) {
         cout << "Hit " << setw(3) << resultNo << endl;
         cout << (*it)->displayString() << endl;
         cout << endl;

@@ -19,28 +19,32 @@ std::set<std::string> parseStringToWords(string rawWords) {
     string uncheckedWord;
     string uncheckedWord2;
     while (ss >> uncheckedWord) {
-        if(uncheckedWord.length() == 1){
+        if(uncheckedWord.length() == 1){ //IF WORD LENGTH IS ONE, GO TO NEXT BECAUSE BY DEFAULT TOO SHORT
             continue;
         }
-        for (int i = 0; i < uncheckedWord.length(); ++i) {
-            if (ispunct(uncheckedWord[i])) {
-                if(uncheckedWord[i] == uncheckedWord.back()){
+        for (int i = 0; i < uncheckedWord.length(); ++i) { //LOOP THROUGH ALL CHAR IN WORD
+            if (ispunct(uncheckedWord[i])) { //CHECK TO SEE IF A CHAR IS PUNCTUATION
+                if(uncheckedWord[i] == uncheckedWord.back() && uncheckedWord.length() < 2){
                     break;
                 }
                 string temp = uncheckedWord.substr(0,  i);
-                char punk = uncheckedWord[i+1];
-                size_t punkT =  uncheckedWord.find(punk);
+                if(uncheckedWord[i] == uncheckedWord.back()){
+                    uncheckedWord = temp;
+                    continue;
+                }
+                char firstLetterPostPunk = uncheckedWord[i+1];
+                size_t punkT =  uncheckedWord.find(firstLetterPostPunk);
                 string temp2 = uncheckedWord.substr(punkT);
                 uncheckedWord2 = temp2;
                 uncheckedWord = temp;
             }
         }
-        if (uncheckedWord.length() >= 2) {
+        if (uncheckedWord.length() >= 2) { //CHECK IF WORD IS LONGER THAN TWO CHAR
             for (int i=0; i < uncheckedWord.length(); ++i) {
-                uncheckedWord[i] = tolower(uncheckedWord[i]);
+                uncheckedWord[i] = tolower(uncheckedWord[i]); //TURN WORD TO ALL LOWERCASE
             }
 
-            keyWords.insert(uncheckedWord);
+            keyWords.insert(uncheckedWord); //ADD TO KEYWORD
         }
         if (uncheckedWord2.length() >= 2) {
             for (int i=0; i < uncheckedWord2.length(); ++i) {

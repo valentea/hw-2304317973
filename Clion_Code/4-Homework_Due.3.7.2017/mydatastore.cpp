@@ -8,7 +8,7 @@
 
 using namespace std;
 
-MyDataStore::MyDataStore(){
+MyDataStore::MyDataStore() {
 
 }
 
@@ -30,21 +30,26 @@ void MyDataStore::addUser(User *u) {
 
 }
 
-void MyDataStore::dump(std::ostream& ofile){
+void MyDataStore::dump(std::ostream &ofile) {
+    for(set<Product *>::iterator prodSingle = productList_.begin(); prodSingle != productList_.end(); prodSingle++){
+        (*prodSingle)->dump(ofile); //LOOP THROUGH ALL AVALABLE PRODUCTS AND INSERT DATA TO ofile
+    }
 
 }
 
-std::vector<Product*> MyDataStore::search(std::vector<std::string> &terms, int type) {
+std::vector<Product *> MyDataStore::search(std::vector<std::string> &terms, int type) {
     std::set<std::set<std::string>> anything;
     vector<Product *> hits;
 
     set<string> termsSet;
-    for(vector<string>::iterator test = terms.begin(); test != terms.end(); test++){ //CHANGE THE VECTOR OF SEARCHED TERMS INTO A SET FOR THE SEARCH FNs
+    for (vector<string>::iterator test = terms.begin();
+         test != terms.end(); test++) { //CHANGE THE VECTOR OF SEARCHED TERMS INTO A SET FOR THE SEARCH FNs
         termsSet.insert(*test);
     }
 
-    if(type == 0) { //"AND" SEARCH
-        for (set<Product *>::iterator singleProd = productList_.begin(); singleProd != productList_.end(); singleProd++) { //CYCLE THROUGH EACH PRODUCT IN THE DATABASE
+    if (type == 0) { //"AND" SEARCH
+        for (set<Product *>::iterator singleProd = productList_.begin();
+             singleProd != productList_.end(); singleProd++) { //CYCLE THROUGH EACH PRODUCT IN THE DATABASE
             set<string> singleProdKeyWords = (*singleProd)->keywords(); //GET KEYWORDS FOR SINGLE PROD
             set<string> outPut;
             outPut = setIntersection(singleProdKeyWords, termsSet); //SEE IF SEARCH TERMS BOTH SHOW UP IN PROD
@@ -55,8 +60,9 @@ std::vector<Product*> MyDataStore::search(std::vector<std::string> &terms, int t
         return hits;
     }
 
-    if(type == 1){ //"OR" SEARCH
-        for (set<Product *>::iterator singleProd = productList_.begin(); singleProd != productList_.end(); singleProd++) { //CYCLE THROUGH EACH PRODUCT IN THE DATABASE
+    if (type == 1) { //"OR" SEARCH
+        for (set<Product *>::iterator singleProd = productList_.begin();
+             singleProd != productList_.end(); singleProd++) { //CYCLE THROUGH EACH PRODUCT IN THE DATABASE
             set<string> singleProdKeyWords = (*singleProd)->keywords(); //GET KEYWORDS FOR SINGLE PROD
             set<string> outPut;
             outPut = setUnion(singleProdKeyWords, termsSet); //SEE IF ONE OF THE SEARCH TERMS SHOW UP IN PROD
@@ -70,25 +76,27 @@ std::vector<Product*> MyDataStore::search(std::vector<std::string> &terms, int t
 
 }
 
-void MyDataStore::addToCart(string userName, Product* hit) {
+void MyDataStore::addToCart(string userName, Product *hit) {
     bool userFound = false;
-    for(set<User *>::iterator user = userList_.begin(); user != userList_.end(); user++){ //LOOP THROUGH ALL USERS IN DATA FILE
-        if((*user)->getName() == userName){ //AND FIND ONE THAT MATCHES SAME USERNAME
+    for (set<User *>::iterator user = userList_.begin();
+         user != userList_.end(); user++) { //LOOP THROUGH ALL USERS IN DATA FILE
+        if ((*user)->getName() == userName) { //AND FIND ONE THAT MATCHES SAME USERNAME
             userFound = true;
             map<User *, vector<Product *>>::iterator it;
             it = cart_.find(*user); //FIND THE SPECIFIC CART FOR GIVEN USER
             it->second.push_back(hit); //ADD hit PROD TO CART FOR GIVEN USER
         }
     }
-    if(!userFound){
+    if (!userFound) {
         cout << "Invalid Request: Invalid Username" << endl;
     }
 }
 
 vector<Product *> MyDataStore::viewCart(std::string userName) {
     bool userFound = false;
-    for(set<User *>::iterator user = userList_.begin(); user != userList_.end(); user++){ //LOOP THROUGH ALL USERS IN DATA FILE
-        if((*user)->getName() == userName){ //AND FIND ONE THAT MATCHES SAME USERNAME
+    for (set<User *>::iterator user = userList_.begin();
+         user != userList_.end(); user++) { //LOOP THROUGH ALL USERS IN DATA FILE
+        if ((*user)->getName() == userName) { //AND FIND ONE THAT MATCHES SAME USERNAME
             userFound = true;
             return cart_.find(*user)->second; //RETURN THIS USERS CART TO BE PRINTED IN main()
         }
@@ -102,24 +110,29 @@ vector<Product *> MyDataStore::viewCart(std::string userName) {
 
 void MyDataStore::buyCart(string userName) {
     bool userFound = false;
-    for (set<User *>::iterator user = userList_.begin(); user != userList_.end(); user++) { //LOOP THROUGH ALL USERS IN DATA FILE
+    for (set<User *>::iterator user = userList_.begin();
+         user != userList_.end(); user++) { //LOOP THROUGH ALL USERS IN DATA FILE
         if ((*user)->getName() == userName) { //AND FIND ONE THAT MATCHES SAME USERNAME
             userFound = true;
             map<User *, vector<Product *>>::iterator it;
             it = cart_.find(*user); //LOOK AT SPESIFIC USER CART
-            for (vector<Product *>::iterator singleProdFromCart = it->second.begin(); singleProdFromCart != it->second.end();) { //LOOP THROUGH ALL PRODUCTS IN CART
-                if ((*user)->getBalance() >= (*singleProdFromCart)->getPrice() && (*singleProdFromCart)->getQty() >= 0) { //CHECK TO SEE IF USER HAS ENOUGH MONEY, AND PRODUCT IS IN STOCK
+            for (vector<Product *>::iterator singleProdFromCart = it->second.begin();
+                 singleProdFromCart != it->second.end(); singleProdFromCart++) { //LOOP THROUGH ALL PRODUCTS IN CART
+                if ((*user)->getBalance() >= (*singleProdFromCart)->getPrice() && (*singleProdFromCart)->getQty() >= 0) {
+                                                                    //CHECK TO SEE IF USER HAS ENOUGH MONEY, AND PRODUCT IS IN STOCK
                     (*user)->deductAmount((*singleProdFromCart)->getPrice()); //TAKE MONEY AWAY FROM USER'S CREDIT
-                    cout << (*user)->getName() << " credit is: " << (*user)->getBalance() << endl;
-/*LOOK AT THIS*/    (productList_.find(*singleProdFromCart)).operator*()->subtractQty(1); //NOT WORKING: DOES NOT TAKE FROM productList_->qty_ ONLY TAKES FROM STACK BUT RESETS WHEN BACK IN MAIN
-                    cout << (productList_.find(*singleProdFromCart)).operator*()->getQty() << endl;
-                    it->second.erase(singleProdFromCart);
+                    set<Product *>::iterator prodFromList;
+                    prodFromList = productList_.find(*singleProdFromCart); //GET THE PRODUCT (FROM productList) THAT IS BEING BOUGHT FROM THE CART
+                    (*prodFromList)->subtractQty(1); //REDUCE ITS QUANTITY
+                    it->second.erase(singleProdFromCart); //TAKE BOUGHT ITEM OUT OF CART
+                    singleProdFromCart--; //BECAUSE PRODUCTS IN CART IS ONE SMALLER (DUE TO ONE LINE ABOVE) DON'T SHIFT ITERATOR OR IT GOES OUT OF BOUNDS
                 }
             }
         }
     }
-    if(!userFound){
+    if (!userFound) {
         cout << "Invalid Username" << endl;
+        return;
     }
 }
 
