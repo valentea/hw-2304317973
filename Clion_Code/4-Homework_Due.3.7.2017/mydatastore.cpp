@@ -4,12 +4,16 @@
 #include <vector>
 #include "product.h"
 #include "user.h"
+#include "util.h"
 
 using namespace std;
 
 MyDataStore::MyDataStore(){
-    productList_;
-    userList_;
+
+}
+
+MyDataStore::~MyDataStore() {
+
 }
 
 void MyDataStore::addProduct(Product *p) {
@@ -20,11 +24,28 @@ void MyDataStore::addUser(User *u) {
     userList_.insert(u);
 }
 
-//virtual std::vector<Product*> search(std::vector<std::string>& terms, int type) = 0;
-
-//virtual void dump(std::ostream& ofile) = 0;
-
-std::vector<Product *> search(std::vector<std::string>& terms, int type){
+void MyDataStore::dump(std::ostream& ofile){
 
 }
 
+std::vector<Product*> MyDataStore::search(std::vector<std::string> &terms, int type) {
+    std::set<std::set<std::string>> anything;
+    vector<Product *> hits;
+    set<string> termsSet;
+    for(auto test : terms){
+        termsSet.insert(test);
+    }
+
+
+    for(auto test : productList_){
+        set<string> prodKeyWord = test->keywords();
+        setIntersection(prodKeyWord, termsSet);
+
+    }
+
+
+}
+
+std::set<Product> keyWordsToProduct(std::set<std::string> keyWords){
+
+}

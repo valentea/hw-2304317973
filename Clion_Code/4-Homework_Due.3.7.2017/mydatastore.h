@@ -3,8 +3,10 @@
 #include <string>
 #include <set>
 #include <vector>
+#include <map>
 #include "product.h"
 #include "user.h"
+#include "datastore.h"
 
 /**
  * DataStore Interface needed for parsing and instantiating products and users
@@ -12,37 +14,22 @@
  * A derived version of the DataStore can provide other services as well but
  * must support those below
  */
-class MyDataStore {
+class MyDataStore : public DataStore{
 public:
     MyDataStore();
 
-    virtual ~MyDataStore() { }
+    ~MyDataStore();
+    void addProduct(Product* p);
+    void addUser(User* u);
+    std::vector<Product*> search(std::vector<std::string>& terms, int type);
+    void dump(std::ostream& ofile);
 
-    /**
-     * Adds a product to the data store
-     */
-    virtual void addProduct(Product* p) = 0;
+    std::set<Product> keyWordsToProduct(std::set<std::string> keyWords);
 
-    /**
-     * Adds a user to the data store
-     */
-    virtual void addUser(User* u) = 0;
-
-    /**
-     * Performs a search of products whose keywords match the given "terms"
-     *  type 0 = AND search (intersection of results for each term) while
-     *  type 1 = OR search (union of results for each term)
-     */
-    virtual std::vector<Product*> search(std::vector<std::string>& terms, int type) = 0;
-
-    /**
-     * Reproduce the database file from the current Products and User values
-     */
-    virtual void dump(std::ostream& ofile) = 0;
-
-//private:
+protected:
     std::set<Product *> productList_;
     std::set<User *> userList_;
+    std::map<User *, Product *> cart_;
 };
 
 #endif

@@ -32,7 +32,7 @@ void DBParser::addSectionParser(const std::string& sectionName,
 {
     parsers_.insert(make_pair(sectionName, parser));
 }
-bool DBParser::parse(string db_filename, MyDataStore& ds)
+bool DBParser::parse(string db_filename, DataStore& ds)
 {
 #ifdef DEBUG
     cout << "Starting parsing" << endl;
@@ -127,7 +127,7 @@ void ProductSectionParser::addProductParser(ProductParser* p)
 
 bool ProductSectionParser::parse(
     std::istream& is,
-    MyDataStore& ds,
+    DataStore& ds,
     int& lineno,
     std::string& errorMsg)
 {
@@ -185,7 +185,7 @@ UserSectionParser::UserSectionParser()
 }
 bool UserSectionParser::parse(
     std::istream& is,
-    MyDataStore& ds,
+    DataStore& ds,
     int& lineno,
     std::string& errorMsg)
 {
@@ -206,7 +206,7 @@ bool UserSectionParser::parse(
 }
 User* UserSectionParser::parseUser(
     std::istream& is,
-    MyDataStore& ds,
+    DataStore& ds,
     std::string& errorMsg)
 {
     string username;

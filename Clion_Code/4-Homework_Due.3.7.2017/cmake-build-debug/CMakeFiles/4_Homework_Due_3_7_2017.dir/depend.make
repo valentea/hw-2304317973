@@ -4,19 +4,17 @@
 CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.o: ../Book.cpp
 CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.o: ../Book.h
 CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.o: ../product.h
-CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.o: ../product_parser.h
 
 CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.o: ../Clothing.cpp
 CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.o: ../Clothing.h
 CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.o: ../product.h
-CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.o: ../product_parser.h
 
 CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.o: ../Movie.cpp
 CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.o: ../Movie.h
 CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.o: ../product.h
-CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.o: ../product_parser.h
 
 CMakeFiles/4_Homework_Due_3_7_2017.dir/amazon.cpp.o: ../amazon.cpp
+CMakeFiles/4_Homework_Due_3_7_2017.dir/amazon.cpp.o: ../datastore.h
 CMakeFiles/4_Homework_Due_3_7_2017.dir/amazon.cpp.o: ../db_parser.h
 CMakeFiles/4_Homework_Due_3_7_2017.dir/amazon.cpp.o: ../mydatastore.h
 CMakeFiles/4_Homework_Due_3_7_2017.dir/amazon.cpp.o: ../product.h
@@ -24,6 +22,7 @@ CMakeFiles/4_Homework_Due_3_7_2017.dir/amazon.cpp.o: ../product_parser.h
 CMakeFiles/4_Homework_Due_3_7_2017.dir/amazon.cpp.o: ../user.h
 CMakeFiles/4_Homework_Due_3_7_2017.dir/amazon.cpp.o: ../util.h
 
+CMakeFiles/4_Homework_Due_3_7_2017.dir/db_parser.cpp.o: ../datastore.h
 CMakeFiles/4_Homework_Due_3_7_2017.dir/db_parser.cpp.o: ../db_parser.cpp
 CMakeFiles/4_Homework_Due_3_7_2017.dir/db_parser.cpp.o: ../db_parser.h
 CMakeFiles/4_Homework_Due_3_7_2017.dir/db_parser.cpp.o: ../mydatastore.h
@@ -32,10 +31,12 @@ CMakeFiles/4_Homework_Due_3_7_2017.dir/db_parser.cpp.o: ../product_parser.h
 CMakeFiles/4_Homework_Due_3_7_2017.dir/db_parser.cpp.o: ../user.h
 CMakeFiles/4_Homework_Due_3_7_2017.dir/db_parser.cpp.o: ../util.h
 
+CMakeFiles/4_Homework_Due_3_7_2017.dir/mydatastore.cpp.o: ../datastore.h
 CMakeFiles/4_Homework_Due_3_7_2017.dir/mydatastore.cpp.o: ../mydatastore.cpp
 CMakeFiles/4_Homework_Due_3_7_2017.dir/mydatastore.cpp.o: ../mydatastore.h
 CMakeFiles/4_Homework_Due_3_7_2017.dir/mydatastore.cpp.o: ../product.h
 CMakeFiles/4_Homework_Due_3_7_2017.dir/mydatastore.cpp.o: ../user.h
+CMakeFiles/4_Homework_Due_3_7_2017.dir/mydatastore.cpp.o: ../util.h
 
 CMakeFiles/4_Homework_Due_3_7_2017.dir/product.cpp.o: ../product.cpp
 CMakeFiles/4_Homework_Due_3_7_2017.dir/product.cpp.o: ../product.h

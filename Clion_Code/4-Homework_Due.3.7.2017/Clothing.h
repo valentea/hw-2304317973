@@ -2,7 +2,6 @@
 #define CLOTHING_H
 
 #include "product.h"
-#include "product_parser.h"
 
 
 class Clothing : public Product{
