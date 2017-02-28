@@ -99,7 +99,22 @@ int main(int argc, char* argv[])
                     ofile.close();
                 }
                 done = true;
+            }else if ( cmd == "ADD" ) {
+                string term;
+                vector<string> terms;
+                while(ss >> term){
+                    terms.push_back(term);
+                }
+                ds.addToCart(terms[0], hits[stoi(terms[1])]);
+            }else if ( cmd == "VIEWCART" ) {
+                string user;
+                ss >> user;
+                vector<Product *> personalProd;
+                personalProd = ds.viewCart(user);
+                displayProducts(personalProd);
             }
+
+
 	    /* Add support for other commands here */
 
 

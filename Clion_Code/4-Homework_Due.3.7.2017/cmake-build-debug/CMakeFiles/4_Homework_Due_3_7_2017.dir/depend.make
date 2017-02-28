@@ -4,14 +4,17 @@
 CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.o: ../Book.cpp
 CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.o: ../Book.h
 CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.o: ../product.h
+CMakeFiles/4_Homework_Due_3_7_2017.dir/Book.cpp.o: ../util.h
 
 CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.o: ../Clothing.cpp
 CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.o: ../Clothing.h
 CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.o: ../product.h
+CMakeFiles/4_Homework_Due_3_7_2017.dir/Clothing.cpp.o: ../util.h
 
 CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.o: ../Movie.cpp
 CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.o: ../Movie.h
 CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.o: ../product.h
+CMakeFiles/4_Homework_Due_3_7_2017.dir/Movie.cpp.o: ../util.h
 
 CMakeFiles/4_Homework_Due_3_7_2017.dir/amazon.cpp.o: ../amazon.cpp
 CMakeFiles/4_Homework_Due_3_7_2017.dir/amazon.cpp.o: ../datastore.h

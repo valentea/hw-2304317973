@@ -17,23 +17,36 @@ std::set<std::string> parseStringToWords(string rawWords) {
     set<string> keyWords;
     stringstream ss(rawWords);
     string uncheckedWord;
-    string uncheckedWork2;
+    string uncheckedWord2;
     while (ss >> uncheckedWord) {
+        if(uncheckedWord.length() == 1){
+            continue;
+        }
         for (int i = 0; i < uncheckedWord.length(); ++i) {
             if (ispunct(uncheckedWord[i])) {
+                if(uncheckedWord[i] == uncheckedWord.back()){
+                    break;
+                }
                 string temp = uncheckedWord.substr(0,  i);
                 char punk = uncheckedWord[i+1];
                 size_t punkT =  uncheckedWord.find(punk);
                 string temp2 = uncheckedWord.substr(punkT);
-                uncheckedWork2 = temp2;
+                uncheckedWord2 = temp2;
                 uncheckedWord = temp;
             }
         }
         if (uncheckedWord.length() >= 2) {
+            for (int i=0; i < uncheckedWord.length(); ++i) {
+                uncheckedWord[i] = tolower(uncheckedWord[i]);
+            }
+
             keyWords.insert(uncheckedWord);
         }
-        if (uncheckedWork2.length() >= 2) {
-            keyWords.insert(uncheckedWork2);
+        if (uncheckedWord2.length() >= 2) {
+            for (int i=0; i < uncheckedWord2.length(); ++i) {
+                uncheckedWord2[i] = tolower(uncheckedWord2[i]);
+            }
+            keyWords.insert(uncheckedWord2);
         }
     }
     return keyWords;

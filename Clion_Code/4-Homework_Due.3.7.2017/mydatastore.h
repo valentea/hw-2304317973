@@ -23,13 +23,13 @@ public:
     void addUser(User* u);
     std::vector<Product*> search(std::vector<std::string>& terms, int type);
     void dump(std::ostream& ofile);
-
-    std::set<Product> keyWordsToProduct(std::set<std::string> keyWords);
+    void addToCart(std::string userName, Product* hit);
+    std::vector<Product *> viewCart(std::string userName);
 
 protected:
     std::set<Product *> productList_;
     std::set<User *> userList_;
-    std::map<User *, Product *> cart_;
+    std::map<User *, std::vector<Product *>> cart_;
 };
 
 #endif

@@ -8,139 +8,139 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Alex/Documents/School/College/2017.1\ Spring/CSCI\ 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Alex/Documents/School/College/2017.1\ Spring/CSCI\ 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Alex/Documents/School/College/2017.1\ Spring/CSCI\ 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Alex/Documents/School/College/2017.1\ Spring/CSCI\ 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Alex/Documents/School/College/2017.1\ Spring/CSCI\ 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Alex/Documents/School/College/2017.1\ Spring/CSCI\ 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Alex/Documents/School/College/2017.1\ Spring/CSCI\ 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Alex/Documents/School/College/2017.1\ Spring/CSCI\ 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Alex/Documents/School/College/2017.1\ Spring/CSCI\ 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Alex/Documents/School/College/2017.1\ Spring/CSCI\ 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Alex/Documents/School/College/2017.1\ Spring/CSCI\ 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Alex/Documents/School/College/2017.1\ Spring/CSCI\ 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="4_Homework_Due_3_7_2017">
-				<Option output="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/4_Homework_Due_3_7_2017" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/4_Homework_Due_3_7_2017.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include"/>
 					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/../../../../lib/../include/w32api"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 4_Homework_Due_3_7_2017"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Alex/Documents/School/College/2017.1\ Spring/CSCI\ 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 4_Homework_Due_3_7_2017"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Alex/Documents/School/College/2017.1\ Spring/CSCI\ 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Alex/Documents/School/College/2017.1\ Spring/CSCI\ 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Alex/Documents/School/College/2017.1\ Spring/CSCI\ 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="4_Homework_Due_3_7_2017/fast">
-				<Option output="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/4_Homework_Due_3_7_2017" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/4_Homework_Due_3_7_2017.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include"/>
 					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/../../../../lib/../include/w32api"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 4_Homework_Due_3_7_2017/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Alex/Documents/School/College/2017.1\ Spring/CSCI\ 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 4_Homework_Due_3_7_2017/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Alex/Documents/School/College/2017.1\ Spring/CSCI\ 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Alex/Documents/School/College/2017.1\ Spring/CSCI\ 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Alex/Documents/School/College/2017.1\ Spring/CSCI\ 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Book.cpp">
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Book.cpp">
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Book.h">
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Book.h">
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Clothing.cpp">
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Clothing.cpp">
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Clothing.h">
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Clothing.h">
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Movie.cpp">
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Movie.cpp">
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Movie.h">
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/Movie.h">
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/amazon.cpp">
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/amazon.cpp">
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/database.txt">
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/datastore.h">
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/db_parser.cpp">
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/db_parser.cpp">
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/db_parser.h">
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/db_parser.h">
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/mydatastore.cpp">
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/mydatastore.cpp">
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/mydatastore.h">
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/mydatastore.h">
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product.cpp">
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product.cpp">
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product.h">
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product.h">
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product_parser.cpp">
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product_parser.cpp">
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product_parser.h">
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/product_parser.h">
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/user.cpp">
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/user.cpp">
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/user.h">
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/user.h">
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/util.cpp">
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/util.cpp">
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/util.h">
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/util.h">
 			<Option target="4_Homework_Due_3_7_2017"/>
 		</Unit>
-		<Unit filename="/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
