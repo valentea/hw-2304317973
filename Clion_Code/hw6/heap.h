@@ -30,10 +30,19 @@ public:
     /// returns true if the heap is empty
     bool empty() const;
 
+    int size();
+
+    struct less
+    {
+        bool operator()(const T& v1, const T& v2){
+            return v1 < v2;
+        }
+    };
+
 private:
     /// Add whatever helper functions and data members you need below
 
-    int currSize_;
+    int currSize_ = 0;
     T currItem_;
     std::vector<T> heap_;
     void heapify(int idx);
@@ -46,6 +55,7 @@ private:
 
 // Add implementation of member functions here
 
+
 template<typename T, typename Comparator>
 void Heap<T, Comparator>::trickleUp(int loc) {
     int parent = loc / 2;
@@ -57,7 +67,6 @@ void Heap<T, Comparator>::trickleUp(int loc) {
         parent = loc / 2;
     }
 }
-
 
 template<typename T, typename Comparator>
 Heap<T, Comparator>::Heap(int m, Comparator c){
@@ -72,7 +81,8 @@ Heap<T, Comparator>::~Heap() {
 template<typename T, typename Comparator>
 void Heap<T, Comparator>::push(const T &item){
     heap_.push_back(item);
-    trickleUp(heap_.size()-1);
+    trickleUp((int)heap_.size()-1);
+    currSize_++;
 
 }
 
@@ -88,16 +98,18 @@ T const &Heap<T, Comparator>::top() const {
     }
     // If we get here we know the heap has at least 1 item
     // Add code to return the top element
-    return heap_[1];
+    return heap_[0];
 }
 
 
 template<typename T, typename Comparator>
 void Heap<T, Comparator>::heapify(int idx) {
-    if(idx == 1) return;
-    int smallerChild = 2 * idx; // start w/ left
-    if (heap_[idx].rightC_ != NULL) {
-        int rChild = smallerChild + 1;
+    int smallerChild = 2*idx + 1; // start w/ left
+    int rChild = smallerChild + 1;
+
+    if(smallerChild>size()-1 && rChild>size()-1) return;
+
+    if (heap_[rChild] != NULL) {
         if (heap_[rChild] < heap_[smallerChild])
             smallerChild = rChild;
     }
@@ -118,16 +130,21 @@ void Heap<T, Comparator>::pop() {
     if (empty()) {
         throw std::logic_error("can't pop an empty heap");
     }
-    heap_[1] = heap_.back(); heap_.pop_back();
-    heapify(1);
-
-
+    heap_[0] = heap_.back();
+    heap_.pop_back();
+    currSize_--;
+    heapify(0);
 }
 
 template<typename T, typename Comparator>
 bool Heap<T, Comparator>::empty() const {
     return currSize_==0;
 }
+
+template<typename T, typename Comparator>
+int Heap<T, Comparator>::size(){
+    return currSize_;
+};
 
 
 #endif
