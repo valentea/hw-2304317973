@@ -4,6 +4,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <utility>
+#include "avlbst.h"
 
 /**
 * A templated class for a Node in a search tree. This represents a node in a normal
@@ -254,7 +255,7 @@ public:
     // std::vector, etc.
     iterator begin();
     iterator end();
-    iterator find(const Key& key) const;
+    iterator find(const Key& key);
 
 protected:
     Node<Key, Value>* internalFind(const Key& key) const;
@@ -278,6 +279,7 @@ Begin implementations for the BinarySearchTree::iterator class.
 * Initialize the internal members of the iterator.
 * You can choose what kind of iterator the default constructor should create.
 */
+
 template<typename Key, typename Value>
 BinarySearchTree<Key, Value>::iterator::iterator() : mCurrent(NULL)
 {
@@ -317,7 +319,6 @@ std::pair<Key, Value>* BinarySearchTree<Key, Value>::iterator::operator->()
 template<typename Key, typename Value>
 bool BinarySearchTree<Key, Value>::iterator::operator==(const BinarySearchTree<Key, Value>::iterator& rhs) const
 {
-    // TODO
     return mCurrent == rhs.mCurrent; // A dummy return value until you provide your implementation.
 }
 
@@ -328,7 +329,6 @@ bool BinarySearchTree<Key, Value>::iterator::operator==(const BinarySearchTree<K
 template<typename Key, typename Value>
 bool BinarySearchTree<Key, Value>::iterator::operator!=(const BinarySearchTree<Key, Value>::iterator& rhs) const
 {
-    // TODO
     return mCurrent != rhs.mCurrent;; // A dummy return value until you provide your implementation.
 }
 
@@ -338,9 +338,7 @@ bool BinarySearchTree<Key, Value>::iterator::operator!=(const BinarySearchTree<K
 template<typename Key, typename Value>
 typename BinarySearchTree<Key, Value>::iterator& BinarySearchTree<Key, Value>::iterator::operator=(const BinarySearchTree<Key, Value>::iterator& rhs)
 {
-    // TODO
     mCurrent = rhs.mCurrent;
-
     return *this; // A dummy return value until you provide your implementation.
 }
 
@@ -348,9 +346,7 @@ typename BinarySearchTree<Key, Value>::iterator& BinarySearchTree<Key, Value>::i
 * Advances the iterator's location using an in-order traversal.
 */
 template<typename Key, typename Value>
-typename BinarySearchTree<Key, Value>::iterator& BinarySearchTree<Key, Value>::iterator::operator++()
-{
-    // TODO
+typename BinarySearchTree<Key, Value>::iterator& BinarySearchTree<Key, Value>::iterator::operator++(){
     Value temp  = *this;
     mCurrent++;
     return temp; // A dummy return value until you provide your implementation.
@@ -407,7 +403,6 @@ typename BinarySearchTree<Key, Value>::iterator BinarySearchTree<Key, Value>::be
 template<typename Key, typename Value>
 typename BinarySearchTree<Key, Value>::iterator BinarySearchTree<Key, Value>::end()
 {
-    // TODO
     return iterator(NULL); // A dummy return value until you provide your implementation.
 }
 
@@ -416,20 +411,21 @@ typename BinarySearchTree<Key, Value>::iterator BinarySearchTree<Key, Value>::en
 * or the end iterator if k does not exist in the tree
 */
 template<typename Key, typename Value>
-typename BinarySearchTree<Key, Value>::iterator BinarySearchTree<Key, Value>::find(const Key& key) const
+typename BinarySearchTree<Key, Value>::iterator BinarySearchTree<Key, Value>::find(const Key& key)
 {
     // TODO
-    Node<Key, Value>* curr = mRoot;
-    while(curr){
-        if(curr->getKey() == key){
-            return  curr;
-        }else if(key < curr->getKey()){
-            curr = curr->getLeft();
-        }else{
-            curr = curr->getRight();
+    while (mRoot != NULL){
+        if(mRoot->getKey() == key){
+            return  iterator(mRoot);
+        }else if(key < mRoot->getKey()){
+            mRoot = mRoot->getLeft();
+            find(key);
+        }else if(key > mRoot->getKey()){
+            mRoot = mRoot->getRight();
+            find(key);
         }
     }
-    return iterator(NULL);  // A dummy return value until you provide your implementation.
+    return iterator(end());  // A dummy return value until you provide your implementation.
 }
 
 /**
@@ -442,40 +438,40 @@ void BinarySearchTree<Key, Value>::insert(const std::pair<Key, Value>& keyValueP
 {
 
     if(mRoot == NULL){
-        mRoot = new Node(keyValuePair.first, keyValuePair.second, NULL);
+        mRoot->getKey() = keyValuePair.first;
+        mRoot->setValue(keyValuePair.second);
         return;
     }
-    Node *curr = mRoot;
    // while (curr) {
     for(;;){
-        if(curr->getKey() < keyValuePair.first){
-            if(curr->getRight()){
+        if(mRoot->getKey() < keyValuePair.first){
+            if(mRoot->getRight()){
                 break;
             }
-            curr = curr->getRight();
-        }else if(curr->getKey() > keyValuePair.first){
-            if(curr->getLeft()){
+            mRoot = mRoot->getRight();
+        }else if(mRoot->getKey() > keyValuePair.first){
+            if(mRoot->getLeft()){
                 break;
             }
-            curr = curr->getLeft();
+            mRoot = mRoot->getLeft();
         }
     }
 
-    Node *tmp = new Node(keyValuePair.first, keyValuePair.second, NULL);
-    if (curr->getKey < keyValuePair.first)
+    Node<Key, Value> *tmp = new Node<Key, Value> (keyValuePair.first, keyValuePair.second, NULL);
+    if (mRoot->getKey() < keyValuePair.first)
     {
         /* insert to right side */
-        tmp->setRight(curr->getRight();
-        tmp->setLeft(curr);
-        curr->setLeft(tmp);
-        curr->setRight(NULL);
+        tmp->setRight(mRoot->getRight());
+        tmp->setLeft(mRoot);
+        mRoot->setLeft(tmp);
+        mRoot->setRight(NULL);
     }
     else
     {
-        tmp->setRight(curr);
-        tmp->setLeft(curr->getLeft());
-        curr->setLeft(tmp);
-        curr->setLeft(NULL);
+        tmp->setRight(mRoot);
+        tmp->setLeft(mRoot->getLeft());
+        mRoot->setLeft(tmp);
+        mRoot->setLeft(NULL);
     }
 }
 

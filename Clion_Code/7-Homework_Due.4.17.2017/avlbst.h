@@ -6,6 +6,8 @@
 #include <string>
 #include "math.h"
 #include "bst.h"
+#include<stdio.h>
+#include<stdlib.h>
 
 /**
 * A special kind of node for an AVL tree, which adds the balance as a data member, plus
@@ -21,9 +23,9 @@ public:
     virtual ~AVLNode();
 
     // Getter/setter for the node's height.
-    char getBalance () const;
-    void setBalance (char balance);
-    void updateBalance(char diff);
+    int getBalance () const;
+    void setBalance (int balance);
+    void updateBalance(int diff);
 
     // Getters for parent, left, and right. These need to be redefined since they
     // return pointers to AVLNodes - not plain Nodes. See the Node class in bst.h
@@ -33,7 +35,7 @@ public:
     virtual AVLNode<Key, Value>* getRight() const override;
 
 protected:
-    char balance_;
+    int balance_;
 };
 
 /*
@@ -66,7 +68,7 @@ AVLNode<Key, Value>::~AVLNode()
 * A getter for the balance of a AVLNode.
 */
 template<class Key, class Value>
-char AVLNode<Key, Value>::getBalance() const
+int AVLNode<Key, Value>::getBalance() const
 {
     return balance_;
 }
@@ -75,7 +77,7 @@ char AVLNode<Key, Value>::getBalance() const
 * A setter for the balance of a AVLNode.
 */
 template<class Key, class Value>
-void AVLNode<Key, Value>::setBalance(char balance)
+void AVLNode<Key, Value>::setBalance(int balance)
 {
     balance_ = balance;
 }
@@ -84,9 +86,9 @@ void AVLNode<Key, Value>::setBalance(char balance)
 * Adds diff to the balance of a AVLNode.
 */
 template<class Key, class Value>
-void AVLNode<Key, Value>::updateBalance(char diff)
+void AVLNode<Key, Value>::updateBalance(int diff)
 {
-    balance_ += diff;
+    balance_ = balance_ + (diff);
 }
 
 /**
@@ -133,14 +135,15 @@ public:
     // You must implement both of these methods.
     virtual void insert(const std::pair<Key, Value>& keyValuePair) override;
     virtual void erase(const Key& key);
+    void eraseHelp(Node<Key, Value> key, int diff);
 
 private:
     /* Helper functions are strongly encouraged to help separate the problem
        into smaller pieces. You should not need additional data members. */
 
     /* You should write these helpers for sure.  You may add others. */
-    void rotateLeft (AVLNode<Key, Value> *n);
-    void rotateRight (AVLNode<Key, Value> *n);
+    AVLNode<Key, Value>* rotateLeft (AVLNode<Key, Value> *n);
+    AVLNode<Key, Value>* rotateRight (AVLNode<Key, Value> *n);
 
     /* A provided helper function to swap 2 nodes location in the tree */
     void nodeSwap( AVLNode<Key,Value>* n1, AVLNode<Key,Value>* n2);
@@ -156,94 +159,149 @@ Begin implementations for the AVLTree class.
 * Insert function for a key value pair. Finds location to insert the node and then balances the tree.
 */
 template<typename Key, typename Value>
-void AVLTree<Key, Value>::insert(const std::pair<Key, Value>& keyValuePair)
-{
+void AVLTree<Key, Value>::insert(const std::pair<Key, Value>& keyValuePair) {
     // TODO
-    AVLNode *temp = new AVLNode(mRoot->getKey(), mRoot->getValue(), NULL);
-    AVLNode *curr = new AVLNode(keyValuePair.first, keyValuePair.second, NULL);
+    AVLNode<Key, Value> *curr = new AVLNode<Key, Value> (keyValuePair.first, keyValuePair.second, NULL);
 
-    if (mRoot == NULL) {
-        mRoot->setValue(keyValuePair.second);
-        mRoot->getKey() = keyValuePair.first;
-    }
-
-    if (keyValuePair.first < temp->getKey()) {
-        if(temp->getLeft() == NULL){
-            mRoot->setLeft(curr);
+    if (this->mRoot == NULL) {
+        this->mRoot = curr;
+    }  else if (curr->getKey() < this->mRoot->getKey()) {
+        if (this->mRoot->getLeft() == NULL) {
+            curr->setParent(this->mRoot);
+            this->mRoot->setLeft(curr);
+            static_cast<AVLNode<Key, Value>*>(this->mRoot)->updateBalance(-1);
+            insert(keyValuePair);
+        }else if(this->mRoot->getLeft()->getKey() != curr->getKey()){
+            this->mRoot = this->mRoot->getLeft();
+            insert(keyValuePair);
         }
-        if(temp )
+    } else if (curr->getKey() > this->mRoot->getKey()) {
+        if (this->mRoot->getRight() == NULL) {
+            curr->setParent(this->mRoot);
+            this->mRoot->setRight(curr);
+            static_cast<AVLNode<Key, Value>*>(this->mRoot)->updateBalance(+1);
+            insert(keyValuePair);
+        }else if(this->mRoot->getRight()->getKey() != curr->getKey()){
+            this->mRoot = this->mRoot->getRight();
+            insert(keyValuePair);
+        }
     }
-    else if (key > node->key)
-        node->right = insert(node->right, key);
-    else // Equal keys are not allowed in BST
-        return node;
-
     /* 2. Update height of this ancestor node */
-    node->height = 1 + max(height(node->left),
-                           height(node->right));
-
-    /* 3. Get the balance factor of this ancestor
-          node to check whether this node became
-          unbalanced */
-    int balance = getBalance(node);
+    int tempBalance = static_cast<AVLNode<Key, Value>*>(this->mRoot)->getBalance();
 
     // If this node becomes unbalanced, then
     // there are 4 cases
 
     // Left Left Case
-    if (balance > 1 && key < node->left->key)
-        return rightRotate(node);
-
-    // Right Right Case
-    if (balance < -1 && key > node->right->key)
-        return leftRotate(node);
-
-    // Left Right Case
-    if (balance > 1 && key > node->left->key)
-    {
-        node->left =  leftRotate(node->left);
-        return rightRotate(node);
+    if (tempBalance > 1 && this->mRoot->getKey() < this->mRoot->getLeft()->getKey()) {
+        rotateRight(static_cast<AVLNode<Key, Value> *>(curr));
+        return;
     }
-
-    // Right Left Case
-    if (balance < -1 && key < node->right->key)
-    {
-        node->right = rightRotate(node->right);
-        return leftRotate(node);
+    if (tempBalance < -1 && curr->getKey() > curr->getRight()->getKey()) {
+        rotateLeft(static_cast<AVLNode<Key, Value> *>(curr));
+        return;
     }
-
-    /* return the (unchanged) node pointer */
-    return node;
-
-
+    if (tempBalance > 1 && curr->getKey() > curr->getLeft()->getKey()) {
+        curr->setLeft(rotateLeft(static_cast<AVLNode<Key, Value> *>(curr)->getLeft()));
+        rotateRight(static_cast<AVLNode<Key, Value> *>(curr));
+        return;
+    }
+    if (tempBalance < -1 && curr->getKey() < curr->getRight()->getKey()) {
+        curr->setRight(rotateLeft(static_cast<AVLNode<Key, Value> *>(curr)->getRight()));
+        rotateLeft(static_cast<AVLNode<Key, Value> *>(curr));
+        return;
+    }
+    if(this->mRoot->getParent() != NULL){
+        this->mRoot = this->mRoot->getParent();
+    }
 }
 
 /**
 * Erase function for a given key. Finds the node, reattaches pointers, and then balances when finished.
-*/
+ */
+template<typename Key, typename Value>
+void AVLTree<Key, Value>::eraseHelp(Node<Key, Value> key, int diff){
+    if(&key == NULL){
+        return;
+    }
+    int ndiff = 0;
+    if(key.getParent()->getLeft()->getKey() == key.getKey()){
+        ndiff = 1;
+    }else{
+        ndiff = -1;
+    }
+    Node<Key, Value> *par = key.getParent();
+};
+
+
 template<typename Key, typename Value>
 void AVLTree<Key, Value>::erase(const Key& key)
 {
     // TODO
+    while (mRoot != NULL){
+        int diff = 0;
+        if(mRoot->getKey() == key){
+            if(mRoot->getParent()->getLeft()->getKey() == key){
+                diff = 1;
+            }if(mRoot->getParent()->getRight()->getKey() == key){
+                diff = -1;
+            }
+            Node<Key, Value> *temp = mRoot;
+            delete[](mRoot);
+            eraseHelp(*temp, diff);
+        }else if(key < mRoot->getKey()){
+            mRoot = mRoot->getLeft();
+            erase(key);
+        }else if(key > mRoot->getKey()){
+            mRoot = mRoot->getRight();
+            erase(key);
+        }
+    }
 }
+
+
 
 /**
 * Rotates n down and to the left
 */
 template<typename Key, typename Value>
-void AVLTree<Key, Value>::rotateLeft (AVLNode<Key, Value> *n)
+AVLNode<Key, Value>* AVLTree<Key, Value>::rotateLeft (AVLNode<Key, Value> *n)
 {
     // TODO
+    AVLNode<Key, Value> *y = n->getRight();
+    AVLNode<Key, Value> *T2= y->getLeft();
+
+    // Perform rotation
+    y->setLeft(n);
+    n->setRight(T2);
+
+    //  Update heights
+    n->setBalance(char (std::max(n->getLeft()->getBalance(), n->getRight()->getBalance())+1));
+    y->setBalance(char (std::max(n->getLeft()->getBalance(), n->getRight()->getBalance())+1));
+
+    return y;
+
 }
 
 /**
 * Rotates n down and to the right
 */
 template<typename Key, typename Value>
-void AVLTree<Key, Value>::rotateRight (AVLNode<Key, Value> *n)
+AVLNode<Key, Value>* AVLTree<Key, Value>::rotateRight (AVLNode<Key, Value> *n)
 {
     // TODO
+    AVLNode<Key, Value> *x = n->getRight();
+    AVLNode<Key, Value> *T2 = x->getLeft();
 
+    // Perform rotation
+    x->setLeft(n);
+    n->setRight(T2);
+
+    //  Update heights
+    n->setBalance(char (std::max(n->getLeft()->getBalance(), n->getRight()->getBalance())+1));
+    x->setBalance(char (std::max(x->getLeft()->getBalance(), x->getRight()->getBalance())+1));
+
+    return x;
 }
 
 /**

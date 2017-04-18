@@ -73,7 +73,7 @@ void flip(int x1, int y1, const Rectangle& r, vector<vector<bool> >& grid)
 
 int main(int argc, char *argv[])
 {
-    if (argc < 3) {
+    /*if (argc < 3) {
         cout << "please specify an input and output file";
         return 0;
     }
@@ -110,7 +110,7 @@ int main(int argc, char *argv[])
     InputMapType::iterator it = input.begin();
     bool solution_exists = false;
 
-    // TODO:  Call your backtracking search function here
+    // todo:  Call your backtracking search function here
 
 
 
@@ -121,6 +121,23 @@ int main(int argc, char *argv[])
     else {
       printSolution(ofile, input, output);
     }
-    ofile.close();
+    ofile.close();*/
+
+    AVLTree<int, int> test;
+
+    int tempKey = 0;
+    int tempVal = 0;
+    vector <int> inputNumbs;
+    for (int i = 0; i < 10; ++i) {
+        int spacer = rand();
+        tempVal = spacer % 10;
+        tempKey = tempVal;
+        inputNumbs.push_back(tempKey);
+        test.insert(make_pair(tempKey, tempVal));
+    }
+
+    test.print();
+
+    std::cout << test.find(2).operator->()->first << endl;
     return 0;
 }
