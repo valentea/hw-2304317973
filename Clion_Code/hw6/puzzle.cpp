@@ -10,30 +10,22 @@
 
 
 int main(int argc, char *argv[]) {
-    if (argc < 5) {
-        cerr << "Usage: ./puzzle size initMoves seed heur" << endl;
-        return 1;
-    }
-    int size = (int)*argv[1];
-    int initMoves = (int)*argv[2];
-    int seed = (int)*argv[3];
-    int heur = (int)*argv[4];
+    less<int> hat;
+    Heap<int> test(2, hat);
+    test.push(0);
+    test.push(2);
+    test.push(4);
+    test.push(6);
+    test.push(8);
+    test.push(10);
+    test.push(12);
+    test.push(14);
 
-    Board mainStage(size, initMoves, seed);
 
-    cout << mainStage << endl;
-    cout << "enter tile number to move or -1 for a cheat: " << endl;
-    int move = 0;
-    while(mainStage.solved() || move == -2) {
-        cin >> move;
-        if (move == 0) {
-            cout << "can not move empty space" << endl;
-        } else if (move == -1) {
-            cout << "cheat stuff i dont know how to use yet" << endl;
-        } else {
-            mainStage.move(move);
-        }
-    }
+    test.push(1);
+
+
+
 
 
 

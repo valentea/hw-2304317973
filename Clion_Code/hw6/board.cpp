@@ -240,11 +240,13 @@ bool Board::operator<(const Board &rhs) const{
             return false;
         }
     }
+    return false;
 }
 
 bool Board::solved() const{
     Board answer(dim(), 0, 0);
     if(*this < answer){
+        cout << "you win" << endl;
         return true;
     }
     return false;
