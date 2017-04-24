@@ -1,0 +1,1 @@
+/usr/bin/c++.exe  -g  -Wl,--enable-auto-import CMakeFiles/SkipListClass.dir/main.cpp.o  -o SkipListClass.exe -Wl,--out-implib,libSkipListClass.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
