@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/Alex/.CLion2016.3/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/Alex/.CLion2016.3/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/SkipListClass"
+CMAKE_SOURCE_DIR = /Users/Alex/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/SkipListClass
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/SkipListClass/cmake-build-debug"
+CMAKE_BINARY_DIR = /Users/Alex/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/SkipListClass/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/SkipListClass.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/SkipListClass.dir/flags.make
 
 CMakeFiles/SkipListClass.dir/main.cpp.o: CMakeFiles/SkipListClass.dir/flags.make
 CMakeFiles/SkipListClass.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/SkipListClass/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SkipListClass.dir/main.cpp.o"
-	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SkipListClass.dir/main.cpp.o -c "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/SkipListClass/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Alex/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/SkipListClass/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SkipListClass.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SkipListClass.dir/main.cpp.o -c /Users/Alex/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/SkipListClass/main.cpp
 
 CMakeFiles/SkipListClass.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SkipListClass.dir/main.cpp.i"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/SkipListClass/main.cpp" > CMakeFiles/SkipListClass.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Alex/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/SkipListClass/main.cpp > CMakeFiles/SkipListClass.dir/main.cpp.i
 
 CMakeFiles/SkipListClass.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SkipListClass.dir/main.cpp.s"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/SkipListClass/main.cpp" -o CMakeFiles/SkipListClass.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Alex/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/SkipListClass/main.cpp -o CMakeFiles/SkipListClass.dir/main.cpp.s
 
 CMakeFiles/SkipListClass.dir/main.cpp.o.requires:
 
@@ -88,14 +88,14 @@ SkipListClass_OBJECTS = \
 # External object files for target SkipListClass
 SkipListClass_EXTERNAL_OBJECTS =
 
-SkipListClass.exe: CMakeFiles/SkipListClass.dir/main.cpp.o
-SkipListClass.exe: CMakeFiles/SkipListClass.dir/build.make
-SkipListClass.exe: CMakeFiles/SkipListClass.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/SkipListClass/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable SkipListClass.exe"
+SkipListClass: CMakeFiles/SkipListClass.dir/main.cpp.o
+SkipListClass: CMakeFiles/SkipListClass.dir/build.make
+SkipListClass: CMakeFiles/SkipListClass.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Alex/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/SkipListClass/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable SkipListClass"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SkipListClass.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/SkipListClass.dir/build: SkipListClass.exe
+CMakeFiles/SkipListClass.dir/build: SkipListClass
 
 .PHONY : CMakeFiles/SkipListClass.dir/build
 
@@ -108,6 +108,6 @@ CMakeFiles/SkipListClass.dir/clean:
 .PHONY : CMakeFiles/SkipListClass.dir/clean
 
 CMakeFiles/SkipListClass.dir/depend:
-	cd "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/SkipListClass/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/SkipListClass" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/SkipListClass" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/SkipListClass/cmake-build-debug" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/SkipListClass/cmake-build-debug" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/SkipListClass/cmake-build-debug/CMakeFiles/SkipListClass.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /Users/Alex/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/SkipListClass/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Alex/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/SkipListClass /Users/Alex/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/SkipListClass /Users/Alex/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/SkipListClass/cmake-build-debug /Users/Alex/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/SkipListClass/cmake-build-debug /Users/Alex/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/SkipListClass/cmake-build-debug/CMakeFiles/SkipListClass.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/SkipListClass.dir/depend
 

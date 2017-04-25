@@ -5,74 +5,78 @@
 #include <vector>
 
 
-template <typename K, typename V, typename Comp = std::less<K> >
+template <typename K, typename V>
 struct SkipNode {
     K key_;
     V value_;
 
     // pointers to successor nodes
-    std::vector<SkipNode<K, V, Comp>* > forward_;
+    std::vector<SkipNode<K, V>* > forward_;
 
-    SkipNode<K, V, Comp> (K key, const V& val, int level);
+    SkipNode<K, V> (K key, const V& val, int level);
 };
 
 
 template <typename K, typename V, typename Comp = std::less<K> >
 class Skip_list {
 public:
-    Skip_list<K, V, Comp> (const Comp& c = Comp());
+
+    Skip_list<K, V, Comp> (const Comp& c = Comp() ); //TODO IMPLEMENT maxLevel HERE
     ~Skip_list<K, V, Comp> ();
 
     // non-modifying member functions
     void print ();
-    SkipNode<K, V, Comp>* find (K searchKey);
+    SkipNode<K, V>* find (K searchKey);
 
     // modifying member functions
     void insert (K searchKey, V newValue);
     void erase (K searchKey);
 private:
     // pointer to first node
-    SkipNode<K, V, Comp>* head;
+    SkipNode<K, V>* head;
     // last node
-    SkipNode<K, V, Comp>* NIL;
+    SkipNode<K, V>* NIL;
 
     // implicitly used member functions
     int randomLevel ();
-    int nodeLevel(const std::vector<SkipNode<K, V, Comp>* >& v);
-    SkipNode<K, V, Comp>* makeNode (K key, V val, int level);
+    int nodeLevel(const std::vector<SkipNode<K, V>* >& v);
+    SkipNode<K, V>* makeNode (K key, V val, int level);
 
     // data members
     float probability;
-    int maxLevel;
+    int maxLevel;    ///////////////TODO IMPLEMENT TO CONSTRUCTOR!!!!!!
+    Comp singleComp;
 };
 
 
-template <typename K, typename V, typename Comp >
-SkipNode<K, V, Comp>::SkipNode<K, V, Comp> (K k, const V& v, int level)
+template <typename K, typename V>
+SkipNode<K, V>::SkipNode (K k, const V& v, int level)
         :  key_(k), value_(v)
 {
-    for (int i = 0; i < level; ++i) forward_.emplace_back(NULL);
+    for (int i = 0; i < level; ++i) forward_.push_back(NULL);
 }
 
 //==============================================================================
 // Class Skip_list member implementations
 // constructor
 
-template <typename K, typename V, typename Comp >
-Skip_list<K, V, Comp>::Skip_list<K, V, Comp>(const Comp& c = Comp())
-        : probability(0.5), maxLevel(16)
+template <typename K, typename V, typename Comp>
+Skip_list<K, V, Comp>::Skip_list(const Comp& c)
+        : probability(0.5), maxLevel(15), singleComp(c)
 {
     // Initialize the head of the skip list
 
     // smallest possible key_
     int headKey = INT_MIN;
-    head = new SkipNode<K, V, Comp> (headKey, "head", maxLevel);
+    int headVal = INT_MIN;
+    head = new SkipNode<K, V> (headKey, headVal, maxLevel);
 
     // Initialize the last element of the list
 
     // largest possible key_
     int nilKey = INT_MAX;
-    NIL = new SkipNode<K, V, Comp> (nilKey, "NIL", maxLevel);
+    int nilVal = INT_MAX;
+    NIL = new SkipNode<K, V> (nilKey, nilVal, maxLevel);
 
     // Connect start to end
     // connect all the levels/forward_ pointers of the header to NIL
@@ -123,7 +127,7 @@ int Skip_list<K, V, Comp>::randomLevel () {
     If list empty returns 1.
 */
 template <typename K, typename V, typename Comp >
-int Skip_list<K, V, Comp>::nodeLevel (const std::vector<SkipNode<K, V, Comp>* >& v) {
+int Skip_list<K, V, Comp>::nodeLevel (const std::vector<SkipNode<K, V>* >& v) {
     int currentLevel = 1;
     // last element's key_ is the largest
     int nilKey = INT_MAX;
@@ -155,7 +159,7 @@ int Skip_list<K, V, Comp>::nodeLevel (const std::vector<SkipNode<K, V, Comp>* >&
 */
 template <typename K, typename V, typename Comp >
 void Skip_list<K, V, Comp>::print () {
-    SkipNode<K, V, Comp>* list = head;
+    SkipNode<K, V>* list = head;
     int lineLenght = 1;
 
     std::cout <<"{";
@@ -184,8 +188,8 @@ void Skip_list<K, V, Comp>::print () {
     failure, in the form of null pointer.
 */
 template <typename K, typename V, typename Comp >
-SkipNode<K, V, Comp>* Skip_list<K, V, Comp>::find(K searchKey) {
-    SkipNode<K, V, Comp>* x = head;
+SkipNode<K, V>* Skip_list<K, V, Comp>::find(K searchKey) {
+    SkipNode<K, V>* x = head;
     int currentMaximum = nodeLevel(head->forward_);
 
     for (int i = currentMaximum; i-- > 0;) {
@@ -211,8 +215,8 @@ SkipNode<K, V, Comp>* Skip_list<K, V, Comp>::find(K searchKey) {
     a node on the heap and returns a pointer to it.
 */
 template <typename K, typename V, typename Comp >
-SkipNode<K, V, Comp>* Skip_list<K, V, Comp>::makeNode (K key, V val, int level) {
-    return new SkipNode<K, V, Comp> (key, val, level);
+SkipNode<K, V>* Skip_list<K, V, Comp>::makeNode (K key, V val, int level) {
+    return new SkipNode<K, V> (key, val, level);
 }
 
 /*
@@ -225,10 +229,10 @@ SkipNode<K, V, Comp>* Skip_list<K, V, Comp>::makeNode (K key, V val, int level) 
     newValue, otherwise it creates and splices
     a new node, of random level.
 */
-template <typename K, typename V, typename Comp >
+template <typename K, typename V, typename Comp = std::less<K> >
 void Skip_list<K, V, Comp>::insert(K searchKey, V newValue) {
     // reassign if node exists
-    SkipNode<K, V, Comp>* x = nullptr;
+    SkipNode<K, V>* x = nullptr;
     x = find(searchKey);
     if (x) {
         x->value_ = newValue;
@@ -236,7 +240,7 @@ void Skip_list<K, V, Comp>::insert(K searchKey, V newValue) {
     }
 
     // vector of pointers that needs to be updated to account for the new node
-    std::vector<SkipNode<K, V, Comp>* > update(head->forward_);
+    std::vector<SkipNode<K, V>* > update(head->forward_);
     int currentMaximum = nodeLevel(head->forward_);
     x = head;
 
@@ -286,8 +290,8 @@ void Skip_list<K, V, Comp>::insert(K searchKey, V newValue) {
 template <typename K, typename V, typename Comp >
 void Skip_list<K, V, Comp>::erase (K searchKey) {
     // vector of pointers that needs to be updated to account for the deleted node
-    std::vector<SkipNode<K, V, Comp>* > update(head->forward_);
-    SkipNode<K, V, Comp>* x = head;
+    std::vector<SkipNode<K, V>* > update(head->forward_);
+    SkipNode<K, V>* x = head;
     int currentMaximum = nodeLevel(head->forward_);
 
     // search and update pointers
