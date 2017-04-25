@@ -11,7 +11,94 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7665396d-a935-4873-b442-5fd1f4db061e" name="Default" comment="" />
+    <list default="true" id="7665396d-a935-4873-b442-5fd1f4db061e" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/.idea/5-Homework.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/Book.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/Book.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/CMakeLists.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/Clothing.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/Clothing.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/Movie.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/Movie.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/amazon.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/database.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/datastore.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/db_parser.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/db_parser.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/msort.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/mydatastore.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/mydatastore.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/product.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/product.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/product_parser.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/product_parser.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/review.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/user.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/user.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/util.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../5-Homework/util.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/.idea/hw6.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/CMakeLists.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/board.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/board.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeCache.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/3.6.3/CMakeCCompiler.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/3.6.3/CMakeCXXCompiler.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/3.6.3/CMakeDetermineCompilerABI_C.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/3.6.3/CMakeDetermineCompilerABI_CXX.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/3.6.3/CMakeRCCompiler.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/3.6.3/CMakeSystem.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/3.6.3/CompilerIdC/CMakeCCompilerId.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/3.6.3/CompilerIdC/a.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/3.6.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/3.6.3/CompilerIdCXX/a.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/Makefile2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/clion-environment.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/cmake.check_cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/feature_tests.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/feature_tests.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/feature_tests.cxx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/hw6.dir/CXX.includecache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/hw6.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/hw6.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/hw6.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/hw6.dir/depend.internal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/hw6.dir/depend.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/hw6.dir/flags.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/hw6.dir/link.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/hw6.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/CMakeFiles/progress.marks" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/cmake_install.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/hw6.cbp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/hw6.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/cmake-build-debug/hw6.exe.stackdump" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/heap.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/puzzle.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/puzzle_heur.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/puzzle_move.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../hw6/puzzle_solver.h" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../3-Homework_Due.2.16.2017/Problem6/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../3-Homework_Due.2.16.2017/Problem6/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SkipList.h" afterPath="$PROJECT_DIR$/SkipList.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,7 +112,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
@@ -39,8 +126,8 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            <state relative-caret-position="204">
+              <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="38" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -51,11 +138,22 @@
       <file leaf-file-name="SkipList.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SkipList.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+            <state relative-caret-position="378">
+              <caret line="245" column="66" lean-forward="false" selection-start-line="245" selection-start-column="65" selection-end-line="245" selection-end-column="66" />
               <folding>
                 <element signature="e#41#59#0" expanded="true" />
-                <element signature="e#89#144#0" expanded="true" />
+                <element signature="e#89#128#0" expanded="true" />
+                <element signature="e#333#372#0" expanded="true" />
+                <element signature="e#1058#1098#0" expanded="true" />
+                <element signature="e#1419#1459#0" expanded="true" />
+                <element signature="e#2103#2143#0" expanded="true" />
+                <element signature="e#2517#2557#0" expanded="true" />
+                <element signature="e#3060#3100#0" expanded="true" />
+                <element signature="e#3767#3807#0" expanded="true" />
+                <element signature="e#4588#4628#0" expanded="true" />
+                <element signature="e#5302#5342#0" expanded="true" />
+                <element signature="e#5782#5822#0" expanded="true" />
+                <element signature="e#7261#7301#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,11 +164,20 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>SkipList&lt;K, V, Comp&gt;</find>
+      <find>Comp = std::less&lt;K&gt;</find>
+      <find>SkipNode</find>
+      <find>Skip_list</find>
     </findStrings>
     <replaceStrings>
-      <replace>SkipList&lt;K, V, Comp&gt;</replace>
       <replace>SkipList&lt;K, V, Comp&gt;::</replace>
+      <replace>Comp</replace>
+      <replace>SkipNode&lt;K, V, Comp&gt;</replace>
+      <replace>SkipList&lt;K, V, Comp&gt;</replace>
+      <replace>Skip_list&lt;K, V, Comp&gt;</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -93,6 +200,7 @@
     <option name="width" value="1936" />
     <option name="height" value="1176" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -129,10 +237,168 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../5-Homework_Due.3.22.2017/Movie.cpp" />
+    <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RunManager" selected="Application.Build All">
+    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SkipListClass" TARGET_NAME="SkipListClass" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SkipListClass" TARGET_NAME="SkipListClass" CONFIG_NAME="Debug">
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SkipListClass" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SkipListClass" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SkipListClass" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SkipListClass" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SkipListClass" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SkipListClass" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SkipListClass" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
     <configuration default="false" name="SkipListClass" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SkipListClass" TARGET_NAME="SkipListClass" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="SkipListClass" RUN_TARGET_NAME="SkipListClass">
@@ -162,11 +428,12 @@
       <option name="presentableId" value="Default" />
       <updated>1493000463826</updated>
       <workItem from="1493000466618" duration="6513000" />
+      <workItem from="1493080366583" duration="2351000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6513000" />
+    <option name="totallyTimeSpent" value="8864000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -174,10 +441,11 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24920969" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22243528" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -188,7 +456,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -213,11 +480,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SkipList.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#41#59#0" expanded="true" />
+            <element signature="e#89#128#0" expanded="true" />
+            <element signature="e#333#372#0" expanded="true" />
+            <element signature="e#1058#1098#0" expanded="true" />
+            <element signature="e#1419#1459#0" expanded="true" />
+            <element signature="e#2103#2143#0" expanded="true" />
+            <element signature="e#2517#2557#0" expanded="true" />
+            <element signature="e#3060#3100#0" expanded="true" />
+            <element signature="e#3767#3807#0" expanded="true" />
+            <element signature="e#4588#4628#0" expanded="true" />
+            <element signature="e#5302#5342#0" expanded="true" />
+            <element signature="e#5782#5822#0" expanded="true" />
+            <element signature="e#7261#7301#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://C:/Program Files (x86)/cygwin64/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/ext/new_allocator.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
           <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -225,7 +531,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -239,8 +544,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        <state relative-caret-position="204">
+          <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="38" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -249,11 +554,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SkipList.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        <state relative-caret-position="378">
+          <caret line="245" column="66" lean-forward="false" selection-start-line="245" selection-start-column="65" selection-end-line="245" selection-end-column="66" />
           <folding>
             <element signature="e#41#59#0" expanded="true" />
-            <element signature="e#89#144#0" expanded="true" />
+            <element signature="e#89#128#0" expanded="true" />
+            <element signature="e#333#372#0" expanded="true" />
+            <element signature="e#1058#1098#0" expanded="true" />
+            <element signature="e#1419#1459#0" expanded="true" />
+            <element signature="e#2103#2143#0" expanded="true" />
+            <element signature="e#2517#2557#0" expanded="true" />
+            <element signature="e#3060#3100#0" expanded="true" />
+            <element signature="e#3767#3807#0" expanded="true" />
+            <element signature="e#4588#4628#0" expanded="true" />
+            <element signature="e#5302#5342#0" expanded="true" />
+            <element signature="e#5782#5822#0" expanded="true" />
+            <element signature="e#7261#7301#0" expanded="true" />
           </folding>
         </state>
       </provider>

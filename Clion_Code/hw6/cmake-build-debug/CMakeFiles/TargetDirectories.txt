@@ -1,3 +1,0 @@
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/hw6/cmake-build-debug/CMakeFiles/edit_cache.dir
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/hw6/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/hw6/cmake-build-debug/CMakeFiles/hw6.dir

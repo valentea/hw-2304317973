@@ -10,7 +10,7 @@
 int main () {
 
     // 1.Initialize an empty Skip_list object
-    Skip_list s;
+    Skip_list<int, int, std::less<int> > s;
 
     // 2. insert()
     for (int i = 0; i < 50; ++i){
@@ -18,7 +18,7 @@ int main () {
         std::stringstream ss;
         ss << i;
 
-        s.insert(i, ss.str());
+        s.insert(i, i);
     }
 
     // 2a. print()
@@ -31,7 +31,7 @@ int main () {
     else std::cout <<"Node NOT found!\n";
 
     // 4. insert() - reassign
-    s.insert(40, "TEST");
+    s.insert(40, 100);
 
     // 4a. print()
     s.print();
