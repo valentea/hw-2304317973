@@ -25,7 +25,7 @@ int main () {
     s.print();
 
     // 3. find()
-    SkipNode* f = nullptr;
+    SkipNode<int, int, std::less<int> >* f = nullptr;
     f = s.find(10);
     if (f) std::cout <<"Node found!\nvalue: "<< f->value_ <<'\n';
     else std::cout <<"Node NOT found!\n";

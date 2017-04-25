@@ -5,7 +5,7 @@
 #include <vector>
 
 
-template <typename K, typename V, typename Comp>
+template <typename K, typename V, typename Comp = std::less<K> >
 struct SkipNode {
     K key_;
     V value_;
@@ -17,10 +17,10 @@ struct SkipNode {
 };
 
 
-template <typename K, typename V, typename Comp>
+template <typename K, typename V, typename Comp = std::less<K> >
 class Skip_list {
 public:
-    Skip_list<K, V, Comp> ();
+    Skip_list<K, V, Comp> (const Comp& c = Comp());
     ~Skip_list<K, V, Comp> ();
 
     // non-modifying member functions
@@ -59,7 +59,7 @@ SkipNode<K, V, Comp>::SkipNode<K, V, Comp> (K k, const V& v, int level)
 // constructor
 
 template <typename K, typename V, typename Comp >
-Skip_list<K, V, Comp>::Skip_list<K, V, Comp>()
+Skip_list<K, V, Comp>::Skip_list<K, V, Comp>(const Comp& c = Comp())
         : probability(0.5), maxLevel(16)
 {
     // Initialize the head of the skip list
