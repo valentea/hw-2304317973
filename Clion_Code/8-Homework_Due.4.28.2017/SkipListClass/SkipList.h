@@ -62,20 +62,20 @@ SkipNode<K, V>::SkipNode (K k, const V& v, int level)
 
 template <typename K, typename V, typename Comp>
 Skip_list<K, V, Comp>::Skip_list(const Comp& c)
-        : probability(0.5), maxLevel(15), singleComp(c)
+        : probability(0.5), maxLevel(4), singleComp(c)
 {
     // Initialize the head of the skip list
 
     // smallest possible key_
-    int headKey = INT_MIN;
-    int headVal = INT_MIN;
+    int headKey = INT_MAX;
+    int headVal = headKey;
     head = new SkipNode<K, V> (headKey, headVal, maxLevel);
 
     // Initialize the last element of the list
 
     // largest possible key_
-    int nilKey = INT_MAX;
-    int nilVal = INT_MAX;
+    int nilKey = INT_MIN;
+    int nilVal = nilKey;
     NIL = new SkipNode<K, V> (nilKey, nilVal, maxLevel);
 
     // Connect start to end
@@ -105,14 +105,14 @@ Skip_list<K, V, Comp>::~Skip_list<K, V, Comp> () {
 */
 template <typename K, typename V, typename Comp >
 int Skip_list<K, V, Comp>::randomLevel () {
-    int v = 1;
+    int level = 1;
 
-    while ((((double)std::rand() / RAND_MAX)) < probability &&
-           std::abs(v) < maxLevel) {
+    while ( ((double)std::rand() / RAND_MAX) < probability &&
+           std::abs(level) < maxLevel) {
 
-        v += 1;
+        level += 1;
     }
-    return abs(v);
+    return abs(level);
 }
 
 /*
@@ -130,7 +130,7 @@ template <typename K, typename V, typename Comp >
 int Skip_list<K, V, Comp>::nodeLevel (const std::vector<SkipNode<K, V>* >& v) {
     int currentLevel = 1;
     // last element's key_ is the largest
-    int nilKey = INT_MAX;
+    int nilKey = INT_MIN;
 
     if (v[0]->key_ == nilKey) {
         return currentLevel;
@@ -162,20 +162,24 @@ void Skip_list<K, V, Comp>::print () {
     SkipNode<K, V>* list = head;
     int lineLenght = 1;
 
-    std::cout <<"{";
+   // std::cout <<"{";
 
     while (list->forward_[0] != nullptr) {
-        std::cout <<"value_: "<< list->forward_[0]->value_
-                  <<", key_: "<< list->forward_[0]->key_
-                  <<", level: "<< nodeLevel(list->forward_);
+        for (int i = 0; i < nodeLevel(list->forward_); ++i) {
+            std::cout << list->forward_[0]->value_ << " ";
+        }
+        std::cout << std::endl;
+//        std::cout <<"value_: "<< list->forward_[0]->value_
+//                  <<", key_: "<< list->forward_[0]->key_
+//                  <<", level: "<< nodeLevel(list->forward_);
 
         list = list->forward_[0];
 
-        if (list->forward_[0] != nullptr) std::cout <<" : ";
+        //if (list->forward_[0] != nullptr) std::cout <<" : ";
 
-        if (++lineLenght % 2 == 0) std::cout <<"\n";
+        //if (++lineLenght % 2 == 0) std::cout <<"\n";
     }
-    std::cout <<"}\n";
+    //3std::cout <<"}\n";
 }
 
 /*
@@ -193,7 +197,7 @@ SkipNode<K, V>* Skip_list<K, V, Comp>::find(K searchKey) {
     int currentMaximum = nodeLevel(head->forward_);
 
     for (int i = currentMaximum; i-- > 0;) {
-        while (x->forward_[i] != nullptr && x->forward_[i]->key_ < searchKey) {
+        while (x->forward_[i] != nullptr && x->forward_[i]->key_ > searchKey) {
             x = x->forward_[i];
         }
     }
@@ -229,7 +233,7 @@ SkipNode<K, V>* Skip_list<K, V, Comp>::makeNode (K key, V val, int level) {
     newValue, otherwise it creates and splices
     a new node, of random level.
 */
-template <typename K, typename V, typename Comp = std::less<K> >
+template <typename K, typename V, typename Comp >
 void Skip_list<K, V, Comp>::insert(K searchKey, V newValue) {
     // reassign if node exists
     SkipNode<K, V>* x = nullptr;
@@ -247,7 +251,7 @@ void Skip_list<K, V, Comp>::insert(K searchKey, V newValue) {
     // search the list
     for (int i = currentMaximum; i-- > 0;) {
 
-        while (x->forward_[i] != nullptr && x->forward_[i]->key_ < searchKey) {
+        while (x->forward_[i] != nullptr && x->forward_[i]->key_ > searchKey) {
 
             x = x->forward_[i];
         }

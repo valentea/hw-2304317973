@@ -12,16 +12,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7665396d-a935-4873-b442-5fd1f4db061e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../7-Homework_Due.4.17.2017/avlbst.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../7-Homework_Due.4.17.2017/bst.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../7-Homework_Due.4.17.2017/floorplan.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.3/CMakeRCCompiler.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.3/CompilerIdC/a.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.3/CompilerIdCXX/a.exe" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.3/CMakeDetermineCompilerABI_C.bin" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.3/CMakeDetermineCompilerABI_C.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.3/CMakeDetermineCompilerABI_CXX.bin" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.3/CMakeDetermineCompilerABI_CXX.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../7-Homework_Due.4.17.2017/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../7-Homework_Due.4.17.2017/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/SkipListClass.exe" afterPath="$PROJECT_DIR$/cmake-build-debug/SkipListClass.exe" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SkipList.h" afterPath="$PROJECT_DIR$/SkipList.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
@@ -46,6 +42,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/SkipListClass.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/SkipListClass.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/SkipListClass.exe.stackdump" afterPath="$PROJECT_DIR$/cmake-build-debug/SkipListClass.exe.stackdump" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
@@ -66,8 +63,8 @@
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="9" column="45" lean-forward="false" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -76,8 +73,8 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+            <state relative-caret-position="272">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -88,22 +85,22 @@
       <file leaf-file-name="SkipList.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SkipList.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+            <state relative-caret-position="253">
+              <caret line="253" column="66" lean-forward="false" selection-start-line="253" selection-start-column="66" selection-end-line="253" selection-end-column="66" />
               <folding>
                 <element signature="e#41#59#0" expanded="true" />
                 <element signature="e#89#113#0" expanded="true" />
                 <element signature="e#306#361#0" expanded="true" />
                 <element signature="e#1147#1171#0" expanded="true" />
                 <element signature="e#1471#1510#0" expanded="true" />
-                <element signature="e#2213#2253#0" expanded="true" />
-                <element signature="e#2627#2667#0" expanded="true" />
-                <element signature="e#3170#3210#0" expanded="true" />
-                <element signature="e#3871#3911#0" expanded="true" />
-                <element signature="e#4686#4726#0" expanded="true" />
-                <element signature="e#5388#5428#0" expanded="true" />
-                <element signature="e#5856#5911#0" expanded="true" />
-                <element signature="e#7338#7378#0" expanded="true" />
+                <element signature="e#2211#2251#0" expanded="true" />
+                <element signature="e#2625#2665#0" expanded="true" />
+                <element signature="e#3183#3223#0" expanded="true" />
+                <element signature="e#3884#3924#0" expanded="true" />
+                <element signature="e#4877#4917#0" expanded="true" />
+                <element signature="e#5579#5619#0" expanded="true" />
+                <element signature="e#6047#6087#0" expanded="true" />
+                <element signature="e#7514#7554#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -117,6 +114,7 @@
       <find>Comp = std::less&lt;K&gt;</find>
       <find>SkipNode</find>
       <find>Skip_list</find>
+      <find>un</find>
     </findStrings>
     <replaceStrings>
       <replace>SkipList&lt;K, V, Comp&gt;::</replace>
@@ -145,8 +143,10 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1176" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -384,6 +384,8 @@
       <workItem from="1493000466618" duration="6513000" />
       <workItem from="1493080366583" duration="3337000" />
       <workItem from="1493143238705" duration="4727000" />
+      <workItem from="1493158045622" duration="6457000" />
+      <workItem from="1493169460825" duration="1347000" />
     </task>
     <task id="LOCAL-00001" summary="skiplist">
       <created>1493082748834</created>
@@ -396,23 +398,23 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14577000" />
+    <option name="totallyTimeSpent" value="22381000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24861111" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15173867" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37866354" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32942554" sideWeight="0.50277776" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3767977" sideWeight="0.49577805" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38521835" sideWeight="0.9119421" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39980826" sideWeight="0.50421494" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32942554" sideWeight="0.49722221" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2885906" sideWeight="0.49722221" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39980826" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39980826" sideWeight="0.49578503" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -434,11 +436,63 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>15</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/SkipList.h</url>
+          <line>237</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="45" lean-forward="false" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SkipList.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#41#59#0" expanded="true" />
+            <element signature="e#89#113#0" expanded="true" />
+            <element signature="e#306#361#0" expanded="true" />
+            <element signature="e#1147#1171#0" expanded="true" />
+            <element signature="e#1471#1510#0" expanded="true" />
+            <element signature="e#2211#2251#0" expanded="true" />
+            <element signature="e#2625#2665#0" expanded="true" />
+            <element signature="e#3183#3223#0" expanded="true" />
+            <element signature="e#3884#3924#0" expanded="true" />
+            <element signature="e#4877#4917#0" expanded="true" />
+            <element signature="e#5579#5619#0" expanded="true" />
+            <element signature="e#6047#6087#0" expanded="true" />
+            <element signature="e#7514#7554#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -467,14 +521,14 @@
             <element signature="e#306#361#0" expanded="true" />
             <element signature="e#1147#1171#0" expanded="true" />
             <element signature="e#1471#1510#0" expanded="true" />
-            <element signature="e#2213#2253#0" expanded="true" />
-            <element signature="e#2627#2667#0" expanded="true" />
-            <element signature="e#3170#3210#0" expanded="true" />
-            <element signature="e#3871#3911#0" expanded="true" />
-            <element signature="e#4686#4726#0" expanded="true" />
-            <element signature="e#5388#5428#0" expanded="true" />
-            <element signature="e#5856#5911#0" expanded="true" />
-            <element signature="e#7338#7378#0" expanded="true" />
+            <element signature="e#2211#2251#0" expanded="true" />
+            <element signature="e#2625#2665#0" expanded="true" />
+            <element signature="e#3183#3223#0" expanded="true" />
+            <element signature="e#3884#3924#0" expanded="true" />
+            <element signature="e#4877#4917#0" expanded="true" />
+            <element signature="e#5579#5619#0" expanded="true" />
+            <element signature="e#6047#6087#0" expanded="true" />
+            <element signature="e#7514#7554#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -507,41 +561,34 @@
             <element signature="e#306#361#0" expanded="true" />
             <element signature="e#1147#1171#0" expanded="true" />
             <element signature="e#1471#1510#0" expanded="true" />
-            <element signature="e#2213#2253#0" expanded="true" />
-            <element signature="e#2627#2667#0" expanded="true" />
-            <element signature="e#3170#3210#0" expanded="true" />
-            <element signature="e#3871#3911#0" expanded="true" />
-            <element signature="e#4686#4726#0" expanded="true" />
-            <element signature="e#5388#5428#0" expanded="true" />
-            <element signature="e#5856#5911#0" expanded="true" />
-            <element signature="e#7338#7378#0" expanded="true" />
+            <element signature="e#2211#2251#0" expanded="true" />
+            <element signature="e#2625#2665#0" expanded="true" />
+            <element signature="e#3183#3223#0" expanded="true" />
+            <element signature="e#3884#3924#0" expanded="true" />
+            <element signature="e#4877#4917#0" expanded="true" />
+            <element signature="e#5579#5619#0" expanded="true" />
+            <element signature="e#6047#6087#0" expanded="true" />
+            <element signature="e#7514#7554#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://C:/Program Files (x86)/cygwin64/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/ext/new_allocator.h" />
     <entry file="file://$PROJECT_DIR$/../../5-Homework_Due.3.22.2017/Movie.cpp" />
     <entry file="file://C:/Program Files (x86)/cygwin64/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/bits/stl_vector.h" />
-    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/memory">
+    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/memory" />
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="1751" column="0" lean-forward="false" selection-start-line="1751" selection-start-column="0" selection-end-line="1751" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="9" column="45" lean-forward="false" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -550,22 +597,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SkipList.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        <state relative-caret-position="253">
+          <caret line="253" column="66" lean-forward="false" selection-start-line="253" selection-start-column="66" selection-end-line="253" selection-end-column="66" />
           <folding>
             <element signature="e#41#59#0" expanded="true" />
             <element signature="e#89#113#0" expanded="true" />
             <element signature="e#306#361#0" expanded="true" />
             <element signature="e#1147#1171#0" expanded="true" />
             <element signature="e#1471#1510#0" expanded="true" />
-            <element signature="e#2213#2253#0" expanded="true" />
-            <element signature="e#2627#2667#0" expanded="true" />
-            <element signature="e#3170#3210#0" expanded="true" />
-            <element signature="e#3871#3911#0" expanded="true" />
-            <element signature="e#4686#4726#0" expanded="true" />
-            <element signature="e#5388#5428#0" expanded="true" />
-            <element signature="e#5856#5911#0" expanded="true" />
-            <element signature="e#7338#7378#0" expanded="true" />
+            <element signature="e#2211#2251#0" expanded="true" />
+            <element signature="e#2625#2665#0" expanded="true" />
+            <element signature="e#3183#3223#0" expanded="true" />
+            <element signature="e#3884#3924#0" expanded="true" />
+            <element signature="e#4877#4917#0" expanded="true" />
+            <element signature="e#5579#5619#0" expanded="true" />
+            <element signature="e#6047#6087#0" expanded="true" />
+            <element signature="e#7514#7554#0" expanded="true" />
           </folding>
         </state>
       </provider>

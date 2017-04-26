@@ -8,40 +8,19 @@
 
 //==================================================
 int main () {
+    //srand(time(NULL));
 
     // 1.Initialize an empty Skip_list object
-    Skip_list<int, int> s;
+    Skip_list<int, int, std::greater<int> > s;
 
     // 2. insert()
-    for (int i = 0; i < 50; ++i){
+    for (int i = 0; i < 100; ++i){
 
-        std::stringstream ss;
-        ss << i;
-
-        s.insert(i, i);
+        s.insert(rand()%20, rand()%20);
     }
 
     // 2a. print()
     s.print();
 
-    // 3. find()
-    SkipNode<int, int>* f = nullptr;
-    f = s.find(10);
-    if (f) std::cout <<"Node found!\nvalue: "<< f->value_ <<'\n';
-    else std::cout <<"Node NOT found!\n";
-
-    // 4. insert() - reassign
-    s.insert(40, 100);
-
-    // 4a. print()
-    s.print();
-
-    // 5. erase()
-    s.erase(40);
-
-    // 5a. print();
-    s.print();
-
-    std::cout << "\nDone!\n";
-    getchar();
+    return 0;
 }

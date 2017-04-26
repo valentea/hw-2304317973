@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/SkipListClass.dir/main.cpp.o"
   "SkipListClass.pdb"
-  "SkipListClass"
+  "SkipListClass.exe"
+  "libSkipListClass.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
