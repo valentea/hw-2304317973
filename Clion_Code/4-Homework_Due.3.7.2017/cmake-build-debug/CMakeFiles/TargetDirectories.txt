@@ -1,3 +1,3 @@
-/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir
+/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug/CMakeFiles/4_Homework_Due_3_7_2017.dir

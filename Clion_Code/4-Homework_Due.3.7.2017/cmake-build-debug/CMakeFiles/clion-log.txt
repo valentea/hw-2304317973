@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017
+C:\Users\Alex\.CLion2016.3\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017"
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/Alex/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug
+-- Build files have been written to: /cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/4-Homework_Due.3.7.2017/cmake-build-debug

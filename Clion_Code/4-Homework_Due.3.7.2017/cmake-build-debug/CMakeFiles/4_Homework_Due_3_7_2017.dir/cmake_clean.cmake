@@ -10,7 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/4_Homework_Due_3_7_2017.dir/user.cpp.o"
   "CMakeFiles/4_Homework_Due_3_7_2017.dir/util.cpp.o"
   "4_Homework_Due_3_7_2017.pdb"
-  "4_Homework_Due_3_7_2017"
+  "4_Homework_Due_3_7_2017.exe"
+  "lib4_Homework_Due_3_7_2017.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -3,15 +3,16 @@
 #include <vector>
 #include <array>
 #include <cmath>
+#include <numeric>
 
 using namespace std;
 
 int main() {
-    string password = "password";
+    string password = "fighton";
     vector<char> singleLetters;
-    vector<unsigned long> numbers;
+    vector<unsigned long long> numbers;
     unsigned long long hash = 0;
-    array<int, 4> final;
+    array<unsigned long long, 4> significantNumbs;
 
     cout << "single letters" << endl;
     for (int i = 0; i < password.length(); ++i) {
@@ -20,9 +21,9 @@ int main() {
     }
     cout << endl << endl;
 
-    cout << "single letter 'int' conversion" << endl;
-    for (int m = 0; m < singleLetters.size(); ++m) {
-        cout << (int)singleLetters[m] << " ";
+    cout << "single letters (int)" << endl;
+    for (int i = 0; i < password.length(); ++i) {
+        cout << (int)singleLetters[i] << " ";
     }
     cout << endl << endl;
 
@@ -30,12 +31,12 @@ int main() {
     cout << "single letter 'int' conversion IN REVERSE" << endl;
     for (int j = (int)singleLetters.size()-1; j >= 0; j--) {
         cout << (int)singleLetters[j] << " ";
-        numbers.push_back(pow(128,(singleLetters.size() - j)) * (int)singleLetters[j]);
+        numbers.push_back((unsigned long long) pow(128,(singleLetters.size() - (j+1))) * (int)singleLetters[j]);
     }
     cout << endl << endl;
 
     cout << "numbers: " << endl;
-    for (int l = 0; l < 8; ++l) {
+    for (int l = 0; l < numbers.size(); ++l) {
         cout << l << ": " << numbers[l] << endl;
     }
     cout << endl;
@@ -43,15 +44,35 @@ int main() {
 
     cout << "hash before encryption: " << endl;
     for (int k = 0; k < singleLetters.size(); ++k) {
-        hash = hash + (int)singleLetters[k];
+        hash = hash + numbers[k];
     }
-
     cout << hash << endl;
 
+    if(hash == 452236385531886){
+        cout << "correct this far" << endl << endl;
+    }
 
+    significantNumbs[3] = hash % 65521;
+    significantNumbs[2] = (hash/65521) % 65521;
+    significantNumbs[1] = ((hash/65521)/65521) % 65521;
+    significantNumbs[0] = (((hash/65521)/65521)/65521) % 65521;
 
+    cout << "significant numbs: " << endl;
+    for (int n = 0; n < 4; ++n) {
+        cout << "w" << n+1 << ": " << significantNumbs[n] << endl;
+    }
+    cout << endl << endl;
 
+    unsigned long long finalVal;
+
+    finalVal = (45912*significantNumbs[0]) + (35511*significantNumbs[1]) + (65169*significantNumbs[2]) + (4625*significantNumbs[3]);
+    cout << "Final Val Pre Mod: " << finalVal << endl;
+    finalVal = finalVal % 65521;
+
+    cout << "Final Val: " << finalVal << endl;
+
+    if(finalVal == 29703){
+        cout << "boom" << endl;
+    }
     return 0;
-
-
 }
