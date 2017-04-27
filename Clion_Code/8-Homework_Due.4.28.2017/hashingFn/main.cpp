@@ -7,8 +7,10 @@
 
 using namespace std;
 
+unsigned long long power(unsigned long long base, unsigned long long top);
+
 int main() {
-    string password = "fighton";
+    string password = "csci104";
     vector<char> singleLetters;
     vector<unsigned long long> numbers;
     unsigned long long hash = 0;
@@ -31,7 +33,7 @@ int main() {
     cout << "single letter 'int' conversion IN REVERSE" << endl;
     for (int j = (int)singleLetters.size()-1; j >= 0; j--) {
         cout << (int)singleLetters[j] << " ";
-        numbers.push_back((unsigned long long) pow(128,(singleLetters.size() - (j+1))) * (int)singleLetters[j]);
+        numbers.push_back((unsigned long long) power(128,(singleLetters.size() - (j+1))) * (int)singleLetters[j]);
     }
     cout << endl << endl;
 
@@ -75,4 +77,12 @@ int main() {
         cout << "boom" << endl;
     }
     return 0;
+}
+
+unsigned long long power(unsigned long long base, unsigned long long top){
+    unsigned long long answer = 1;
+    for (int i = 0; i < top; ++i) {
+        answer = answer * base;
+    }
+    return answer;
 }
