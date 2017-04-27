@@ -1,4 +1,4 @@
-# Install script for directory: /Users/Alex/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/main
+# Install script for directory: /cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/Alex/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/main/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/cygdrive/c/Users/Alex/Documents/School/College/2017.1 Spring/CSCI 104/Homework/hw-2304317973/Clion_Code/8-Homework_Due.4.28.2017/main/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
