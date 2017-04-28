@@ -48,6 +48,7 @@ public:
 
     void print();
 
+
 private:
     /// Add whatever helper functions you need below
     void reHeapUp(int hole);
@@ -109,9 +110,9 @@ template <typename T, typename TComparator, typename PComparator, typename Hashe
 void Heap<T,TComparator,PComparator,Hasher>::decreaseKey(double newPriority, const T& item)
 {
     // You complete
-    int hole = keyToLocation_.find(item);
+    int hole = keyToLocation_.find(item)->second;
     store_[hole].first = newPriority;
-    reH
+    reHeapUp(hole);
 }
 
 template <typename T, typename TComparator, typename PComparator, typename Hasher >
@@ -135,9 +136,9 @@ void Heap<T,TComparator,PComparator,Hasher>::pop(){
     // You complete
     size_--;
     swap(store_.front(), store_.back());
+    keyToLocation_.erase(store_.back().second);
     store_.erase(store_.cend());
-    keyToLocation_[store_.front()] = 0;
-    keyToLocation_.erase(store_.back());
+    keyToLocation_[store_.front().second] = 0;
     reHeapDown(0);
 }
 
@@ -160,9 +161,9 @@ void Heap<T, TComparator, PComparator, Hasher>::reHeapUp(int hole) {
 
     while (parNode >= 0) {
         if (c_(store_[hole].first, store_[parNode].first)) {
-            swap(store_[hole], store_[parNode]);
             keyToLocation_[store_[hole].second] = (unsigned long) parNode;
             keyToLocation_[store_[parNode].second] = (unsigned long) hole;
+            swap(store_[hole], store_[parNode]);
             hole = parNode;
             parNode = parent(hole);
         }
@@ -213,6 +214,8 @@ void Heap<T, TComparator, PComparator, Hasher>::reHeapDown(int hole) {
         // swap only if the key of max_child_index
         // is greater than the key of node
         if (!c_(store_[hole].first, store_[max_child_index].first) ) {
+            keyToLocation_[store_[hole].second] = (unsigned long) max_child_index;
+            keyToLocation_[store_[max_child_index].second] = (unsigned long)  hole;
             swap(store_[hole], store_[max_child_index]);
         }
         hole = max_child_index;
@@ -245,7 +248,7 @@ void Heap<T, TComparator, PComparator, Hasher>::print(){
         cout << "empty heap" << endl;
     }
     for (int i = 0; i < size_; ++i) {
-        cout << store_[i].first << ", " << store_[i].second << " " << endl;
+        cout << keyToLocation_[store_[i].second] << " -:-> " << store_[i].first << ", " << store_[i].second << endl;
     }
     cout << endl;
 }
