@@ -148,3 +148,21 @@ bool MyDataStore::checkPassword(std::string userName, std::string password) {
         }
     }
 }
+
+User* MyDataStore::nameToUser(string name){
+    for(auto user : userList_){
+        if(user->getName() == name){
+            return user;
+        }
+    }
+    return NULL;
+}
+
+bool MyDataStore::userExist(std::string name) {
+    for(auto user : userList_){
+        if(user->getName() == name){
+            return true;
+        }
+    }
+    return false;
+}

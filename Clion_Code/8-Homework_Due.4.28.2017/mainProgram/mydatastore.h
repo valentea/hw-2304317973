@@ -27,6 +27,8 @@ public:
     std::vector<Product *> viewCart(std::string userName);
     void buyCart(std::string userName);
     bool checkPassword(std::string userName, std::string password);
+    User* nameToUser(std::string name);
+    bool userExist(std::string name);
 
 protected:
     std::set<Product *> productList_;
