@@ -7,6 +7,7 @@
 #include <algorithm>
 #include <stdexcept>
 #include <unordered_map>
+#include <cfloat>
 
 using namespace std;
 
@@ -62,6 +63,7 @@ private:
     std::unordered_map<T, size_t, Hasher, TComparator> keyToLocation_;
     int parent(int hole);
     int size_;
+    bool lessComp = true;
 
 };
 
@@ -80,7 +82,9 @@ Heap<T,TComparator,PComparator,Hasher>::Heap(
     size_(0)
 
 {
-
+    if(c(2,1)){
+        lessComp = false;
+    }
 }
 
 // Complete
@@ -93,19 +97,21 @@ Heap<T,TComparator,PComparator,Hasher>::~Heap()
 template <typename T, typename TComparator, typename PComparator, typename Hasher >
 void Heap<T,TComparator,PComparator,Hasher>::push(double priority, const T& item)
 {
+    std::pair<double, T> temp = make_pair(priority, item);
+    keyToLocation_.insert(make_pair(item, size_));
     int hole = size_;
     size_++;
-    std::pair<double, T> temp;
-    temp = make_pair(priority, item);
     store_.push_back(temp);
     reHeapUp(hole);
 }
 
 template <typename T, typename TComparator, typename PComparator, typename Hasher >
-void Heap<T,TComparator,PComparator,Hasher>::decreaseKey(double priority, const T& item)
+void Heap<T,TComparator,PComparator,Hasher>::decreaseKey(double newPriority, const T& item)
 {
     // You complete
-
+    int hole = keyToLocation_.find(item);
+    store_[hole].first = newPriority;
+    reH
 }
 
 template <typename T, typename TComparator, typename PComparator, typename Hasher >
@@ -128,8 +134,11 @@ void Heap<T,TComparator,PComparator,Hasher>::pop(){
     }
     // You complete
     size_--;
-    store_.pop_back();
-    reHeapDown(size_);
+    swap(store_.front(), store_.back());
+    store_.erase(store_.cend());
+    keyToLocation_[store_.front()] = 0;
+    keyToLocation_.erase(store_.back());
+    reHeapDown(0);
 }
 
 /// returns true if the heap is empty
@@ -152,6 +161,8 @@ void Heap<T, TComparator, PComparator, Hasher>::reHeapUp(int hole) {
     while (parNode >= 0) {
         if (c_(store_[hole].first, store_[parNode].first)) {
             swap(store_[hole], store_[parNode]);
+            keyToLocation_[store_[hole].second] = (unsigned long) parNode;
+            keyToLocation_[store_[parNode].second] = (unsigned long) hole;
             hole = parNode;
             parNode = parent(hole);
         }
@@ -163,43 +174,47 @@ void Heap<T, TComparator, PComparator, Hasher>::reHeapUp(int hole) {
 
 
 template <typename T, typename TComparator, typename PComparator, typename Hasher >
-void Heap<T, TComparator, PComparator, Hasher>::reHeapDown(int hole){
+void Heap<T, TComparator, PComparator, Hasher>::reHeapDown(int hole) {
     // child array to store indexes of all
     // the children of given node
-    int child[m_+1];
+    int child[m_];
 
-    while (1)
-    {
+    while (1) {
         // child[i]=-1 if the node is a leaf
         // children (no children)
-        for (int i=1; i<=m_; i++) {
-            child[i] = ((m_ * hole + i) < size_) ? (m_ * hole + i) : -1;
+        for (int i = 0; i < m_; i++) {
+            child[i] = ((m_ * hole + (i + 1)) < size_) ? (m_ * hole + (i + 1)) : -1;
         }
 
         // max_child stores the maximum child and
         // max_child_index holds its index
-        pair<double, T> max_child = make_pair((double)-1, (T)-1);
+        pair<double, T> max_child;
+        if(lessComp) {
+           max_child = make_pair((double) DBL_MAX, (T) -1);
+        }else {
+           max_child = make_pair((double) -1, (T) -1);
+        }
         int max_child_index = -1;
 
         // loop to find the maximum of all
         // the children of a given node
-        for (int i = 1; i <= m_; i++) {
-            if (child[i] != -1 && store_[child[i]].first < max_child.first) {
+        for (int i = 0; i < m_; i++) {
+            if (child[i] != -1 && c_(store_[child[i]].first, max_child.first) ) {
                 max_child_index = child[i];
                 max_child = store_[child[i]];
             }
         }
 
         // leaf node
-        if (max_child.first == -1) {
+        if (max_child_index == -1) {
             break;
         }
 
         // swap only if the key of max_child_index
         // is greater than the key of node
-        if (store_[hole].first < store_[max_child_index].first)
+        if (!c_(store_[hole].first, store_[max_child_index].first) ) {
             swap(store_[hole], store_[max_child_index]);
-
+        }
         hole = max_child_index;
     }
 }
@@ -234,6 +249,7 @@ void Heap<T, TComparator, PComparator, Hasher>::print(){
     }
     cout << endl;
 }
+
 
 #endif
 
