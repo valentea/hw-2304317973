@@ -5,12 +5,16 @@
 #include <vector>
 #include <iomanip>
 #include <algorithm>
+#include <QApplication>
+#include <QWidget>
+#include <QObject>
 
 #include "product.h"
 #include "db_parser.h"
 #include "product_parser.h"
 #include "util.h"
 #include "mydatastore.h"
+#include "loginWindow.h"
 
 using namespace std;
 
@@ -56,38 +60,9 @@ int main(int argc, char *argv[]) {
     }
 
     QApplication app(argc, argv);
-    QWidget *window = new QWidget;
+    loginWindow* window = new loginWindow(ds);
 
-    QPushButton *logIn = new QPushButton("Log In");
-    QPushButton *newUser = new QPushButton("Make New User");
-    QPushButton *quit = new QPushButton("Quit");
-    QLineEdit *userName = new QLineEdit("User Name");
-    QLineEdit *password = new QLineEdit("Password");
-
-    QGridLayout *grid = new QGridLayout;
-    QHBoxLayout *topLine = new QHBoxLayout;
-    QHBoxLayout *bottomLine = new QHBoxLayout;
-
-    topLine->addWidget(userName);
-    topLine->addWidget(password);
-
-    bottomLine->addWidget(logIn);
-    bottomLine->addWidget(newUser);
-    bottomLine->addWidget(quit);
-
-    grid->addLayout(topLine, 0, 0);
-    grid->addLayout(bottomLine, 1, 0);
-
-    window->setLayout(grid);
     window->show();
-
-    string usernameRaw = (newUser->text()).toStdString();
-    string passwordRaw = (password->text()).toStdString();
-
-
-    QObject::connect(quit, SIGNAL(clicked()), &app, SLOT(quit()));
-    QObject::connect(logIn, SIGNAL(clicked()), userName, SLOT());
-
     return app.exec();
 
 
