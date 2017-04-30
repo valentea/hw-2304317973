@@ -161,6 +161,8 @@ bool MyDataStore::checkPassword(std::string userName, std::string password) {
         if(user->getName() == userName){
             if(user->getPassword() == hashedPassword){
                 return true;
+            }else{
+            return false;
             }
         }
     }
@@ -241,8 +243,8 @@ void MyDataStore::findPath(User* src, User* targetUser, User* nextUser, set<User
     }
 }
 
-std::vector<std::pair<std::string, double> > MyDataStore::makeSuggestion(std::string currentUser) {
-    vector<pair<string, double> > buyThese;
+std::vector<std::pair<double, std::string> > MyDataStore::makeSuggestion(std::string currentUser) {
+    vector<pair<double, std::string> > buyThese;
     User *currUser = nameToUser(currentUser);
 
     set<string> notReviewed;
@@ -278,11 +280,13 @@ std::vector<std::pair<std::string, double> > MyDataStore::makeSuggestion(std::st
         double wTotal = 0;
         accumulate(W.begin(), W.end(), rTotal);
         if (wTotal == 0) {
-            buyThese.push_back(make_pair(singleProd, 0));
+            buyThese.push_back(make_pair(0, singleProd));
         } else {
             double rating = rTotal / wTotal;
-            buyThese.push_back((make_pair(singleProd, rating)));
+            buyThese.push_back((make_pair(rating, singleProd)));
         }
     }
+    sort(buyThese.begin(), buyThese.end());
+    
     return buyThese;
 };

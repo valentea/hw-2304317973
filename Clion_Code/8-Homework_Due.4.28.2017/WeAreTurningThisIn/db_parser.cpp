@@ -22,8 +22,8 @@ DBParser::DBParser()
 DBParser::~DBParser()
 {
     for(map<string, SectionParser*>::iterator it = parsers_.begin();
-        it != parsers_.end();
-        ++it) {
+            it != parsers_.end();
+            ++it) {
         delete it->second;
     }
 }
@@ -97,8 +97,8 @@ bool DBParser::parse(string db_filename, DataStore& ds)
     }
     if(!error_) {
         for(map<string, SectionParser*>::iterator it = parsers_.begin();
-            it != parsers_.end();
-            ++it)
+                it != parsers_.end();
+                ++it)
         {
             it->second->reportItemsRead(cout);
         }
@@ -113,8 +113,8 @@ ProductSectionParser::ProductSectionParser()
 ProductSectionParser::~ProductSectionParser()
 {
     for(map<string, ProductParser*>::iterator it = prodParsers_.begin();
-        it != prodParsers_.end();
-        ++it) {
+            it != prodParsers_.end();
+            ++it) {
         delete it->second;
     }
 }
@@ -126,10 +126,10 @@ void ProductSectionParser::addProductParser(ProductParser* p)
 
 
 bool ProductSectionParser::parse(
-        std::istream& is,
-        DataStore& ds,
-        int& lineno,
-        std::string& errorMsg)
+    std::istream& is,
+    DataStore& ds,
+    int& lineno,
+    std::string& errorMsg)
 {
     string line;
     while(getline(is, line)) {
@@ -157,9 +157,9 @@ bool ProductSectionParser::parse(
 
 
 Product* ProductSectionParser::parseProduct(const string& category,
-                                            istream& is,
-                                            int& lineno,
-                                            std::string& errorMsg)
+        istream& is,
+        int& lineno,
+        std::string& errorMsg)
 {
     bool error = false;
     map<string,ProductParser*>::iterator it = prodParsers_.find(category);
@@ -184,10 +184,10 @@ UserSectionParser::UserSectionParser()
     numRead_ = 0;
 }
 bool UserSectionParser::parse(
-        std::istream& is,
-        DataStore& ds,
-        int& lineno,
-        std::string& errorMsg)
+    std::istream& is,
+    DataStore& ds,
+    int& lineno,
+    std::string& errorMsg)
 {
     string line;
     while(getline(is, line)) {
@@ -205,14 +205,14 @@ bool UserSectionParser::parse(
     return false;
 }
 User* UserSectionParser::parseUser(
-        std::istream& is,
-        DataStore& ds,
-        std::string& errorMsg)
+    std::istream& is,
+    DataStore& ds,
+    std::string& errorMsg)
 {
     string username;
     double balance;
     int type;
-    unsigned long long passwordHash;
+    double password;
     is >> username;
     if( is.fail() ) {
         errorMsg = "Unable to read username";
@@ -228,12 +228,12 @@ User* UserSectionParser::parseUser(
         errorMsg = "Unable to read type";
         return NULL;
     }
-    is >> passwordHash;
+    is >> password;
     if( is.fail() ) {
-        errorMsg = "Unable to read password";
+        errorMsg = "Unable to read Password";
         return NULL;
     }
-    return new User(username, balance, type, passwordHash);
+    return new User(username, balance, type, password);
 }
 
 void UserSectionParser::reportItemsRead(std::ostream& os)
@@ -248,10 +248,10 @@ ReviewSectionParser::ReviewSectionParser()
 }
 
 bool ReviewSectionParser::parse(
-        std::istream& is,
-        DataStore& ds,
-        int& lineno,
-        std::string& errorMsg)
+    std::istream& is,
+    DataStore& ds,
+    int& lineno,
+    std::string& errorMsg)
 {
     string line;
     string prod, line2;
@@ -284,9 +284,9 @@ bool ReviewSectionParser::parse(
 }
 
 Review* ReviewSectionParser::parseReview(
-        std::istream& is,
-        const std::string& prodname,
-        std::string& errorMsg)
+    std::istream& is,
+    const std::string& prodname,
+    std::string& errorMsg)
 {
     int rating;
     string date;

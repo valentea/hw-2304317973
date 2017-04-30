@@ -5,11 +5,17 @@
 #include <vector>
 #include <iomanip>
 #include <algorithm>
+#include <QApplication>
+#include <QWidget>
+#include <QObject>
+
 #include "product.h"
 #include "db_parser.h"
 #include "product_parser.h"
 #include "util.h"
 #include "mydatastore.h"
+#include "loginWindow.h"
+#include "review.h"
 
 using namespace std;
 
@@ -55,22 +61,18 @@ int main(int argc, char *argv[]) {
         cerr << "Error parsing!" << endl;
         return 1;
     }
-
-
-//    cout << "Plz enter Username and Password" << endl;
-//    string user;
-//    string password;
-//    cin >> user >> password;
-//
-//    if(ds->checkPassword(user, password)){
-//        cout << "your a boss" << endl;
-//    }
-
-    vector<pair<string, double> > test = ds->makeSuggestion("ttrojan");
+    
+        vector<pair<double, string> > test = ds->makeSuggestion("saty");
     for(auto temp : test){
-        cout << temp.first << endl;
+        cout << temp.second << endl;
     }
 
+
+   QApplication app(argc, argv);
+    loginWindow* window = new loginWindow(ds);
+
+    window->show();
+    return app.exec();
 
 
     return 0;
@@ -164,3 +166,4 @@ void mainFn(MyDataStore ds) {
 
     }
 }
+

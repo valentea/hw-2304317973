@@ -100,9 +100,9 @@ public:
     virtual void reportItemsRead(std::ostream& os);
 protected:
     User* parseUser(
-            std::istream& is,
-            DataStore& ds,
-            std::string& errorMsg);
+        std::istream& is,
+        DataStore& ds,
+        std::string& errorMsg);
 private:
 
     unsigned int numRead_ ;
@@ -122,9 +122,9 @@ public:
     virtual void reportItemsRead(std::ostream& os);
 protected:
     Review* parseReview(
-            std::istream& is,
-            const std::string& prodname,
-            std::string& errorMsg);
+        std::istream& is,
+        const std::string& prodname,
+        std::string& errorMsg);
 private:
 
     unsigned int numRead_ ;

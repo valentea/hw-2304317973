@@ -33,7 +33,7 @@ public:
     bool userExist(std::string name);
     void userSimilarity();
     void findPath(User* src, User* targetUser, User* nextUser, set<User* >& path, double dist);
-    std::vector<std::pair<std::string, double> > makeSuggestion(std::string currentUser);
+    std::vector<std::pair<double, std::string> > makeSuggestion(std::string currentUser);
     void findShortestPath(User* src, User* target);
 
 protected:
